@@ -163,7 +163,7 @@
 ======================== */
 @media (max-width: 1024px) {
   .about-section {
-    margin: 220px 30px; /* Add margin: top/right/bottom/left */
+    margin: 220px 30px 1px 0px; /* margin: top right bottom left | Added margin bottom and right */
   }
   .about-container {
     flex-direction: column;
