@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marriage Hall</title>
+  <link rel="stylesheet" href="Contact.css">
+  <link rel="stylesheet" href="../components/css/footer.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&family=League+Spartan:wght@400&family=Mea+Culpa:wght@400&family=Reem+Kufi:wght@400&display=swap" rel="stylesheet">
+  <!-- AOS Animation CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"/>
+</head>
+<body class="contact-page">
+
+  <!-- Header Component -->
+<header class="header" id="header" data-aos="fade-down" data-aos-duration="900">
+  <div class="container">
+    
+    <!-- Location Info -->
+    <div class="location-info" data-aos="fade-right" data-aos-delay="100">
+      <i class="fas fa-map-marker-alt"></i>
+      <span>Anna Nagar, Sinnamani Nagar, Thoothukudi, Tamil Nadu 628008</span>
+    </div>
+
+    <!-- Divider Line (Full Width) -->
+    <div style="width: 100vw; position: relative; left: 50%; right: 50%; margin-left: -50vw; margin-right: -50vw;" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="200">
+      <hr style="border: none; border-top: 1px solid #ffffff; margin: 0; opacity: 0.3;">
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar" data-aos="fade-up" data-aos-delay="250">
+      <!-- Mobile Menu Toggle -->
+      <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+      
+      <!-- Navigation Links -->
+      <div class="nav-links" id="navLinks">
+        <a href="../index.html" class="nav-link">Home</a>
+        <a href="../About us/aboutus.html" class="nav-link">About Us</a>
+        <a href="../Services/service.html" class="nav-link">Services</a>
+        <!-- <a href="../index.html#facilities" class="nav-link">Facilities</a>
+        <a href="../index.html#gallery" class="nav-link">Gallery</a>
+        <a href="../index.html#blog" class="nav-link">Blog</a> -->
+        <a href="./Contact.html" class="nav-link active">Contact Us</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("contactNavLinks").classList.toggle("show");
+    }
+    </script>
+    
+
+  <!-- ====== Hero Section ====== -->
+  <section class="contact-hero" data-aos="fade-up">
+    <div class="overlay"></div>
+
+    <!-- Breadcrumbs -->
+    <div class="contact-breadcrumbs" data-aos="fade-zoom-in" data-aos-delay="100" data-aos-duration="700">
+      <a href="index.html">Home</a>
+      <span class="custom-separator" style="display: inline-block; vertical-align: middle; width: 32px; height: 16px; position: relative;">
+        <span style="
+          position: absolute;
+          left: 0; top: 50%;
+          width: 20px;
+          height: 3px;
+          background: #fff;
+          border-radius: 2px;
+          transform: translateY(-50%);
+        "></span>
+        <span style="
+          position: absolute;
+          left: 18px; top: 50%;
+          width: 8px;
+          height: 8px;
+          background: #fff;
+          border-radius: 50%;
+          box-shadow: 0 1px 6px 0 rgba(30,25,20,0.17);
+          transform: translateY(-50%);
+        "></span>
+      </span>
+      <span class="current">Contact Us</span>
+    </div>
+
+    <!-- Booking Form -->
+    <div class="contact-form-section" data-aos="fade-left" data-aos-delay="200">
+      <form class="contact-form">
+        <div class="contact-form-group" data-aos="fade-up" data-aos-delay="250">
+          <label for="from">From</label>
+          <div style="display: flex; align-items: center;">
+            <i class="fas fa-calendar-alt" style="color:#8b0000; font-size: 17px; margin-right:7px;"></i>
+            <input type="date" id="from" name="from" placeholder="From">
+          </div>
+        </div>
+        <div class="contact-form-group" data-aos="fade-up" data-aos-delay="300">
+          <label for="to">To</label>
+          <div style="display: flex; align-items: center;">
+            <i class="fas fa-calendar-alt" style="color:#8b0000; font-size: 17px; margin-right:7px;"></i>
+            <input type="date" id="to" name="to" placeholder="To">
+          </div>
+        </div>
+        <div class="contact-form-group" data-aos="fade-up" data-aos-delay="350">
+          <label for="event">Event</label>
+          <div style="display: flex; align-items: center;">
+            <i class="fas fa-landmark" style="color:#8b0000; font-size: 17px; margin-right:7px;"></i>
+            <select id="event" name="event">
+              <option value="marriage">Marriage</option>
+              <option value="birthday">Birthday</option>
+              <option value="corporate">Corporate</option>
+            </select>
+          </div>
+        </div>
+        <div class="contact-form-group" data-aos="fade-up" data-aos-delay="400">
+          <label for="facilities">Facilities</label>
+          <div style="display: flex; align-items: center;">
+            <i class="fas fa-cogs" style="color:#8b0000; font-size: 17px; margin-right:7px;"></i>
+            <select id="facilities" name="facilities">
+              <option value="catering">Catering</option>
+              <option value="decoration">Decoration</option>
+              <option value="entertainment">Entertainment</option>
+            </select>
+          </div>
+        </div>
+        <div class="contact-submit" data-aos="zoom-in" data-aos-delay="500">
+          <button type="submit"><i class="fas fa-arrow-right"></i> Submit</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ====== JS just for hero fade-in ====== -->
+  <script>
+    window.addEventListener("load", () => {
+      document.querySelector(".contact-hero").classList.add("loaded");
+    });
+  </script>
+
+
+<section class="contact-info" data-aos="fade-up" data-aos-delay="150">
+  <!-- Left half circle -->
+  <div class="decorative-half-circle left" data-aos="fade-right" data-aos-delay="100"></div>
+  
+  <!-- Center background circle -->
+  <div class="decorative-half-circle center"
+    style="
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    height: 350px;
+    background: radial-gradient(circle, #780000 60%, #780000 100%);
+    border-radius: 50%;
+    opacity: 0.25;
+    z-index: 1;
+    pointer-events: none;
+  " data-aos="zoom-in" data-aos-delay="250"></div>
+  
+  <!-- Phone -->
+  <div class="info-box" data-aos="fade-up" data-aos-delay="300">
+    <div class="icon"><i class="fas fa-phone"></i></div>
+    <hr>
+    <h3>PHONE</h3>
+    <p>+ 91 8754139334</p>
+    <p>+ 91 8754139334</p>
+  </div>
+
+  <!-- Center dot -->
+  <div class="decorative-dot center-dot" data-aos="zoom-in" data-aos-delay="350"></div>
+
+  <!-- Mail -->
+  <div class="info-box" data-aos="fade-up" data-aos-delay="400">
+    <div class="icon"><i class="fas fa-envelope"></i></div>
+    <hr>
+    <h3>MAIL</h3>
+    <p>nithiyaprasath1999@gmail.com</p>
+  </div>
+
+  <!-- Center dot -->
+  <div class="decorative-dot center-dot" data-aos="zoom-in" data-aos-delay="450"></div>
+
+  <!-- Location -->
+  <div class="info-box" data-aos="fade-up" data-aos-delay="500">
+    <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+    <hr>
+    <h3>LOCATION</h3>
+    <p>Anna Nagar, Sinnamani Nagar,<br>Thoothukudi, Tamil Nadu 628008</p>
+  </div>
+
+  <!-- Right half circle -->
+  <div class="decorative-half-circle right" data-aos="fade-left" data-aos-delay="600"></div>
+  
+  <!-- Leaf SVG icon -->
+  <div class="decorative-leaf" data-aos="fade-zoom-in" data-aos-delay="700">
+    <svg width="40" height="60" viewBox="0 0 40 60" fill="none">
+      <path d="M20 5C25 5 30 10 30 15C30 20 25 25 20 30C15 25 10 20 10 15C10 10 15 5 20 5Z" fill="#b8860b" opacity="0.8"/>
+      <path d="M20 30C25 35 30 40 30 45C30 50 25 55 20 55C15 55 10 50 10 45C10 40 15 35 20 30Z" fill="#b8860b" opacity="0.6"/>
+      <path d="M20 5L20 55" stroke="#b8860b" stroke-width="2" opacity="0.7"/>
+    </svg>
+  </div>
+</section>
+
+<section class="booking-section" data-aos="fade-up" data-aos-delay="200">
+  <!-- Left Carousel -->
+  <div class="booking-left" data-aos="zoom-in-right" data-aos-delay="250">
+    <div class="booking-carousel">
+      <div class="booking-slide active">
+        <img src="images/couple1.jpg" alt="Wedding Couple 1">
+        <div class="booking-caption">
+          <p>More Than a Hall,<br>A Memory Maker</p>
+          <div class="booking-line"></div>
+        </div>
+      </div>
+
+      <div class="booking-slide">
+        <img src="images/couple2.jpg" alt="Wedding Couple 2">
+        <div class="booking-caption">
+          <p>Celebrate Your Day,<br>In Grand Style</p>
+          <div class="booking-line"></div>
+        </div>
+      </div>
+
+      <div class="booking-slide">
+        <img src="images/couple3.jpg" alt="Wedding Couple 3">
+        <div class="booking-caption">
+          <p>Where Moments<br>Turn Into Memories</p>
+          <div class="booking-line"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Progress Dots -->
+    <div class="booking-dots">
+      <span class="booking-dot active"></span>
+      <span class="booking-dot"></span>
+      <span class="booking-dot"></span>
+    </div>
+  </div>
+
+  <!-- Right Form -->
+  <div class="booking-right" data-aos="zoom-in-left" data-aos-delay="300">
+    <h2 data-aos="fade-zoom-in" data-aos-delay="350">GET IN TOUCH</h2>
+    <form id="bookingForm" class="booking-form">
+      <input type="text" name="name" placeholder="NAME" required data-aos="fade-right" data-aos-delay="400">
+      <input type="text" name="event" placeholder="EVENT" required data-aos="fade-right" data-aos-delay="450">
+      <div class="booking-datebox" data-aos="fade-right" data-aos-delay="500">
+        <input type="text" name="from" placeholder="FROM" required>
+        <input type="text" name="to" placeholder="TO" required>
+      </div>
+      <textarea name="description" rows="4" placeholder="DESCRIPTION" data-aos="fade-right" data-aos-delay="550"></textarea>
+      <button type="submit" data-aos="zoom-in" data-aos-delay="600">→ Submit</button>
+    </form>
+  </div>
+</section>
+
+
+<div class="contact-map-section" data-aos="zoom-in-up" data-aos-delay="350">
+  <div class="map-container">
+    <iframe
+      src="https://www.google.com/maps?q=Anna+Nagar,+Sinnamani+Nagar,+Thoothukudi,+Tamil+Nadu+628008&output=embed"
+      width="100%"
+      height="350"
+      style="border:0;"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+      title="Marriage Hall Location"
+    ></iframe>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-container"> 
+    <div class="footer-col logo-col">
+      <img src="logo.png" alt="Logo" class="footer-logo">
+      <p class="tagline">Beyond Spaces,<br>We Craft Experiences</p>
+    </div>
+
+    <!-- Important Links -->
+    <div class="footer-col">
+      <h4 style="font-family: 'League Spartan', sans-serif;">Important Links</h4>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../About us/aboutus.html">About Us</a></li>
+        <li><a href="../Services/service.html">Services</a></li>
+        <li><a href="../Contact Us/Contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact -->
+    <div class="footer-col">
+      <h4 style="font-family: 'League Spartan', sans-serif;">Contact Us</h4>
+      <p>Call: +91 8903125809</p>
+      <p>Email: balasaraswathichitspvtltd@gmail.com</p>
+      <p>Address: Anna Nagar, Sinnamani Nagar,<br>Thoothukudi, Tamil Nadu 628008</p>
+    </div>
+
+     <!-- Footer Map -->
+<div class="footer-col map-col">
+  <h4 style="font-family: 'League Spartan', sans-serif;">Find Us on Google Maps</h4>
+  <div style="width:100%;border-radius:12px;overflow:hidden;">
+    <iframe 
+      src="https://www.google.com/maps?q=Anna+Nagar,+Sinnamani+Nagar,+Thoothukudi,+Tamil+Nadu+628008&output=embed"
+      width="100%" height="170" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+</div>
+</div>
+
+  <!-- Bottom Bar -->
+  <div class="footer-bottom">
+    <p>© 2025 All Rights Reserved by Balasaraswathi</p>
+    <span style="font-size: 0.97em; margin-left: auto;">
+      <a href="../Policy Pages/Privacy.html" style="color:inherit;text-decoration:None;">Privacy Policy</a> | 
+      <a href="../Policy Pages/Terms.html" style="color:inherit;text-decoration:None;">Terms &amp; Conditions</a> | 
+      <a href="../Policy Pages/bookingpolicy.html" style="color:inherit;text-decoration:none;">Booking &amp; Cancellation Policy</a>
+    </span>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+    </div>
+  </div>
+</footer>
+
+<!-- AOS Animation JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true,
+    offset: 120,
+    easing: 'ease-in-out'
+  });
+</script>
+  
+<script src="Contact.js"></script>
+
+</body>
+</html>

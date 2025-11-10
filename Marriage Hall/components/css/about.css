@@ -1,0 +1,294 @@
+/* -------------------------------
+   About Section (Responsive + Clean)
+---------------------------------- */
+.about-section {
+  background: #fffdf8;
+  padding: 100px 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.about-container {
+  display: flex;
+  max-width: 1300px;
+  margin: auto;
+  gap: 40px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Left Side Images */
+.about-images {
+  flex: 1 1 45%;
+  display: flex;
+  gap: 15px;
+  height: 500px;
+}
+
+.big-img {
+  flex: 1;
+  height: 100%;
+}
+
+.big-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.small-imgs {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.small-imgs img {
+  width: 100%;
+  height: 50%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Right Side Content */
+.about-content {
+  flex: 1 1 50%;
+  text-align: left;
+}
+
+.about-subtitle {
+  font-style: italic;
+  font-size: 28px;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.about-subtitle .dot {
+  width: 8px;
+  height: 8px;
+  background: #7a0a0a;
+  border-radius: 50%;
+}
+
+.about-title {
+  font-size: 38px;
+  font-weight: 500;
+  color: #7a0a0a;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.divider {
+  width: 90%;
+  border: none;
+  border-bottom: 2px solid #cfa23a;
+  margin-bottom: 10px;
+}
+
+.about-text {
+  font-size: 14px;
+  line-height: 1.8;
+  color: #444;
+  margin-bottom: 25px;
+  max-width: 90%;
+}
+
+/* Counters */
+.about-counters {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+
+.counter-box {
+  border: 1px solid #7a0a0a;
+  padding: 12px 20px;
+  border-radius: 6px;
+  background: #fff;
+  flex: 1;
+  min-width: 160px;
+  max-width: 220px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.counter-number {
+  font-size: 28px;
+  font-weight: 700;
+  color: #c08a00;
+}
+
+.counter-text div {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #333;
+  letter-spacing: 0.5px;
+}
+
+/* CTA Button */
+.legacy-btn {
+  display: inline-block;
+  padding: 14px 130px;
+  background: #7a0a0a;
+  color: #fff;
+  border-radius: 6px;
+  font-size: 20px;
+  text-decoration: none;
+  transition: 0.3s;
+  text-align: center;
+  font-weight: 400;
+}
+
+.legacy-btn:hover {
+  background: #5a0606;
+}
+
+.legacy-divider {
+  width: 100%;
+  border: none;
+  border-bottom: 5px solid #cfa23a;
+  opacity: 0.85;
+  margin-top: 20px;
+}
+
+/* ========================
+   Tablet View
+======================== */
+@media (max-width: 1024px) {
+  .about-section {
+    margin: 220px 30px; /* Add margin: top/right/bottom/left */
+  }
+  .about-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .about-images {
+    width: 100%;
+    height: 400px;
+  }
+
+  .about-title {
+    font-size: 30px;
+  }
+
+  .about-text {
+    font-size: 15px;
+    max-width: 100%;
+  }
+
+  .counter-box {
+    min-width: 200px;
+    max-width: 100%;
+  }
+
+  .legacy-btn {
+    width: 100%;
+    font-size: 18px;
+  }
+}
+
+/* ========================
+   Mobile View
+======================== */
+@media (max-width: 768px) {
+  .about-section {
+    padding: 20px 15px;
+    margin: 40px 12px 40px 12px; /* Added margin: top, right, bottom, left */
+  }
+
+  .about-images {
+    flex-direction: column;
+    /* height: auto; */
+    margin: 0 0 0 0; /* No extra margin here */
+  }
+
+  .big-img {
+    width: 100%;        /* Reduce big-img to 80% width */
+    height: 50px;     /* Give a fixed reduced height */
+    margin: 0 auto 5px auto; /* Center horizontally, space below */
+  }
+
+  .big-img img {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  .small-imgs {
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .small-imgs img {
+    width: 48%;
+    height: auto;
+  }
+
+  .about-title {
+    font-size: 24px;
+  }
+
+  .about-text {
+    font-size: 14px;
+  }
+
+  .counter-number {
+    font-size: 22px;
+  }
+
+  .legacy-btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+  }
+}
+
+/* ========================
+   Small Mobile View
+======================== */
+@media (max-width: 480px) {
+  .about-section {
+    padding: 250px 20px;
+    margin-bottom: -200px;
+  }
+
+  .about-subtitle {
+    font-size: 22px;
+  }
+
+  .about-title {
+    font-size: 20px;
+  }
+
+  .about-text {
+    font-size: 13px;
+    line-height: 1.6;
+  }
+
+  .about-counters {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .counter-box {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .legacy-btn {
+    width: 100%;
+    font-size: 13px;
+  }
+}

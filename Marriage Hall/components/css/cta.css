@@ -1,0 +1,249 @@
+/* CTA Section */
+.cta-section {
+  background: #f5f0e8; /* light beige background */
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+/* Outer golden border container */
+.cta-section::before {
+  content: '';
+  position: absolute;
+  top: 20px;
+  left: 60px;
+  right: 60px;
+  bottom: 20px;
+  border: 3px solid #d4a017;
+  border-radius: 15px;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Decorative SVG leaf icon in top-right corner */
+.cta-section::after {
+  content: '';
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 100px;
+  height: 100px;
+  z-index: 2;
+  background: url('../../assets/Leaf.svg') no-repeat center center / contain;
+  border-radius: 0;
+  transform: none;
+  pointer-events: none;
+}
+
+.cta-box {
+  position: relative;
+  max-width: 1350px;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #000;
+  z-index: 0;
+}
+
+.cta-box img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+
+.cta-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.4); /* dark overlay */
+  color: #fff;
+}
+
+.cta-overlay h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #f9c536; /* golden yellow */
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.cta-overlay p {
+  font-size: 15px;
+  max-width: 700px;
+  line-height: 1.6;
+  color: #eee;
+}
+
+/* ======================= */
+/* Responsive (max-width: 1024px) */
+/* ======================= */
+@media (max-width: 1024px) {
+  .cta-section {
+    padding: 22px 5px;
+    min-width: 0;
+  }
+  .cta-section::before {
+    left: 8px;
+    right: 8px;
+    top: 8px;
+    bottom: 8px;
+    border-radius: 8px;
+    border-width: 2px;
+  }
+  .cta-section::after {
+    right: 15px;
+    top: 15px;
+    width: 60px;
+    height: 60px;
+  }
+  .cta-box {
+    max-width: 97vw;
+    border-radius: 8px;
+  }
+  .cta-box img {
+    border-radius: 8px;
+  }
+  .cta-overlay {
+    padding: 14px;
+  }
+  .cta-overlay h2 {
+    font-size: 1.25rem;
+  }
+  .cta-overlay p {
+    font-size: 13.5px;
+    max-width: 98vw;
+  }
+}
+
+/* ===================== */
+/* Responsive Fixes */
+/* ===================== */
+
+/* Tablet */
+@media (max-width: 992px) {
+  .cta-section {
+    padding: 10px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 0;
+  }
+  .cta-section::before {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: 0;
+  }
+  .cta-section::after {
+    right: 10px;
+    top: 10px;
+    width: 60px;
+    height: 60px;
+  }
+  .cta-box {
+    max-width: 95%;
+    border-radius: 0;
+  }
+  .cta-overlay {
+    padding: 18px;
+  }
+  .cta-overlay h2 {
+    font-size: 22px;
+  }
+  .cta-overlay p {
+    font-size: 13.5px;
+    max-width: 95vw;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .cta-section {
+    padding: 10px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 0;
+  }
+  .cta-section::before {
+    left: 10px;
+    right: 10px;
+    top: 0;
+    bottom: 0;
+    border-radius: 5px;
+  }
+  .cta-section::after {
+    right: 6px;
+    top: 6px;
+    width: 34px;
+    height: 34px;
+  }
+  .cta-box {
+    max-width: 95%;
+    border-radius: 8px; /* Reduced border radius for the cta image section */
+    overflow: hidden;
+  }
+  .cta-overlay {
+    padding: 18px;
+  }
+  .cta-overlay h2 {
+    font-size: 17px;
+  }
+  .cta-overlay p {
+    font-size: 12px;
+    max-width: 95vw;
+  }
+  .cta-box img {
+    border-radius: 8px; /* Makes the image itself have a reduced border radius */
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .cta-section {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .cta-section::before {
+    left: 10px;
+    right: 10px;
+    top: -10px;
+    bottom: -10px;
+    border-radius: 10px; /* Reduced border radius for the border */
+  }
+  .cta-section::after {
+    right: 3px;
+    top: 3px;
+    width: 20px;
+    height: 20px;
+  }
+  .cta-box {
+    max-width: 92vw;    /* Reduced max-width for the section */
+    border-radius: 10px; /* Reduced border radius */
+  }
+  .cta-box img {
+    border-radius: 2px; /* Reduced border radius for the image itself */
+  }
+  .cta-overlay {
+    padding: 6px;
+  }
+  .cta-overlay h2 {
+    font-size: 13px;
+    line-height: 1.2;
+  }
+  .cta-overlay p {
+    font-size: 9px;
+    line-height: 1.4;
+    max-width: 94vw; /* Reduced max-width */
+  }
+}

@@ -1,0 +1,263 @@
+/* ===============================
+   IMPORT FONTS
+=============================== */
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mea+Culpa:wght@400&display=swap');
+
+/* ===============================
+   HERO SECTION
+=============================== */
+.hero {
+    position: relative;
+    height: 100vh; /* Further reduced from 96vh to decrease bottom space */
+    background: url('../../assets/hero.jpg') bottom center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    overflow: hidden;
+    /* box-shadow removed as per instruction */
+    padding-bottom: 0; /* Ensure no extra padding at bottom */
+}
+
+.hero .overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0,0,0,0.4);
+    z-index: 1;
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+    max-width: 900px;
+    padding: 100px 20px 0 20px;
+    /* no change */
+}
+
+/* Add line under hero content as per image */
+.hero-line {
+    display: block;
+    width: 120px;
+    height: 3px;
+    background: #c08a00;
+    opacity: 100;
+    margin: 18px auto 0 auto; /* Reduce space above the line */
+    border-radius: 2px;
+}
+
+.play-button {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    background: rgba(255, 255, 255, 0.95);
+    color: #8B0000;
+    border-radius: 50%;
+    font-size: 24px;
+    line-height: 80px;
+    text-align: center;
+    margin-bottom: 24px; /* Reduced from 40px */
+    cursor: pointer;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    border: 2px solid rgba(255, 255, 255, 0.8);
+}
+.play-button:hover {
+    background: rgba(255, 255, 255, 1);
+    transform: scale(1.05);
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.4);
+}
+.play-button i { margin-left: 3px; }
+
+h1 {
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 500;
+    font-size: 44px; /* Slightly reduced for overall compactness */
+    letter-spacing: 0.02em;
+    margin-bottom: 10px; /* Reduced vertical margin */
+    color: #ffffff;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+    line-height: 1.14; /* Tighter lines */
+}
+
+/* 
+   IMPORTANT: 
+   Remove any inline style on the tagline element in your HTML (index.html) for font-size or font-family.
+   The .tagline selector below will now always control the font size.
+*/
+.tagline {
+    font-family: 'Mea Culpa', cursive !important;
+    font-size: 40px !important; /* Reduced from 45px */
+    font-weight: 400;
+    color: #ffffff;
+    margin-bottom: 0;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+    opacity: 0.95;
+    line-height: 1.05;
+    line-height: 1.1;
+    display: block;
+}
+/* ===============================
+   FORM SECTION
+=============================== */
+.form-section {
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    margin: 0 auto;
+    max-width: 1500px;
+    width: 90%;
+    padding: 15px 30px 1px 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    border: 2px solid #c08a00;
+}
+
+form {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Desktop layout */
+    gap: 20px;
+    align-items: end;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    color: #8B0000;
+    font-weight: 600;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 12px 15px;
+    background: #fafafa;
+    transition: all 0.3s ease;
+}
+.form-group:hover { border-color: #8B0000; background: #fff; }
+.form-group:focus-within {
+    border-color: #8B0000;
+    background: #fff;
+    box-shadow: 0 0 0 3px rgba(139, 0, 0, 0.1);
+}
+.form-group label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+.form-group label i {
+    font-size: 14px;
+    color: #8B0000;
+}
+.form-group input[type="date"],
+.form-group select {
+    border: none;
+    font-size: 14px;
+    padding: 10px 12px;
+    border-radius: 6px;
+    background: transparent;
+    color: #8B0000;
+    font-weight: 600;
+    outline: none;
+    width: 100%;
+}
+
+/* Submit Button */
+.submit-btn {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.submit-btn button {
+    background: linear-gradient(135deg, #8B0000 0%, #A52A2A 100%);
+    border: none;
+    color: white;
+    font-weight: 600;
+    padding: 14px 25px;
+    font-size: 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    box-shadow: 0 4px 15px rgba(139, 0, 0, 0.3);
+    width: 100%;
+    justify-content: center;
+}
+.submit-btn button:hover {
+    background: linear-gradient(135deg, #A52A2A 0%, #8B0000 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(139, 0, 0, 0.4);
+}
+.submit-btn button:active { transform: translateY(0); }
+
+/* ===============================
+   RESPONSIVE DESIGN
+=============================== */
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .hero { margin-top: 0; }
+    h1 { font-size: 40px !important; }
+    .tagline { font-size: 26px !important; }
+    .form-section {
+        width: 95%;
+        /* Set default padding, easily editable below */
+        padding: 20px 20px;
+        margin: 30px auto -230px auto; /* Added margin above and below */
+    }
+    form { grid-template-columns: repeat(2, 1fr); }
+    .submit-btn { grid-column: span 2; }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .hero { padding-bottom: 10px; }
+    h1 { font-size: 32px !important; }
+    .tagline { font-size: 22px !important; }
+    .play-button {
+    width: 70px; height: 70px;
+    font-size: 20px; line-height: 70px;
+    margin-bottom: 30px;
+    }
+    .form-section {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    transform: none;
+    margin: -100px auto 0px;
+    padding: 20px;
+    }
+    form { grid-template-columns: 1fr; gap: 15px; }
+    .submit-btn { grid-column: span 1; }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+    h1 { font-size: 24px !important; }
+    .tagline { font-size: 18px !important; }
+    .play-button {
+    width: 60px; height: 60px;
+    font-size: 18px; line-height: 60px;
+    }
+    .content { padding: 0 15px; }
+    .form-section { padding: 15px; margin: -220px auto; }
+    .form-group { padding: 10px; }
+    .form-group label { font-size: 10px; }
+    .form-group input, .form-group select { font-size: 12px; padding: 8px; }
+    .submit-btn button { font-size: 12px; padding: 12px 20px; }
+}

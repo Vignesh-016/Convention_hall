@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0" />
+    <title>Service – Bala Saraswathi Hall</title>
+
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+          rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet"
+          href="service.css" />
+    <link rel="stylesheet"
+          href="../components/css/footer.css" />
+</head>
+
+<body>
+
+    <!-- HEADER COMPONENT -->
+    <header class="header"
+            id="header">
+        <div class="container">
+            <div class="location-info">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Anna Nagar, Sinnamani Nagar, Thoothukudi, Tamil Nadu 628008</span>
+            </div>
+            <div style="width: 100vw; position: relative; left: 50%; right: 50%; margin-left: -50vw; margin-right: -50vw;">
+                <hr style="border: none; border-top: 1px solid rgba(255, 255, 255, 0.3); margin: 0;">
+            </div>
+            <nav class="navbar">
+                <button class="mobile-menu-btn"
+                        onclick="toggleMenu()">☰</button>
+                <ul class="nav-links"
+                    id="navLinks">
+                    <li><a href="../index.html"
+                           class="nav-link">Home</a></li>
+                    <li><a href="../About us/aboutus.html"
+                           class="nav-link">About Us</a></li>
+                    <li><a href="./service.html"
+                           class="nav-link">Services</a></li>
+                    <!-- <li><a href="#"
+                           class="nav-link active">Amenities</a></li>
+                    <li><a href="#gallery"
+                           class="nav-link">Gallery</a></li>
+                    <li><a href="#blog"
+                           class="nav-link">Blog</a></li> -->
+                    <li><a href="../Contact Us/Contact.html"
+                           class="nav-link">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Banner -->
+    <section class="hero-banner">
+        <div class="overlay"></div>
+        <div class="hero-text">
+            <p>Home – Amenities</p>
+        </div>
+        <div class="booking-form">
+            <form>
+                <div class="form-group">
+                    <label for="from">From</label>
+                    <div class="input-box">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        <input type="date"
+                               id="from"
+                               value="2025-09-16" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="to">To</label>
+                    <div class="input-box">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        <input type="date"
+                               id="to"
+                               value="2025-09-16" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="event">Event</label>
+                    <div class="input-box">
+                        <i class="fa-solid fa-building-columns"></i>
+                        <select id="event">
+                            <option>MARRIAGE</option>
+                            <option>BIRTHDAY</option>
+                            <option>CORPORATE</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="facility">Facilities</label>
+                    <div class="input-box">
+                        <i class="fa-solid fa-utensils"></i>
+                        <select id="facility">
+                            <option>CATERING</option>
+                            <option>DECORATION</option>
+                            <option>ENTERTAINMENT</option>
+                        </select>
+                    </div>
+                </div>
+                <button type="submit"
+                        class="submit-btn">
+                    Submit <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Special Occasions Section -->
+    <section class="occasion-section">
+        <div class="occasion-container">
+            <div class="occasion-image-slices">
+                <div class="slice"
+                     style="background-image:url('../assets/Marraige\ Hall.png');"></div>
+                <div class="slice"
+                     style="background-image:url('../assets/Marraige\ Hall.png');"></div>
+                <div class="slice"
+                     style="background-image:url('../assets/Marraige\ Hall.png');"></div>
+                <div class="slice"
+                     style="background-image:url('../assets/Marraige\ Hall.png');"></div>
+                <div class="slice"
+                     style="background-image:url('../assets/Marraige\ Hall.png');"></div>
+                <div class="slice"
+                     style="background-image:url('../assets/Marraige\ Hall.png');"></div>
+            </div>
+            <div class="occasion-content">
+                <h2>Turning special occasions into unforgettable memories <span class="dot">•</span></h2>
+                <p>
+                    We believe that every story deserves to be celebrated in the most meaningful way. Your wedding, event, or special occasion is more than just a day—it’s a reflection of your journey, your style, and your dreams. That’s why we focus on blending creativity with elegance, paying attention to the smallest details that make the biggest impact.
+                </p>
+                <section class="facility-slider">
+                    <div class="facility-track">
+                        <div class="facility-slide">
+                            <div class="facility-card"><i class="fa-solid fa-wind"></i><span>Air conditioned hall</span></div>
+                            <div class="facility-card"><i class="fa-solid fa-video"></i><span>24hr cctv surveillance</span></div>
+                        </div>
+                        <div class="facility-slide">
+                            <div class="facility-card"><i class="fa-solid fa-car"></i><span>Spacious parking</span></div>
+                            <div class="facility-card"><i class="fa-solid fa-utensils"></i><span>In-house catering</span></div>
+                        </div>
+                        <div class="facility-slide">
+                            <div class="facility-card"><i class="fa-solid fa-chair"></i><span>Luxury seating</span></div>
+                            <div class="facility-card"><i class="fa-solid fa-wifi"></i><span>Free Wi-Fi access</span></div>
+                        </div>
+                    </div>
+                    <div class="facility-dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- ===== NEW ANIMATED HALLS SECTION START ===== -->
+    <!-- ============================================ -->
+    <section class="premier-halls-section">
+        <h2 class="section-title">Our Premier Halls & Venues</h2>
+        <div class="slider-wrapper">
+            <div class="slider-container">
+                <!-- Slide 1: Main Hall -->
+                <div class="slide active">
+                    <div class="content-wrapper">
+                        <div class="main-banner"
+                             style="background-image: url('https://i.imgur.com/gOa67B1.jpg');">
+                            <div class="location-pin"><span>M</span></div>
+                            <div class="main-hall-box">
+                                <h1 class="main-title">Main Hall</h1>
+                            </div>
+                            <p class="main-description">
+                                Our Main Hall Offers A Spacious And Elegant Setting, Perfect For Hosting Your Dream Wedding. With Modern Amenities And Timeless Decor, It Creates The Ideal Backdrop For Unforgettable Moments.
+                            </p>
+                        </div>
+                        <div class="features-grid">
+                            <div class="feature-item highlight">
+                                <div class="feature-icon-wrapper"><img src="https://i.imgur.com/your-icon-1.png"
+                                         alt="Stage Icon"></div>
+                                <div class="feature-box">
+                                    <p class="feature-description">Grand Stage With Elegant Backdrop & Floral Decoration</p>
+                                </div>
+                                <div class="feature-line"></div>
+                            </div>
+                            <div class="feature-item">
+                                <div id="interactive-icon"
+                                     class="feature-icon-wrapper"><img src="https://i.imgur.com/your-icon-2.png"
+                                         alt="Lighting Icon"></div>
+                                <p class="feature-description">LED Lighting With Customizable Color Themes</p>
+                                <div class="feature-line"></div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon-wrapper"><img src="https://i.imgur.com/your-icon-3.png"
+                                         alt="Guests Icon"></div>
+                                <p class="feature-description">600-1,000 Guests Can Visit</p>
+                                <div class="feature-line"></div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon-wrapper"><img src="https://i.imgur.com/your-icon-4.png"
+                                         alt="AC Icon"></div>
+                                <p class="feature-description">Central Air Conditioning & Premium Sound System</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 2: Garden Area -->
+                <div class="slide">
+                    <div class="content-wrapper">
+                        <div class="main-banner"
+                             style="background-image: url('https://i.imgur.com/another-bg.jpg');">
+                            <div class="location-pin"><span>G</span></div>
+                            <div class="main-hall-box">
+                                <h1 class="main-title">Garden Area</h1>
+                            </div>
+                            <p class="main-description">
+                                Discover our beautiful garden, a perfect outdoor setting for ceremonies and receptions, surrounded by lush greenery and romantic lighting.
+                            </p>
+                        </div>
+                        <div class="features-grid">
+                            <div class="feature-item highlight">
+                                <div class="feature-icon-wrapper"><img src="https://i.imgur.com/your-icon-1.png"
+                                         alt="Lawn Icon"></div>
+                                <div class="feature-box">
+                                    <p class="feature-description">Manicured Lawns & Scenic Views</p>
+                                </div>
+                                <div class="feature-line"></div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon-wrapper"><img src="https://i.imgur.com/your-icon-2.png"
+                                         alt="Lighting Icon"></div>
+                                <p class="feature-description">Ambient String Lighting & Uplighting</p>
+                                <div class="feature-line"></div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon-wrapper"><img src="https://i.imgur.com/your-icon-3.png"
+                                         alt="Guests Icon"></div>
+                                <p class="feature-description">Up to 300 Guests Seating Capacity</p>
+                                <div class="feature-line"></div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon-wrapper"><img src="https://i.imgur.com/your-icon-4.png"
+                                         alt="Sound Icon"></div>
+                                <p class="feature-description">Outdoor Sound System & Weather Contingency</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Interactive Animation Elements -->
+        <div id="interactive-overlay"></div>
+        <div id="interactive-icon-loader">
+            <span id="close-loader">×</span>
+            <div class="loader-spinner"></div>
+        </div>
+    </section>
+    <!-- ========================================== -->
+    <!-- ===== NEW ANIMATED HALLS SECTION END ===== -->
+    <!-- ========================================== -->
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <h2 class="faq-title">Frequently Asked Questions</h2>
+        <div class="faq-container">
+            <div class="faq-column">
+                <div class="faq-item">
+                    <button class="faq-question"><span>What types of services do you offer?</span><span class="faq-icon">+</span></button>
+                    <div class="faq-answer">
+                        <p>We offer a wide range of event services including hall booking, decoration, catering, lighting, and full wedding management—all under one roof.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question"><span>Can I customize the services for my event?</span><span class="faq-icon">+</span></button>
+                    <div class="faq-answer">
+                        <p>Absolutely! We provide fully customizable packages tailored to your event requirements and budget preferences.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="faq-column">
+                <div class="faq-item">
+                    <button class="faq-question"><span>Do you handle outdoor events as well?</span><span class="faq-icon">+</span></button>
+                    <div class="faq-answer">
+                        <p>Yes, our team specializes in both indoor and outdoor event planning and execution.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question"><span>How early should I book the hall?</span><span class="faq-icon">+</span></button>
+                    <div class="faq-answer">
+                        <p>We recommend booking at least 30–60 days in advance to ensure your preferred date and time are available.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question"><span>Do you provide event coordination support?</span><span class="faq-icon">+</span></button>
+                    <div class="faq-answer">
+                        <p>Yes, our in-house coordinators handle everything from scheduling and vendor management to on-day supervision.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById("navLinks").classList.toggle("mobile-active");
+        }
+    </script>
+    <script src="./service.js"></script>
+
+    <footer class="footer">
+        <div class="footer-container"> 
+          <div class="footer-col logo-col">
+            <img src="logo.png" alt="Logo" class="footer-logo">
+            <p class="tagline">Beyond Spaces,<br>We Craft Experiences</p>
+          </div>
+      
+          <!-- Important Links -->
+          <div class="footer-col">
+            <h4 style="font-family: 'League Spartan', sans-serif;">Important Links</h4>
+            <ul>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="../About us/aboutus.html">About Us</a></li>
+              <li><a href="../Services/service.html">Services</a></li>
+              <li><a href="../Contact Us/Contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+      
+          <!-- Contact -->
+          <div class="footer-col">
+            <h4 style="font-family: 'League Spartan', sans-serif;">Contact Us</h4>
+            <p>Call: +91 8903125809</p>
+            <p>Email: balasaraswathichitspvtltd@gmail.com</p>
+            <p>Address: Anna Nagar, Sinnamani Nagar,<br>Thoothukudi, Tamil Nadu 628008</p>
+          </div>
+      
+           <!-- Newsletter -->
+      <div class="footer-col map-col">
+        <h4 style="font-family: 'League Spartan', sans-serif;">Find Us on Google Maps</h4>
+        <div style="width:100%;border-radius:12px;overflow:hidden;">
+          <iframe 
+            src="https://www.google.com/maps?q=Anna+Nagar,+Sinnamani+Nagar,+Thoothukudi,+Tamil+Nadu+628008&output=embed"
+            width="100%" height="170" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </div>
+      
+        <!-- Bottom Bar -->
+        <div class="footer-bottom">
+          <p>© 2025 All Rights Reserved by Balasaraswathi</p>
+          <span style="font-size: 0.97em; margin-left: auto;">
+            <a href="./Privacy.html" style="color:inherit;text-decoration:None;">Privacy Policy</a> | 
+            <a href="./Terms.html" style="color:inherit;text-decoration:None;">Terms &amp; Conditions</a> | 
+            <a href="./bookingpolicy.html" style="color:inherit;text-decoration:none;">Booking &amp; Cancellation Policy</a>
+          </span>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </footer>
+
+</body>
+
+</html>

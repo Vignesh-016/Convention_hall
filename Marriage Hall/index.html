@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bala Saraswathi Conventional Hall - Marriage Hall</title>
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="components/css/about.css">
+    <link rel="stylesheet" href="components/css/header.css">
+    <link rel="stylesheet" href="components/css/hero.css">
+    <link rel="stylesheet" href="components/css/happiness.css">
+    <link rel="stylesheet" href="components/css/event.css">
+    <link rel="stylesheet" href="components/css/cta.css">
+    <link rel="stylesheet" href="components/css/gallery.css">
+    <link rel="stylesheet" href="components/css/features.css">
+    <link rel="stylesheet" href="components/css/testimonials.css">
+    <link rel="stylesheet" href="components/css/venue.css">
+    <link rel="stylesheet" href="components/css/footer.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&family=League+Spartan:wght@400&family=Mea+Culpa:wght@400&family=Reem+Kufi:wght@400&display=swap" rel="stylesheet">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+</head>
+<body style="--hero-bg: url('assets/hero.jpg');">
+    <!-- Component Containers -->
+      <!-- <div id="header-container"></div>
+      <div id="hero-container"></div>
+      <div id="about-container"></div>
+      <div id="happiness-container"></div>
+      <div id="event-container"></div>
+      <div id="cta-container"></div>
+      <div id="gallery-container"></div>
+      <div id="features-container"></div>
+      <div id="testimonials-container"></div>
+      <div id="venue-container"></div>
+      <div id="footer-container"></div> -->
+    
+<!-- Header Component -->
+<header class="header" id="header">
+  <div class="container">
+    
+    <!-- Location Info -->
+    <div class="location-info">
+      <i class="fas fa-map-marker-alt"></i>
+      <span>Anna Nagar, Sinnamani Nagar, Thoothukudi, Tamil Nadu 628008</span>
+    </div>
+
+    <!-- Divider Line (Full Width) -->
+    <div style="width: 100vw; position: relative; left: 50%; right: 50%; margin-left: -50vw; margin-right: -50vw;">
+      <hr style="border: none; border-top: 1px solid #ffffff; margin: 0; opacity: 0.3;">
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+      <!-- Mobile Menu Toggle -->
+      <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+      
+      <!-- Navigation Links -->
+      <div class="nav-links" id="navLinks">
+        <a href="./index.html" class="nav-link active">Home</a>
+        <a href="./About us/aboutus.html" class="nav-link">About Us</a>
+        <a href="./Services/service.html" class="nav-link">Services</a>
+        <a href="./Amenities/amenities.html" class="nav-link">Amenities</a>
+        <!-- <a href="#gallery" class="nav-link">Gallery</a>
+        <a href="#blog" class="nav-link">Blog</a> -->
+        <a href="./Contact Us/Contact.html" class="nav-link">Contact Us</a>
+      </div>
+    </nav>
+    
+  </div>
+</header>
+
+  <script>
+  function toggleMenu() {
+    document.getElementById("navLinks").classList.toggle("mobile-active");
+  }
+  </script>
+  
+
+  <section class="hero">
+    <div class="overlay"></div>
+    <div class="content">
+      <a href="#" class="play-button"><i class="fas fa-play"></i></a>
+      <h1>A Stage Built for Your Happiest Moments</h1>
+      <p class="tagline">Celebrate with Elegance, Cherish for a Lifetime</p>
+      <span class="hero-line"></span>
+    </div>
+  </section>
+  <section class="form-section">
+    <form>
+      <div class="form-group">
+        <label for="from"><i class="fas fa-calendar-alt"></i> From</label>
+        <input type="date" id="from" name="from" value="2025-09-16" />
+      </div>
+      <div class="form-group">
+        <label for="to"><i class="fas fa-calendar-alt"></i> To</label>
+        <input type="date" id="to" name="to" value="2025-09-16" />
+      </div>
+      <div class="form-group">
+        <label for="event"><i class="fas fa-landmark"></i> Event</label>
+        <select id="event" name="event">
+          <option value="marriage" selected>MARRIAGE</option>
+          <option value="birthday">BIRTHDAY</option>
+          <option value="corporate">CORPORATE</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="facilities"><i class="fas fa-camera"></i> Facilities</label>
+        <select id="facilities" name="facilities">
+          <option value="catering" selected>CATERING</option>
+          <option value="decoration">DECORATION</option>
+          <option value="entertainment">ENTERTAINMENT</option>
+        </select>
+      </div>
+      <div class="form-group submit-btn">
+        <button type="submit">
+          Submit <i class="fas fa-arrow-right"></i>
+        </button>
+      </div>
+    </form>
+  </section>
+  
+
+  <section class="about-section">
+    <div class="about-container">
+      <!-- Left Side Images -->
+      <div class="about-images">
+        <div class="big-img">
+          <img src="./assets/Indian Marraige.png" alt="Wedding Ceremony">
+        </div>
+        <div class="small-imgs">
+          <img src="./assets/Marraige Hall.png" alt="Stage Decoration">
+          <img src="./assets/Weeding design.png" alt="Hall Decoration">
+        </div>
+      </div>
+  
+      <!-- Right Side Content -->
+      <div class="about-content">
+        <p class="about-subtitle" style="font-family: 'Mea Culpa', cursive;">
+          <em>About us</em> <span class="dot"></span>
+        </p>
+        <h2 class="about-title" style="font-family: 'League Spartan', sans-serif;">More Than a Hall, A Memory Maker</h2>
+        <hr class="divider">
+        <p class="about-text">
+          Celebrations are about togetherness, and at Bala Saraswathi Conventional Hall, we create a welcoming space where families come together to share joy, love, and tradition. Since our beginning in 2022, we have gone beyond being just a hall—we are curators of memories. Every detail, from the seamless blend of luxury and tradition to our personalized service, is carefully designed to make your big day extraordinary. Here, every occasion becomes more than an event—it transforms into a cherished moment that unites families and strengthens bonds.
+        </p>
+  
+        <!-- Counters -->
+        <div class="about-counters">
+          <div class="counter-box">
+            <div class="counter-number">25+</div>
+            <div class="counter-text">
+              <div>YEARS OF EXPERIENCE</div>
+            </div>
+          </div>
+          <div class="counter-box">
+            <div class="counter-number">500+</div>
+            <div class="counter-text">
+              <div>EVENTS HOSTED</div>
+            </div>
+          </div>
+          <div class="counter-box">
+            <div class="counter-number">100%</div>
+            <div class="counter-text">
+              <div>HAPPY CLIENTS</div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- CTA Button -->
+        <a href="#" class="legacy-btn">A Legacy of Celebrations in Thoothukudi</a>
+        <!-- Extra divider as requested -->
+        <hr class="legacy-divider">
+      </div>
+    </div>
+  </section>
+
+  
+<section class="happiness-section">
+  <div class="happiness-container">
+
+    <!-- Left Video Column -->
+    <div class="video-column left-column">
+      <div class="video-thumb rectangle-video">
+        <img src="./images/video1.jpg" alt="Video 1 Thumbnail">
+        <div class="play-button-overlay"><div class="play-button">&#9658;</div></div>
+      </div>
+      <div class="video-thumb rectangle-video">
+        <img src="./images/video2.jpg" alt="Video 2 Thumbnail">
+        <div class="play-button-overlay"><div class="play-button">&#9658;</div></div>
+      </div>
+    </div>
+
+    <!-- Center Text Column with Circular Background -->
+    <div class="text-column">
+      <div class="text-content">
+        <h2 class="happiness-title" style="font-family: 'Mea Culpa', sans-serif;">
+          <span style="font-size:70px;">Happiness</span><br>
+          <span class="underlined" style="font-size:40px;">in Every Frame</span>
+        </h2>
+        <div class="decorative-svg">
+          <!-- Manually added SVG icon from assets folder -->
+          <img src="../Marriage Hall/assets/Leaf.svg" alt="Decorative Icon" width="120" height="120" />
+        </div>
+        <p class="happiness-description">
+          Browse through our gallery and discover the elegance, charm, and luxury that define every occasion. Each picture reflects the joy of togetherness, the richness of tradition, and the grandeur that turns celebrations into timeless memories.
+        </p>
+        <button class="happiness-book-btn">Book now</button>
+      </div>
+    </div>
+
+    <!-- Right Video Column -->
+    <div class="video-column right-column">
+      <div class="video-thumb standing-video">
+        <img src="./images/video3.jpg" alt="Video 3 Thumbnail">
+        <div class="play-button-overlay"><div class="play-button">&#9658;</div></div>
+      </div>
+      <div class="video-thumb standing-video">
+        <img src="./images/video4.jpg" alt="Video 4 Thumbnail">
+        <div class="play-button-overlay"><div class="play-button">&#9658;</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Main Events Section -->
+<section class="events-section" style="position: relative; overflow: hidden;">
+
+  <!-- Decorative Left Circle -->
+  <div class="events-decorative-circle"></div>
+
+  
+  <!-- Hero Content -->
+  <div class="hero-content" style="position: relative; z-index: 1;">
+    <div class="hero-text">
+      <h4 class="subtitle" style="font-family: 'Mea Culpa', cursive;">Events <span class="dot">•</span></h4>
+      <h1 class="main-title" style="font-family: 'League Spartan', sans-serif;">A Grand Venue for Every Occasion</h1>
+      <div class="accent-line"></div>
+    </div>
+    <div class="hero-right">
+      <p class="description">
+        With stunning décor, seamless coordination, and flawless hospitality, every event becomes an unforgettable experience where each moment delights your guests.
+      </p>
+    </div>
+  </div>
+
+  <!-- Event Cards Container -->
+  <div class="cards-container" style="position: relative; z-index: 1;">
+    <!-- Wedding Card - Featured -->
+    <div class="event-card ">
+      <div class="card-header">
+        <h3>Wedding</h3>
+        <div class="card-dot"></div>
+      </div>
+      <p class="card-description">
+        A grand stage for every union—our elegant setting and spacious halls embrace weddings of all sizes, blending tradition and luxury to create unforgettable memories.
+      </p>
+      <div class="card-image">
+        <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=400&q=80" alt="Wedding celebration">
+      </div>
+      <button class="event-book-btn">BOOK NOW</button>
+    </div>
+
+    <!-- Corporate Events Card -->
+    <div class="event-card">
+      <div class="card-header">
+        <h3>Reception</h3>
+        <div class="card-dot"></div>
+      </div>
+      <p class="card-description">
+        Celebrate love in style—our hall offers the perfect backdrop for receptions filled with joy, laughter, and timeless moments shared with family and friends.
+      </p>
+      <div class="card-image">
+        <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=400&q=80" alt="Corporate event">
+      </div>
+      <button class="event-book-btn">BOOK NOW</button>
+    </div>
+
+    <!-- Anniversary Events Card -->
+    <div class="event-card">
+      <div class="card-header">
+        <h3>Puberty Function</h3>
+        <div class="card-dot"></div>
+      </div>
+      <p class="card-description">
+        Mark this beautiful milestone with dignity and grace—our venue provides a traditional yet modern space to honor and celebrate this special occasion with loved ones.
+      </p>
+      <div class="card-image">
+        <img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=400&q=80" alt="Anniversary event">
+      </div>
+      <button class="event-book-btn">BOOK NOW</button>
+    </div>
+
+    <!-- Birthday Events Card -->
+    <div class="event-card">
+      <div class="card-header">
+        <h3>Birthday Events</h3>
+        <div class="card-dot"></div>
+      </div>
+      <p class="card-description">
+        Celebrate your special day with us — fun, festive, and perfect for all ages.
+      </p>
+      <div class="card-image">
+        <img src="https://images.unsplash.com/photo-1464207687429-7505649dae38?auto=format&fit=crop&w=400&q=80" alt="Birthday celebration">
+      </div>
+      <button class="event-book-btn">BOOK NOW</button>
+    </div>
+  </div>
+
+  <!-- Bottom Accent Line -->
+  <div class="bottom-line" style="position: relative; z-index: 1;"></div>
+</section>
+
+
+<section class="cta-section">
+  <div class="cta-box">
+    <img src="assets/Home-Cta.png" alt="Wedding Couple">
+    <div class="cta-overlay">
+      <h2 style="font-family: 'League Spartan', sans-serif;">"Your Dream Venue is a Call Away"</h2>
+      <p>
+        Let’s turn plans into reality. Get in touch with us today, and together we’ll design a celebration that reflects your love, your style, and your forever.
+      </p>
+    </div>
+  </div>
+</section>
+
+    <section class="gallery-section">
+      <div class="gallery-header">
+        <!-- Left Column: Subheading and Title -->
+        <div class="gallery-header-left">
+          <div class="gallery-leaf" style="display: flex; align-items: center;">
+            <img src="./assets/Golden-Leaf.svg" alt="Leaf Accent" style="height: 100px; width: 60px; vertical-align: middle; margin-left: -50px; margin-bottom: -115px;">
+          </div>
+          <div class="gallery-header-top">
+            <span class="gallery-subtitle">Moments in Focus</span>
+            <span class="gallery-dot"></span>
+          </div>
+          <h2 class="gallery-title">Love's Highlights in Every Frame</h2>
+        </div>
+        <!-- Right Column: Description -->
+        <div class="gallery-header-right">
+          <p class="gallery-desc">
+            Every picture is a reflection of emotions lived and memories made. Our gallery captures the laughter, the rituals, and the grandeur of celebrations that stay alive long after the day is over.
+          </p>
+        </div>
+      </div>
+      
+      <!-- Row 1 (scroll left) -->
+      <div class="gallery-row scroll-left">
+        <div class="gallery-track">
+          <img src="images/gallery1.jpg" alt="Gallery Image 1">
+          <img src="images/gallery2.jpg" alt="Gallery Image 2">
+          <img src="images/gallery3.jpg" alt="Gallery Image 3">
+          <img src="images/gallery4.jpg" alt="Gallery Image 4">
+          <img src="images/gallery5.jpg" alt="Gallery Image 5">
+          <!-- duplicate for seamless scroll -->
+          <img src="images/gallery1.jpg" alt="Gallery Image 1">
+          <img src="images/gallery2.jpg" alt="Gallery Image 2">
+        </div>
+      </div>
+    
+      <!-- Row 2 (scroll right) -->
+      <div class="gallery-row scroll-right">
+        <div class="gallery-track">
+          <img src="images/gallery6.jpg" alt="Gallery Image 6">
+          <img src="images/gallery7.jpg" alt="Gallery Image 7">
+          <img src="images/gallery8.jpg" alt="Gallery Image 8">
+          <img src="images/gallery9.jpg" alt="Gallery Image 9">
+          <img src="images/gallery10.jpg" alt="Gallery Image 10">
+          <!-- duplicate for seamless scroll -->
+          <img src="images/gallery6.jpg" alt="Gallery Image 6">
+          <img src="images/gallery7.jpg" alt="Gallery Image 7">
+        </div>
+      </div>
+    </section>
+        <!-- </div>
+      </section> -->
+
+      <section class="moments-section">
+        <div class="overlay"></div>
+        
+        <!-- Arrows -->
+        <button class="arrow left"><i class="fa fa-chevron-left"></i></button>
+        <button class="arrow right"><i class="fa fa-chevron-right"></i></button>
+      
+        <!-- Heading -->
+        <h2 class="section-title" style="font-family: 'Mea Culpa', cursive;">When Moments Turn Into Masterpieces</h2>
+        <p class="section-text">
+          Comfort meets class at Bala Saraswathi Conventional Hall. With thoughtfully planned seating, private spaces for families, ample parking, and modern amenities, we ensure your guests feel cared for while you enjoy your celebration without worry.
+        </p>
+      
+        <!-- Boxes -->
+        <div class="features">
+          <div class="feature-box">
+            <i class="fa-solid fa-chair"></i>
+            <p>Marriage Hall Chairs<br>Without Cloth Covers</p>
+          </div>
+          <div class="feature-box">
+            <i class="fa-solid fa-bed"></i>
+            <p>2 A/C Room In The Stage<br>For Bride And Groom</p>
+          </div>
+          <div class="feature-box">
+            <i class="fa-solid fa-users"></i>
+            <p>A/C Marriage Hall Of 1000<br>Guests Seating Capacity</p>
+          </div>
+          <div class="feature-box">
+            <i class="fa-solid fa-car"></i>
+            <p>Car Parking For 225 Cars</p>
+          </div>
+        </div>
+      </section>
+      
+      <section class="testimonial-section">
+        <!-- Header Section -->
+        <div class="heading">
+          <div class="header-left">
+            <div class="decorative-branch">
+            <!-- Replace line/curve with an icon -->
+            <img src="../Marriage Hall/assets/Golden-Leaf.svg" alt="Quote Left" style="width:125px; height:125px; position:relative; left:10px; top:-5px;">
+            </div>
+            <div class="title-content">
+              <h2 style="font-family: 'Mea Culpa', cursive;">Voices Of Memories<span class="decorative-dot">•</span></h2>
+              <h3 style="font-family: 'League Spartan', sans-serif;">Where smiles become stories</h3>
+              <div class="golden-underline"></div>
+            </div>
+          </div>
+          <div class="header-right">
+            <p>
+              The best stories are told by those who lived them. From heartfelt blessings to joyous laughter, our guests’ experiences echo in every corner of our hall—proof that every event here becomes a memory worth cherishing.
+            </p>
+          </div>
+        </div>
+      
+        <!-- Carousel Slider -->
+        <div class="carousel-container">
+          <div class="carousel-wrapper">
+            <div class="carousel-track" id="carouselTrack">
+              <!-- Cards will be dynamically generated here -->
+            </div>
+      
+            <!-- Navigation Buttons -->
+            <button class="carousel-btn prev-btn" id="prevBtn">
+              <i class="fas fa-arrow-left"></i>
+            </button>
+            <button class="carousel-btn next-btn" id="nextBtn">
+              <i class="fas fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="hero-slider">
+        <!-- Slide 1 -->
+        <div class="slide active" style="background-image: url('images/venue1.jpg');">
+          <div class="overlay"></div>
+          <div class="slide-content">
+            <h2>Your Perfect Venue Awaits, Reserve It Now</h2>
+            <div style="width: 110px; height: 3px; background: #fff; opacity: 0.7; margin: 16px auto 15px auto; border-radius: 2px;"></div>
+            <p>
+              With years of excellence, elegant spaces, and heartfelt hospitality, we ensure every celebration is seamless. Book today and turn your plans into beautiful reality.
+            </p>
+            <a href="/contact" class="btn">Book Now →</a>
+          </div>
+        </div>
+      
+        <!-- Slide 2 -->
+        <div class="slide" style="background-image: url('images/venue2.jpg');">
+          <div class="overlay"></div>
+          <div class="slide-content">
+            <h2>Celebrate in Timeless Style</h2>
+            <div style="width: 110px; height: 3px; background: #fff; opacity: 0.7; margin: 16px auto 15px auto; border-radius: 2px;"></div>
+            <p>
+              From intimate weddings to grand gatherings, we create spaces where every celebration 
+              becomes an unforgettable memory.
+            </p>
+            <a href="/contact" class="btn">Explore Venues →</a>
+          </div>
+        </div>
+      
+        <!-- Slide 3 -->
+        <div class="slide" style="background-image: url('images/venue3.jpg');">
+          <div class="overlay"></div>
+          <div class="slide-content">
+            <h2>Where Every Detail Speaks Luxury</h2>
+            <div style="width: 110px; height: 3px; background: #fff; opacity: 0.7; margin: 16px auto 15px auto; border-radius: 2px;"></div>
+            <p>
+              Experience elegance at its finest — with bespoke decor, curated spaces, and seamless event coordination.
+            </p>
+            <a href="/contact" class="btn">Enquire Now →</a>
+          </div>
+        </div>
+      
+        <!-- Navigation Arrows -->
+        <div class="nav prev" onclick="prevSlide()">&#10094;</div>
+        <div class="nav next" onclick="nextSlide()">&#10095;</div>
+      </section>
+      
+      <!-- JavaScript for Slider -->
+      <script>
+        let slides = document.querySelectorAll('.slide');
+        let current = 0;
+      
+        function showSlide(index) {
+          slides.forEach((slide, i) => {
+            slide.classList.remove('active');
+            if (i === index) slide.classList.add('active');
+          });
+        }
+      
+        function nextSlide() {
+          current = (current + 1) % slides.length;
+          showSlide(current);
+        }
+      
+        function prevSlide() {
+          current = (current - 1 + slides.length) % slides.length;
+          showSlide(current);
+        }
+      
+        // Auto slide every 5 seconds
+        setInterval(nextSlide, 5000);
+      </script>
+      
+
+
+      <footer class="footer">
+        <div class="footer-container"> 
+          <div class="footer-col logo-col">
+            <img src="logo.png" alt="Logo" class="footer-logo">
+            <p class="tagline">Beyond Spaces,<br>We Craft Experiences</p>
+          </div>
+      
+          <!-- Important Links -->
+          <div class="footer-col">
+            <h4 style="font-family: 'League Spartan', sans-serif;">Important Links</h4>
+            <ul>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="../About us/aboutus.html">About Us</a></li>
+              <li><a href="../Services/service.html">Services</a></li>
+              <li><a href="../Contact Us/Contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+      
+          <!-- Contact -->
+          <div class="footer-col">
+            <h4 style="font-family: 'League Spartan', sans-serif;">Contact Us</h4>
+            <p>Call: +91 8903125809</p>
+            <p>Email: balasaraswathichitspvtltd@gmail.com</p>
+            <p>Address: Anna Nagar, Sinnamani Nagar,<br>Thoothukudi, Tamil Nadu 628008</p>
+          </div>
+      
+           <!-- Newsletter -->
+      <div class="footer-col map-col">
+        <h4 style="font-family: 'League Spartan', sans-serif;">Find Us on Google Maps</h4>
+        <div style="width:100%;border-radius:12px;overflow:hidden;">
+          <iframe 
+            src="https://www.google.com/maps?q=Anna+Nagar,+Sinnamani+Nagar,+Thoothukudi,+Tamil+Nadu+628008&output=embed"
+            width="100%" height="170" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </div>
+      
+        <!-- Bottom Bar -->
+        <div class="footer-bottom">
+          <p>© 2025 All Rights Reserved by Balasaraswathi</p>
+          <span style="font-size: 0.97em; margin-left: auto;">
+            <a href="../Policy Pages/Privacy.html" style="color:inherit;text-decoration:None;">Privacy Policy</a> | 
+            <a href="../Policy Pages/Terms.html" style="color:inherit;text-decoration:None;">Terms &amp; Conditions</a> | 
+            <a href="../Policy Pages/bookingpolicy.html" style="color:inherit;text-decoration:none;">Booking &amp; Cancellation Policy</a>
+          </span>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </footer>
+      
+      <!-- Font Awesome for icons -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+      
+      
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Component Loader -->
+    <script src="components/js/component-loader.js"></script>
+    <!-- Header Component -->
+    <script src="components/js/header.js"></script>
+    <!-- Testimonials Carousel -->
+    <script src="components/js/testimonials.js"></script>
+</body>
+</html>

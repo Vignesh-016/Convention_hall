@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>About Section</title>
+<link rel="stylesheet" href="Aboutus.css?v=2.0" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&family=League+Spartan:wght@400&family=Mea+Culpa:wght@400&family=Reem+Kufi:wght@400&display=swap" rel="stylesheet">
+<!-- AOS Animate On Scroll CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+
+<!-- <style>
+/* Mobile and tablet - make testimonial-section visible, stack heading, make everything readable and spacious */
+@media (max-width: 991px) {
+  .testimonial-section {
+    padding: 18px 0 32px 0 !important;
+    background: #fff !important;
+    overflow-x: visible !important;
+    min-height: unset !important;
+    display: block !important;
+  }
+  .testimonial-section .heading {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 6px !important;
+    text-align: left !important;
+    padding: 0 8vw !important;
+  }
+  .testimonial-section .header-left,
+  .testimonial-section .header-right {
+    width: 100% !important;
+    text-align: left !important;
+  }
+  .testimonial-section .header-left {
+    flex-direction: row !important;
+    gap: 12px !important;
+    align-items: center !important;
+    margin-bottom: 8px !important;
+  }
+  .testimonial-section .decorative-branch img {
+    width: 55px !important;
+    height: 55px !important;
+    left: -10px !important;
+    top: 9px !important;
+    margin-bottom: 0 !important;
+  }
+  .testimonial-section .title-content h2 {
+    font-size: 1.35rem !important;
+    line-height: 1.2 !important;
+    white-space: normal !important;
+    font-family: 'Mea Culpa', 'Playfair Display', cursive, serif !important;
+  }
+  .testimonial-section .title-content h3 {
+    font-size: 1rem !important;
+    margin: 0 0 4px 0 !important;
+    font-family: 'Playfair Display', serif !important;
+  }
+  .testimonial-section .title-content .golden-underline {
+    width: 70vw !important;
+    margin-top: 5px !important;
+    margin-bottom: 14px !important;
+  }
+  .testimonial-section .header-right p {
+    font-size: 16px !important;
+    font-family: 'League Spartan', sans-serif !important;
+    text-align: left !important;
+    margin-top: 14px !important;
+    line-height: 1.6;
+  }
+  .testimonial-section .carousel-container {
+    margin-top: 10px !important;
+    padding: 0 4vw !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .testimonial-section {
+    padding: 5vw 0 !important;
+  }
+  .testimonial-section .heading {
+    padding: 0 2vw !important;
+    gap: 0 !important;
+  }
+  .testimonial-section .decorative-branch img {
+    width: 38px !important;
+    height: 38px !important;
+    left: -5px !important;
+    top: 10px !important;
+    bottom: 10px !important;
+  }
+  .testimonial-section .title-content h2 {
+    font-size: 22px !important;
+  }
+  .testimonial-section .title-content h3 {
+    font-size: 20px !important;
+  }
+  .testimonial-section .title-content .golden-underline {
+    width: 48vw !important;
+    margin-bottom: 8px !important;
+  }
+  .testimonial-section .header-right p {
+    font-size: 0.98rem !important;
+    margin-top: 9px !important;
+  }
+  .testimonial-section .carousel-container {
+    padding: 0 0vw !important;
+  }
+}
+/* General fix for testimonial-section display issues: Remove hidden/overflow if any remains */
+.testimonial-section {
+  display: block !important;
+  opacity: 1 !important;
+}
+</style> -->
+
+</head>
+<body>
+<!-- Header Component -->
+<header class="header" id="header" data-aos="fade-down" data-aos-delay="50">
+  <div class="container">
+
+    <!-- Location Info -->
+    <div class="location-info" data-aos="fade-right" data-aos-delay="100">
+      <i class="fas fa-map-marker-alt"></i>
+      <span>Anna Nagar, Sinnamani Nagar, Thoothukudi, Tamil Nadu 628008</span>
+    </div>
+
+    <!-- Divider Line (Full Width) -->
+    <div style="width: 100vw; position: relative; left: 50%; right: 50%; margin-left: -50vw; margin-right: -50vw;" data-aos="fade-in" data-aos-delay="150">
+      <hr style="border: none; border-top: 1px solid #ffffff; margin: 0; opacity: 0.3;">
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar" data-aos="fade-up" data-aos-delay="180">
+      <!-- Mobile Menu Toggle -->
+      <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+
+      <!-- Navigation Links -->
+      <div class="nav-links" id="navLinks">
+        <a href="../index.html" class="nav-link active">Home</a>
+        <a href="../About us/aboutus.html" class="nav-link">About Us</a>
+        <a href="../Services/service.html" class="nav-link">Services</a>
+        <!-- <a href="#facilities" class="nav-link">Facilities</a>
+        <a href="#gallery" class="nav-link">Gallery</a>
+        <a href="#blog" class="nav-link">Blog</a> -->
+        <a href="../Contact Us/Contact.html" class="nav-link">Contact Us</a>
+      </div>
+    </nav>
+
+  </div>
+</header>
+
+<!-- Hero Banner Section -->
+<!-- Google Fonts: Reem Kufi import (ensure only for breadcrumbs) -->
+<link href="https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@400;600&display=swap" rel="stylesheet" />
+<section class="hero" data-aos="zoom-in" data-aos-delay="120">
+    <div class="overlay"></div>
+    <div class="breadcrumbs" data-aos="fade-up" data-aos-delay="200" style="font-family: 'Reem Kufi', sans-serif;">
+        <a href="../index.html">Home</a>
+        <span class="custom-separator" style="display: inline-block; vertical-align: middle; width: 32px; height: 16px; position: relative;">
+          <span style="
+            position: absolute;
+            left: 0; top: 50%;
+            width: 20px;
+            height: 3px;
+            background: #fff;
+            border-radius: 2px;
+            transform: translateY(-50%);
+          "></span>
+          <span style="
+            position: absolute;
+            left: 18px; top: 50%;
+            width: 8px;
+            height: 8px;
+            background: #fff;
+            border-radius: 50%;
+            box-shadow: 0 1px 6px 0 rgba(30,25,20,0.17);
+            transform: translateY(-50%);
+          "></span>
+        </span>
+        <span class="current">About Us</span>
+    </div>
+</section>
+
+<!-- Form Section -->
+<section class="form-section" data-aos="fade-up" data-aos-delay="190">
+    <form>
+        <div class="form-group" data-aos="fade-right" data-aos-delay="210">
+            <label for="from"><i class="fas fa-calendar-alt"></i> From</label>
+            <input type="date" id="from" name="from" value="2025-09-16" />
+        </div>
+        <div class="form-group" data-aos="fade-left" data-aos-delay="220">
+            <label for="to"><i class="fas fa-calendar-alt"></i> To</label>
+            <input type="date" id="to" name="to" value="2025-09-16" />
+        </div>
+        <div class="form-group" data-aos="fade-right" data-aos-delay="230">
+            <label for="event"><i class="fas fa-landmark"></i> Event</label>
+            <select id="event" name="event">
+                <option value="marriage" selected>MARRIAGE</option>
+                <option value="birthday">BIRTHDAY</option>
+                <option value="corporate">CORPORATE</option>
+            </select>
+        </div>
+        <div class="form-group" data-aos="fade-left" data-aos-delay="240">
+            <label for="facilities"><i class="fas fa-cogs"></i> Facilities</label>
+            <select id="facilities" name="facilities">
+                <option value="catering" selected>CATERING</option>
+                <option value="decoration">DECORATION</option>
+                <option value="entertainment">ENTERTAINMENT</option>
+            </select>
+        </div>
+        <div class="form-group submit-btn" data-aos="zoom-in" data-aos-delay="270">
+            <button type="submit">
+                Submit <i class="fas fa-arrow-right"></i>
+            </button>
+        </div>
+    </form>
+</section>
+
+<section class="about-section" data-aos="fade-up" data-aos-delay="180">
+  <div class="images-wrapper">
+    <div class="img-large-top-left" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="900">
+      <img src="https://placeholder-image-service.onrender.com/image/240x320?prompt=Happy couple standing outdoors in wedding attire during golden hour with autumnal background&id=fe86f1d2-0357-4f02-a693-e29dfcca39d4" alt="Happy couple standing outdoors in wedding attire during golden hour with autumnal background" />
+    </div>
+    <div class="img-large-top-right" data-aos="zoom-in" data-aos-delay="280" data-aos-duration="900">
+      <img src="https://placeholder-image-service.onrender.com/image/240x320?prompt=Two gold wedding rings placed on white fabric with soft focus background&id=fe86f1d2-0357-4f02-a693-e29dfcca39d4" alt="Two gold wedding rings placed on white fabric with soft focus background" />
+    </div>
+    <div class="img-small-bottom-left" data-aos="zoom-in" data-aos-delay="320" data-aos-duration="900">
+      <img src="https://placeholder-image-service.onrender.com/image/160x160?prompt=Indian wedding bride and groom sitting and smiling in vibrant traditional attire with decorative backdrop&id=fe86f1d2-0357-4f02-a693-e29dfcca39d4" alt="Indian wedding bride and groom sitting and smiling in vibrant traditional attire with decorative backdrop" />
+    </div>
+    <div class="img-small-bottom-right" data-aos="zoom-in" data-aos-delay="380" data-aos-duration="900">
+      <img src="https://placeholder-image-service.onrender.com/image/160x160?prompt=Hands of bride and groom with henna and bracelets holding together during traditional wedding ceremony&id=fe86f1d2-0357-4f02-a693-e29dfcca39d4" alt="Hands of bride and groom with henna and bracelets holding together during traditional wedding ceremony" />
+    </div>
+  </div>
+  <div class="text-content" data-aos="fade-left" data-aos-delay="400" data-aos-duration="1100">
+    <div class="decorative-circle"></div>
+    <p class="subheading">About us <span class="red-dot"></span></p>
+    <h2 class="title">A Traditional Kalyana Mandapam</h2>
+    <p class="description">
+      Bala Saraswathi Kalyana Mandapam is one of the most trusted and fortunate conventional halls in Thoothukudi, designed to make every special occasion truly memorable. With spacious interiors, modern facilities, and a touch of tradition, our mandapam is ideal for weddings, receptions, family gatherings, and cultural events. Since 2022, we have been known for providing a warm and welcoming atmosphere, combining cultural values with modern convenience to ensure celebrations are smooth and stress-free. Families choose Bala Saraswathi Kalyana Mandapam not just for a venue, but for a place filled with positive energy, blessings, and memories that last a lifetime.
+    </p>
+  </div>
+</section>
+
+
+<!-- Statistics Section -->
+<!-- ✅ Statistics Section -->
+<section class="statistics-section" 
+  style="background: url('../assets/Weadding Photography.png') center center/cover no-repeat; position: relative;" 
+  data-aos="fade-in" data-aos-delay="200">
+
+  <div class="statistics-container">
+    <div class="statistics-content" data-aos="fade-up" data-aos-delay="230">
+      
+      <div class="statistics-text" data-aos="fade-right" data-aos-delay="250">
+        <h2 class="statistics-title">More Than a Hall, A Memory Maker</h2>
+      </div>
+
+      <div class="statistics-grid">
+        <div class="stat-item" data-aos="zoom-in" data-aos-delay="270">
+          <div class="stat-number">25+</div>
+          <div class="stat-label">Years of Experience</div>
+        </div>
+        <div class="stat-item" data-aos="zoom-in" data-aos-delay="310">
+          <div class="stat-number">5K+</div>
+          <div class="stat-label">Social Events</div>
+        </div>
+        <div class="stat-item" data-aos="zoom-in" data-aos-delay="350">
+          <div class="stat-number">7K+</div>
+          <div class="stat-label">Family Functions</div>
+        </div>
+        <div class="stat-item" data-aos="zoom-in" data-aos-delay="390">
+          <div class="stat-number">10K+</div>
+          <div class="stat-label">Successful Marriages</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ✅ Separator Line UNDER the entire grid -->
+  <div class="statistics-separator"></div>
+</section>
+
+<section class="founder-section" data-aos="fade-down" data-aos-delay="200">
+  <!-- Left Arrow -->
+  <button class="arrow left" id="founderPrevBtn"><i class="fas fa-chevron-left"></i></button>
+
+  <div class="founder-container" id="founderCarouselContainer" data-aos="fade-up" data-aos-delay="230">
+    <!-- Carousel slides will be dynamically inserted here -->
+  </div>
+
+  <!-- Right Arrow -->
+  <button class="arrow right" id="founderNextBtn"><i class="fas fa-chevron-right"></i></button>
+</section>
+
+  <section class="testimonial-section" data-aos="fade-in" data-aos-delay="160">
+    <!-- Header Section -->
+    <div class="heading" data-aos="fade-up" data-aos-delay="200">
+      <div class="header-left" data-aos="fade-right" data-aos-delay="220">
+        <div class="decorative-branch" data-aos="zoom-in" data-aos-delay="250" style="display:block;">
+          <!-- Replace line/curve with an icon -->
+          <img src="../assets/Golden-Leaf.svg" alt="Quote Left" style="width:100px; height:100px; position:relative; left:-25px; top:-08px;">
+        </div>
+        <div class="title-content" data-aos="fade-up" data-aos-delay="270">
+          <h2>Voices Of Memories<span class="decorative-dot">•</span></h2>
+          <h3>Where smiles become stories</h3>
+          <div class="golden-underline"></div>
+        </div>
+      </div>
+      <div class="header-right" data-aos="fade-left" data-aos-delay="320">
+        <p>
+          The best stories are told by those who lived them. From heartfelt blessings to joyous laughter, our guests’ experiences echo in every corner of our hall  proof that every event here becomes a memory worth cherishing.
+        </p>
+      </div>
+    </div>
+
+    <!-- Carousel Slider -->
+    <div class="carousel-container" data-aos="zoom-in-up" data-aos-delay="350">
+      <div class="carousel-wrapper">
+        <div class="carousel-track" id="carouselTrack">
+          <!-- Cards will be dynamically generated here -->
+        </div>
+        <!-- Navigation Buttons removed as per instruction -->
+      </div>
+    </div>
+  </section>
+
+
+<section class="faq-section" data-aos="fade-up" data-aos-delay="200">
+  <h2 class="faq-title" data-aos="fade-down" data-aos-delay="240">Frequently Ask Questions</h2>
+
+  <div class="faq-container">
+    <!-- LEFT COLUMN -->
+    <div class="faq-column">
+      <div class="faq-item" data-aos="fade-right" data-aos-delay="270">
+        <button class="faq-question">
+          <span>What is the seating capacity of Bala Saraswathi Kalyana Mandapam?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>
+            Our mandapam can comfortably accommodate 500 guests, making it perfect for weddings, receptions, and corporate events.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item" data-aos="fade-right" data-aos-delay="320">
+        <button class="faq-question">
+          <span>Do you provide catering services for events?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Yes, we offer catering support with arrangements for both traditional and modern cuisines to suit your event needs.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT COLUMN -->
+    <div class="faq-column">
+      <div class="faq-item" data-aos="fade-left" data-aos-delay="270">
+        <button class="faq-question">
+          <span>Can I book the mandapam for functions other than weddings?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Absolutely! Our hall is ideal for engagements, birthdays, anniversaries, corporate events, cultural programs, and other celebrations.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" data-aos="fade-left" data-aos-delay="320">
+        <button class="faq-question">
+          <span>Is parking available for guests at the mandapam?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Yes, we have ample car parking facilities to ensure a hassle-free experience for all your guests.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" data-aos="fade-left" data-aos-delay="370">
+        <button class="faq-question">
+          <span>How can I book Bala Saraswathi Kalyana Mandapam for my event?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>You can contact us via phone, email, or visit us in person to check availability, pricing, and book your preferred date.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-container"> 
+    <div class="footer-col logo-col">
+      <img src="logo.png" alt="Logo" class="footer-logo">
+      <p class="tagline">Beyond Spaces,<br>We Craft Experiences</p>
+    </div>
+
+    <!-- Important Links -->
+    <div class="footer-col">
+      <h4 style="font-family: 'League Spartan', sans-serif;">Important Links</h4>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../About us/aboutus.html">About Us</a></li>
+        <li><a href="../Services/service.html">Services</a></li>
+        <li><a href="../Contact Us/Contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact -->
+    <div class="footer-col">
+      <h4 style="font-family: 'League Spartan', sans-serif;">Contact Us</h4>
+      <p>Call: +91 8903125809</p>
+      <p>Email: balasaraswathichitspvtltd@gmail.com</p>
+      <p>Address: Anna Nagar, Sinnamani Nagar,<br>Thoothukudi, Tamil Nadu 628008</p>
+    </div>
+
+     <!-- Newsletter -->
+<div class="footer-col map-col">
+  <h4 style="font-family: 'League Spartan', sans-serif;">Find Us on Google Maps</h4>
+  <div style="width:100%;border-radius:12px;overflow:hidden;">
+    <iframe 
+      src="https://www.google.com/maps?q=Anna+Nagar,+Sinnamani+Nagar,+Thoothukudi,+Tamil+Nadu+628008&output=embed"
+      width="100%" height="170" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+</div>
+</div>
+
+  <!-- Bottom Bar -->
+  <div class="footer-bottom">
+    <p>© 2025 All Rights Reserved by Balasaraswathi</p>
+    <span style="font-size: 0.97em; margin-left: auto;">
+      <a href="../Policy Pages/Privacy.html" style="color:inherit;text-decoration:None;">Privacy Policy</a> | 
+      <a href="../Policy Pages/Terms.html" style="color:inherit;text-decoration:None;">Terms &amp; Conditions</a> | 
+      <a href="../Policy Pages/bookingpolicy.html" style="color:inherit;text-decoration:none;">Booking &amp; Cancellation Policy</a>
+    </span>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+    </div>
+  </div>
+</footer>
+
+<script src="Aboutus.js"></script>
+<!-- Header Component -->
+<script src="../components/js/header.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<!-- AOS Animate On Scroll JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true,
+    offset: 120,
+    easing: 'ease-in-out'
+  });
+</script>
+
+<script>
+  // Wait for all images to fully load before reinitializing AOS
+  window.addEventListener("load", () => {
+    AOS.refresh(); // ensures all AOS elements re-calculate positions after load
+  });
+</script>
+
+
+</body>
+</html>
