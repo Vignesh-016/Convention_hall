@@ -151,72 +151,89 @@
   </div>
 </header>
 
-<!-- Hero Banner Section -->
-<!-- Google Fonts: Reem Kufi import (ensure only for breadcrumbs) -->
-<link href="https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@400;600&display=swap" rel="stylesheet" />
-<section class="hero" data-aos="zoom-in" data-aos-delay="120">
-    <div class="overlay"></div>
-    <div class="breadcrumbs" data-aos="fade-up" data-aos-delay="200" style="font-family: 'Reem Kufi', sans-serif;">
-        <a href="../index.html">Home</a>
-        <span class="custom-separator" style="display: inline-block; vertical-align: middle; width: 32px; height: 16px; position: relative;">
-          <span style="
-            position: absolute;
-            left: 0; top: 50%;
-            width: 20px;
-            height: 3px;
-            background: #fff;
-            border-radius: 2px;
-            transform: translateY(-50%);
-          "></span>
-          <span style="
-            position: absolute;
-            left: 18px; top: 50%;
-            width: 8px;
-            height: 8px;
-            background: #fff;
-            border-radius: 50%;
-            box-shadow: 0 1px 6px 0 rgba(30,25,20,0.17);
-            transform: translateY(-50%);
-          "></span>
-        </span>
-        <span class="current">About Us</span>
-    </div>
+<!-- ====== Hero Section ====== -->
+<section class="contact-hero" data-aos="fade-up">
+  <div class="overlay"></div>
+
+  <!-- Breadcrumbs -->
+  <div class="contact-breadcrumbs" data-aos="fade-zoom-in" data-aos-delay="100" data-aos-duration="700">
+    <a href="../index.html">Home</a>
+    <span class="custom-separator" style="display: inline-block; vertical-align: middle; width: 32px; height: 16px; position: relative;">
+      <span style="
+        position: absolute;
+        left: 0; top: 50%;
+        width: 20px;
+        height: 3px;
+        background: #fff;
+        border-radius: 2px;
+        transform: translateY(-50%);
+      "></span>
+      <span style="
+        position: absolute;
+        left: 18px; top: 50%;
+        width: 8px;
+        height: 8px;
+        background: #fff;
+        border-radius: 50%;
+        box-shadow: 0 1px 6px 0 rgba(30,25,20,0.17);
+        transform: translateY(-50%);
+      "></span>
+    </span>
+    <span class="current">About Us</span>
+  </div>
+
+  <!-- Booking Form -->
+  <div class="contact-form-section" data-aos="fade-left" data-aos-delay="200">
+    <form class="contact-form">
+      <div class="contact-form-group" data-aos="fade-up" data-aos-delay="250">
+        <label for="from">From</label>
+        <div style="display: flex; align-items: center;">
+          <img src="../Contact Us/assets/uis_calender.png" alt="Calendar Icon" style="width: 22px; height: 22px; margin-right:7px;">
+          <input type="date" id="from" name="from" placeholder="From">
+        </div>
+      </div>
+      <div class="contact-form-group" data-aos="fade-up" data-aos-delay="300">
+        <label for="to">To</label>
+        <div style="display: flex; align-items: center;">
+          <img src="../Contact Us/assets/uis_calender.png" alt="Calendar Icon" style="width: 22px; height: 22px; margin-right:7px;">
+          <input type="date" id="to" name="to" placeholder="To">
+        </div>
+      </div>
+      <div class="contact-form-group" data-aos="fade-up" data-aos-delay="350">
+        <label for="event">Event</label>
+        <div style="display: flex; align-items: center; ">
+          <img src="../Contact Us/assets/streamline_city-hall-remix.png" alt="Calendar Icon" style="width: 22px; height: 22px; margin-right:7px;">
+          <select id="event" name="event">
+            <option value="marriage">Marriage</option>
+            <option value="birthday">Birthday</option>
+            <option value="corporate">Corporate</option>
+          </select>
+        </div>
+      </div>
+      <div class="contact-form-group" data-aos="fade-up" data-aos-delay="400">
+        <label for="facilities">Facilities</label>
+        <div style="display: flex; align-items: center;">
+          <img src="../Contact Us/assets/settings.png" alt="Calendar Icon" style="width: 22px; height: 22px; margin-right:7px;">
+          <select id="facilities" name="facilities">
+            <option value="catering">Catering</option>
+            <option value="decoration">Decoration</option>
+            <option value="entertainment">Entertainment</option>
+          </select>
+        </div>
+      </div>
+      <div class="contact-submit" data-aos="zoom-in" data-aos-delay="480" style="font-family: 'League Spartan', Arial, sans-serif;">
+        <button type="submit" style="font-family: 'League Spartan', Arial, sans-serif;"><i class="fas fa-arrow-right"></i> Submit</button>
+      </div>
+    </form>
+  </div>
 </section>
 
-<!-- Form Section -->
-<section class="form-section" data-aos="fade-up" data-aos-delay="190">
-    <form>
-        <div class="form-group" data-aos="fade-right" data-aos-delay="210">
-            <label for="from"><i class="fas fa-calendar-alt"></i> From</label>
-            <input type="date" id="from" name="from" value="2025-09-16" />
-        </div>
-        <div class="form-group" data-aos="fade-left" data-aos-delay="220">
-            <label for="to"><i class="fas fa-calendar-alt"></i> To</label>
-            <input type="date" id="to" name="to" value="2025-09-16" />
-        </div>
-        <div class="form-group" data-aos="fade-right" data-aos-delay="230">
-            <label for="event"><i class="fas fa-landmark"></i> Event</label>
-            <select id="event" name="event">
-                <option value="marriage" selected>MARRIAGE</option>
-                <option value="birthday">BIRTHDAY</option>
-                <option value="corporate">CORPORATE</option>
-            </select>
-        </div>
-        <div class="form-group" data-aos="fade-left" data-aos-delay="240">
-            <label for="facilities"><i class="fas fa-cogs"></i> Facilities</label>
-            <select id="facilities" name="facilities">
-                <option value="catering" selected>CATERING</option>
-                <option value="decoration">DECORATION</option>
-                <option value="entertainment">ENTERTAINMENT</option>
-            </select>
-        </div>
-        <div class="form-group submit-btn" data-aos="zoom-in" data-aos-delay="270">
-            <button type="submit">
-                Submit <i class="fas fa-arrow-right"></i>
-            </button>
-        </div>
-    </form>
-</section>
+<!-- ====== JS just for hero fade-in ====== -->
+<script>
+  window.addEventListener("load", () => {
+    document.querySelector(".contact-hero").classList.add("loaded");
+  });
+</script>
 
 <section class="about-section" data-aos="fade-up" data-aos-delay="180">
   <div class="images-wrapper">

@@ -49,7 +49,10 @@
 
   <script>
     function toggleMenu() {
-      document.getElementById("contactNavLinks").classList.toggle("show");
+      var links = document.getElementById("navLinks");
+      if (links) {
+        links.classList.toggle("mobile-active");
+      }
     }
     </script>
     
@@ -91,21 +94,21 @@
         <div class="contact-form-group" data-aos="fade-up" data-aos-delay="250">
           <label for="from">From</label>
           <div style="display: flex; align-items: center;">
-            <i class="fas fa-calendar-alt" style="color:#8b0000; font-size: 17px; margin-right:7px;"></i>
+            <img src="./assets/uis_calender.png" alt="Calendar Icon" style="width: 22px; height: 22px; margin-right:7px;">
             <input type="date" id="from" name="from" placeholder="From">
           </div>
         </div>
         <div class="contact-form-group" data-aos="fade-up" data-aos-delay="300">
           <label for="to">To</label>
           <div style="display: flex; align-items: center;">
-            <i class="fas fa-calendar-alt" style="color:#8b0000; font-size: 17px; margin-right:7px;"></i>
+            <img src="./assets/uis_calender.png" alt="Calendar Icon" style="width: 22px; height: 22px; margin-right:7px;">
             <input type="date" id="to" name="to" placeholder="To">
           </div>
         </div>
         <div class="contact-form-group" data-aos="fade-up" data-aos-delay="350">
           <label for="event">Event</label>
-          <div style="display: flex; align-items: center;">
-            <i class="fas fa-landmark" style="color:#8b0000; font-size: 17px; margin-right:7px;"></i>
+          <div style="display: flex; align-items: center; ">
+            <img src="./assets/streamline_city-hall-remix.png" alt="Calendar Icon" style="width: 22px; height: 22px; margin-right:7px;">
             <select id="event" name="event">
               <option value="marriage">Marriage</option>
               <option value="birthday">Birthday</option>
@@ -116,7 +119,7 @@
         <div class="contact-form-group" data-aos="fade-up" data-aos-delay="400">
           <label for="facilities">Facilities</label>
           <div style="display: flex; align-items: center;">
-            <i class="fas fa-cogs" style="color:#8b0000; font-size: 17px; margin-right:7px;"></i>
+            <img src="./assets/settings.png" alt="Calendar Icon" style="width: 22px; height: 22px; margin-right:7px;">
             <select id="facilities" name="facilities">
               <option value="catering">Catering</option>
               <option value="decoration">Decoration</option>
@@ -124,8 +127,8 @@
             </select>
           </div>
         </div>
-        <div class="contact-submit" data-aos="zoom-in" data-aos-delay="500">
-          <button type="submit"><i class="fas fa-arrow-right"></i> Submit</button>
+        <div class="contact-submit" data-aos="zoom-in" data-aos-delay="480" style="font-family: 'League Spartan', Arial, sans-serif;">
+          <button type="submit" style="font-family: 'League Spartan', Arial, sans-serif;"><i class="fas fa-arrow-right"></i> Submit</button>
         </div>
       </form>
     </div>
@@ -139,6 +142,7 @@
   </script>
 
 
+<!-- Second section  -->
 <section class="contact-info" data-aos="fade-up" data-aos-delay="150">
   <!-- Left half circle -->
   <div class="decorative-half-circle left" data-aos="fade-right" data-aos-delay="100"></div>
@@ -161,7 +165,9 @@
   
   <!-- Phone -->
   <div class="info-box" data-aos="fade-up" data-aos-delay="300">
-    <div class="icon"><i class="fas fa-phone"></i></div>
+    <div class="icon">
+      <img src="./assets/phone icon.png" alt="Phone Icon" style="width: 42px; height: 42px;">
+    </div>
     <hr>
     <h3>PHONE</h3>
     <p>+ 91 8754139334</p>
@@ -173,7 +179,9 @@
 
   <!-- Mail -->
   <div class="info-box" data-aos="fade-up" data-aos-delay="400">
-    <div class="icon"><i class="fas fa-envelope"></i></div>
+    <div class="icon">
+      <img src="./assets/mail icon.png" alt="Phone Icon" style="width: 42px; height: 42px;">
+    </div>
     <hr>
     <h3>MAIL</h3>
     <p>nithiyaprasath1999@gmail.com</p>
@@ -184,7 +192,9 @@
 
   <!-- Location -->
   <div class="info-box" data-aos="fade-up" data-aos-delay="500">
-    <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+    <div class="icon">
+      <img src="./assets/location icon.png" alt="Phone Icon" style="width: 42px; height: 42px;">
+    </div>
     <hr>
     <h3>LOCATION</h3>
     <p>Anna Nagar, Sinnamani Nagar,<br>Thoothukudi, Tamil Nadu 628008</p>
@@ -203,6 +213,7 @@
   </div>
 </section>
 
+<!-- third seciton  -->
 <section class="booking-section" data-aos="fade-up" data-aos-delay="200">
   <!-- Left Carousel -->
   <div class="booking-left" data-aos="zoom-in-right" data-aos-delay="250">
@@ -244,14 +255,34 @@
   <div class="booking-right" data-aos="zoom-in-left" data-aos-delay="300">
     <h2 data-aos="fade-zoom-in" data-aos-delay="350">GET IN TOUCH</h2>
     <form id="bookingForm" class="booking-form">
-      <input type="text" name="name" placeholder="NAME" required data-aos="fade-right" data-aos-delay="400">
-      <input type="text" name="event" placeholder="EVENT" required data-aos="fade-right" data-aos-delay="450">
+      <input type="text" name="name" placeholder="NAME" required data-aos="fade-right" data-aos-delay="400"
+        class="animated-placeholder"
+        onfocus="this.classList.add('ph-hide');"
+        onblur="this.classList.remove('ph-hide');">
+      
+      <input type="text" name="event" placeholder="EVENT" required data-aos="fade-right" data-aos-delay="450" class="animated-placeholder"
+      onfocus="this.classList.add('ph-hide');"
+      onblur="this.classList.remove('ph-hide');">
       <div class="booking-datebox" data-aos="fade-right" data-aos-delay="500">
-        <input type="text" name="from" placeholder="FROM" required>
-        <input type="text" name="to" placeholder="TO" required>
+        <input type="text" name="from" placeholder="FROM" required class="animated-placeholder"
+        onfocus="this.classList.add('ph-hide');"
+        onblur="this.classList.remove('ph-hide');">
+        <input type="text" name="to" placeholder="TO" required class="animated-placeholder"
+        onfocus="this.classList.add('ph-hide');"
+        onblur="this.classList.remove('ph-hide');">
       </div>
-      <textarea name="description" rows="4" placeholder="DESCRIPTION" data-aos="fade-right" data-aos-delay="550"></textarea>
-      <button type="submit" data-aos="zoom-in" data-aos-delay="600">→ Submit</button>
+      <textarea name="description" rows="4" placeholder="DESCRIPTION" data-aos="fade-right" data-aos-delay="550" class="animated-placeholder"
+      onfocus="this.classList.add('ph-hide');"
+      onblur="this.classList.remove('ph-hide');"></textarea>
+      <button type="submit" data-aos="zoom-in" data-aos-delay="600" style="font-family: 'League Spartan', sans-serif;">
+        <span style="display:inline-flex;align-items:center;">
+          <svg xmlns="http://www.w3.org/2000/svg" height="28" width="28" viewBox="0 0 28 28" style="vertical-align:middle;margin-right:8px;">
+            <line x1="4" y1="14" x2="24" y2="14" stroke="white" stroke-width="2" stroke-linecap="round"/>
+            <polyline points="18,8 24,14 18,20" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          Submit
+        </span>
+      </button>
     </form>
   </div>
 </section>
