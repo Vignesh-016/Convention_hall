@@ -264,6 +264,10 @@ body {
     width: 30px;
     height: 30px;
     font-size: 0.9rem;
+    margin-top: -90px;
+    margin-bottom: -100px;
+    margin-left: 2px;
+    margin-right: 2px;
   }
   .arrow-icon {
     width: 15px;

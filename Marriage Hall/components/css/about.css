@@ -74,7 +74,7 @@
 
 .about-title {
   font-size: 38px;
-  font-weight: 600;
+  font-weight: 400;
   color: #7a0a0a;
   margin-top: 5px;
   margin-bottom: 5px;
@@ -85,7 +85,7 @@
 .divider {
   width: 90%;
   border: none;
-  border-bottom: 2px solid #cfa23a;
+  border-bottom: 3px solid #C08A00;
   margin-bottom: 10px;
 }
 
@@ -153,7 +153,7 @@
 .legacy-divider {
   width: 100%;
   border: none;
-  border-bottom: 5px solid #cfa23a;
+  border-bottom: 5px solid #C08A00;
   opacity: 0.85;
   margin-top: 20px;
 }
@@ -259,7 +259,7 @@
 ======================== */
 @media (max-width: 480px) {
   .about-section {
-    padding: 200px 20px;
+    padding: 250px 20px;
     margin-bottom: -200px;
   }
 

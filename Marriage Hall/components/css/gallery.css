@@ -1,7 +1,7 @@
 /* Gallery Section and Responsive Combined */
 .gallery-section {
   background: #fff8e1;
-  padding: 50px 50px 40px 50px;
+  padding: 40px 0px 40px 0px;
   overflow: hidden;
 }
 .gallery-header {
@@ -12,8 +12,8 @@
   margin: 0 auto 50px auto;
   gap: 20px;
   position: relative;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 120px;
+  padding-right: 120px;
   width: 100%;
   justify-content: flex-end;
   box-sizing: border-box;
@@ -189,7 +189,7 @@
 /* Responsive below 768px: merges all overrides */
 @media (max-width: 768px) {
   .gallery-section {
-    padding: 20px 8px 0 8px; /* Reduced left and right padding */
+    padding: 40px 8px 40px 8px; /* Reduced left and right padding */
     width: 100vw;
     overflow: hidden;
     box-sizing: border-box;
@@ -314,7 +314,7 @@
 /* Extra responsiveness for small mobiles (below 400px) */
 @media (max-width: 480px) {
   .gallery-section {
-    padding: 20px 0 0 5px;
+    padding: 40px 0 0 5px;
   }
   .gallery-header {
     padding: 4px 0 6px 0;
@@ -381,7 +381,7 @@
     width: 86px;
     height: 48px;
     min-width: 66px;
-    max-width: 100px;
+    max-width: 400px;
     border-radius: 5px;
   }
   .gallery-row.scroll-left,
