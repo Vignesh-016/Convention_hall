@@ -112,11 +112,21 @@ body {
   z-index: 10;
   font-size: 18px;
   transition: border-color 0.3s;
+  padding: 0;
+  overflow: hidden;
 }
 
 .nav:hover {
   /* background removed */
   border-color: #fff;
+}
+
+.nav-icon {
+  width: 20px;
+  height: 50px;
+  object-fit: contain;
+  filter: brightness(0) invert(1); /* Makes icon white */
+  transition: filter 0.3s;
 }
 
 .nav.prev {
@@ -150,6 +160,10 @@ body {
     width: 36px;
     height: 36px;
     font-size: 16px;
+  }
+  .nav-icon {
+    width: 18px;
+    height: 18px;
   }
   .nav.prev { left: 10px; }
   .nav.next { right: 10px; }
@@ -185,6 +199,10 @@ body {
     width: 28px;
     height: 28px;
     font-size: 13px;
+  }
+  .nav-icon {
+    width: 15px;
+    height: 15px;
   }
   .nav.prev { left: 2px; }
   .nav.next { right: 2px; }
@@ -225,6 +243,10 @@ body {
     height: 22px;
     font-size: 10px;
   }
+  .nav-icon {
+    width: 12px;
+    height: 12px;
+  }
   .nav.prev { left: 1px; }
   .nav.next { right: 1px; }
 }
@@ -262,6 +284,10 @@ body {
     width: 16px;
     height: 16px;
     font-size: 8px;
+  }
+  .nav-icon {
+    width: 10px;
+    height: 10px;
   }
   .nav.prev { left: 5px; }
   .nav.next { right: 5px; }
