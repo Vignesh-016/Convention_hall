@@ -85,7 +85,7 @@
 /* Responsive (max-width: 1024px) */
 /* ======================= */
 @media (max-width: 1024px) {
-  .cta-section {
+  .cta-section {  
     padding: 22px 5px;
     min-width: 0;
   }
