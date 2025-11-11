@@ -112,11 +112,21 @@ body {
   z-index: 10;
   font-size: 18px;
   transition: border-color 0.3s;
+  padding: 0;
+  overflow: hidden;
 }
 
 .nav:hover {
   /* background removed */
   border-color: #fff;
+}
+
+.nav-icon {
+  width: 20px;
+  height: 50px;
+  object-fit: contain;
+  filter: brightness(0) invert(1); /* Makes icon white */
+  transition: filter 0.3s;
 }
 
 .nav.prev {
@@ -151,6 +161,10 @@ body {
     height: 36px;
     font-size: 16px;
   }
+  .nav-icon {
+    width: 18px;
+    height: 18px;
+  }
   .nav.prev { left: 10px; }
   .nav.next { right: 10px; }
 }
@@ -158,11 +172,11 @@ body {
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
   .hero-slider {
-    height: 180px;
+    height: 225px;
   }
   .slide-content {
     max-width: 100vw;
-    padding: 8px 2vw;
+    padding: 10px 3vw;
     width: 98vw;
     top: 55%;
   }
@@ -186,6 +200,10 @@ body {
     height: 28px;
     font-size: 13px;
   }
+  .nav-icon {
+    width: 15px;
+    height: 15px;
+  }
   .nav.prev { left: 2px; }
   .nav.next { right: 2px; }
 }
@@ -193,7 +211,7 @@ body {
 /* Extra Small Devices */
 @media (max-width: 480px) {
   .hero-slider {
-    height: 110px;
+    height: 200px;
   }
   .slide-content {
     padding: 4px 1vw;
@@ -210,6 +228,10 @@ body {
     font-size: 0.6rem;
     margin-bottom: 7px;
     line-height: 1.1;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 25px;
+    padding-right: 25px;
   }
   .btn {
     padding: 5px 8px;
@@ -221,6 +243,10 @@ body {
     height: 22px;
     font-size: 10px;
   }
+  .nav-icon {
+    width: 12px;
+    height: 12px;
+  }
   .nav.prev { left: 1px; }
   .nav.next { right: 1px; }
 }
@@ -228,7 +254,7 @@ body {
 /* Ultra Small Devices (very small phones) */
 @media (max-width: 360px) {
   .hero-slider {
-    height: 80px;
+    height: 150px;
   }
   .slide-content {
     padding: 2px 0.5vw;
@@ -243,6 +269,11 @@ body {
   .slide-content p {
     font-size: 0.48rem;
     margin-bottom: 4px;
+    line-height: 1.30;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 25px;
+    padding-right: 25px;
   }
   .btn {
     padding: 3px 5px;
@@ -254,6 +285,10 @@ body {
     height: 16px;
     font-size: 8px;
   }
-  .nav.prev { left: 0; }
-  .nav.next { right: 0; }
+  .nav-icon {
+    width: 10px;
+    height: 10px;
+  }
+  .nav.prev { left: 5px; }
+  .nav.next { right: 5px; }
 }

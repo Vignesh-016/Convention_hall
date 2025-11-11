@@ -1416,138 +1416,175 @@ body {
 
 
 /* Founder Section */
-  .founder-section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    padding: 60px 20px;
-    position: relative;
-    background: #fff;
-  }
-  
-  .founder-container {
-    display: flex;
-    max-width: 1500px;
-    align-items: center;
-    gap: 40px;
-    transition: opacity 0.3s ease, transform 0.3s ease;
-  }
-  
-  .founder-img img {
-    width: 400px;
-    border-radius: 12px;
-    object-fit: cover;
-    box-shadow: 0px 6px 20px rgba(0,0,0,0.15);
-  }
-  
-  .founder-content {
-    flex: 1;
-    text-align: left;
-  }
-  
-  .founder-title {
-    font-family: "Mea Culpa", cursive;
-    font-size: 42px;
-    margin-bottom: 10px;
-    color: #333;
-  }
-  
-  .dot {
-    width: 8px;
-    height: 8px;
-    background: #a00;
-    border-radius: 50%;
-    display: inline-block;
-    margin-left: 6px;
-  }
-  
-  .founder-content h2 {
-    font-family: "League Spartan", sans-serif;
-    font-size: 30px;
-    font-weight: 700;
-    color: #a00;
-    margin-bottom: 12px;
-    text-transform: uppercase;
-  }
-  
-  .divider {
-    border: none;
-    border-bottom: 2px solid #b3810d;
-    margin-bottom: 20px;
-    width: 700px;
-  }
-  
-  .founder-section .description {
-    font-family: "League Spartan", sans-serif;
-    font-size: 16px;
-    line-height: 1.6;
-    color: #000000;
-    /* text-align: justify; */ 
-    max-width: 700px;
-  }
-  
-  /* Founder arrows - exact design match per sample image */
-  .arrow {
-    background: #ffe7a8; /* pale golden/yellow */
-    border: none;
-    width: 30px; /* As close as possible to circle diameter (2 × radius) in the image */
-    height: 30px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.07), 0 4px 18px rgba(0,0,0,0.06);
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    padding: 0;
-    z-index: 10;
-    transition: box-shadow 0.2s, transform 0.17s;
-  }
-  /* Arrow Button Placement */
-  .arrow.left { left: 20px; }
-  .arrow.right { right: 20px; }
-  .arrow:active,
-  .arrow:focus {
-    outline: none;
-    box-shadow: 0 6px 18px rgba(178,129,13,0.11), 0 5px 26px rgba(0,0,0,0.12);
-    transform: translateY(-50%) scale(0.97);
-  }
-  .arrow:hover {
-    box-shadow: 0 8px 24px rgba(178,129,13,0.14), 0 7px 34px rgba(0,0,0,0.13);
-    /* mild bounce on hover */
-    transform: translateY(-53%) scale(1.07);
-    filter: brightness(1.05);
-  }
-  /* Inner chevron icon - expects font awesome or svg, but override color/appearance */
-  .arrow i,
-  .arrow svg {
-    color: #6b0100; /* deep red/maroon */
-    font-size: 25px !important;
-    width: 26px;
-    height: 26px;
-    display: block;
-    z-index: 2;
-  }
-  /* If you use ::before or embed a polygon SVG, shape to chevron left/right */
-  .arrow.left i,
-  .arrow.left svg {
-    /* chevron/arrow direction left  */
-    transform: none;
-  }
-  .arrow.right i,
-  .arrow.right svg {
-    /* chevron/arrow direction right  */
-    transform: rotate(360deg);
-  }
-  /* Remove border, set shadow and color as in image */
+.founder-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 60px 20px;
+  position: relative;
+  background: #fff;
+}
+
+.founder-container {
+  display: flex;
+  max-width: 1500px;
+  align-items: center;
+  gap: 40px;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.founder-img img {
+  width: 400px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0px 6px 20px rgba(0,0,0,0.15);
+}
+
+.founder-content {
+  flex: 1;
+  text-align: left;
+}
+
+.founder-title {
+  font-family: "Mea Culpa", cursive;
+  font-size: 42px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  background: #a00;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 6px;
+}
+
+.founder-content h2 {
+  font-family: "League Spartan", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  color: #a00;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+.divider {
+  border: none;
+  border-bottom: 2px solid #b3810d;
+  margin-bottom: 20px;
+  width: 700px;
+}
+
+.founder-section .description {
+  font-family: "League Spartan", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #000000;
+  /* text-align: justify; */
+  max-width: 700px;
+}
+
+/* Founder arrows - exact design match per sample image */
+.arrow {
+  background: #ffe7a8; /* pale golden/yellow */
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07), 0 4px 18px rgba(0,0,0,0.06);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0;
+  z-index: 10;
+  transition: box-shadow 0.2s, transform 0.17s;
+}
+/* Arrow Button Placement */
+.arrow.left { left: 20px; }
+.arrow.right { right: 20px; }
+.arrow:active,
+.arrow:focus {
+  outline: none;
+  box-shadow: 0 6px 18px rgba(178,129,13,0.11), 0 5px 26px rgba(0,0,0,0.12);
+  transform: translateY(-50%) scale(0.97);
+}
+.arrow:hover {
+  box-shadow: 0 8px 24px rgba(178,129,13,0.14), 0 7px 34px rgba(0,0,0,0.13);
+  /* mild bounce on hover */
+  transform: translateY(-53%) scale(1.07);
+  filter: brightness(1.05);
+}
+/* Inner chevron icon - expects font awesome or svg, but override color/appearance */
+.arrow i,
+.arrow svg {
+  color: #6b0100; /* deep red/maroon */
+  font-size: 25px !important;
+  width: 26px;
+  height: 26px;
+  display: block;
+  z-index: 2;
+}
+/* If you use ::before or embed a polygon SVG, shape to chevron left/right */
+.arrow.left i,
+.arrow.left svg { transform: none; }
+.arrow.right i,
+.arrow.right svg { transform: rotate(360deg); }
 
 /* =============================================
    FOUNDER SECTION RESPONSIVE FIX (2025-10-04)
    Prevent overflow and maintain alignment on mobile
 ============================================= */
+
+/* Fix for 1024px arrow alignment issues */
+@media (max-width: 1200px) and (min-width: 992px) {
+  .founder-section {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  .founder-container {
+    gap: 30px;
+    max-width: 1000px;
+  }
+  .founder-img img {
+    width: 340px;
+    min-width: 240px;
+    max-width: 340px;
+  }
+  .arrow.left { left: 8px; }
+  .arrow.right { right: 8px; }
+}
+
+@media (max-width: 1024px) {
+  .founder-section {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+  .founder-container {
+    gap: 24px;
+    max-width: 960px;
+  }
+  .arrow.left { left: 7px;}
+  .arrow.right { right: 7px;}
+}
+
+@media (max-width: 900px) {
+  .founder-img img {
+    width: 100%;
+    max-width: 270px;
+    min-width: 150px;
+    height: auto;
+  }
+  .founder-container {
+    gap: 18px;
+  }
+}
 
 @media (max-width: 768px) {
   .founder-section {
@@ -1610,7 +1647,6 @@ body {
   
   /* Arrow buttons responsive styling */
   .arrow {
-    /* Easily adjustable width & height for responsiveness */
     width: var(--arrow-width, 100px);
     height: var(--arrow-height, 100px);
     min-width: 20px;
@@ -1621,8 +1657,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* fallback for older browsers not supporting CSS variables */
-    /* You can override arrow sizes in parent by setting --arrow-width and --arrow-height */
   }
 
   .arrow.left {

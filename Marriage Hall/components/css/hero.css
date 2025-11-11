@@ -9,7 +9,7 @@
 =============================== */
 .hero {
     position: relative;
-    height: 100vh; /* Further reduced from 96vh to decrease bottom space */
+    height: 85vh; /* Reduced from 100vh to decrease banner height */
     background: url('../../assets/hero.jpg') bottom center/cover no-repeat;
     display: flex;
     justify-content: center;
@@ -103,7 +103,7 @@ h1 {
 =============================== */
 .form-section {
     position: absolute;
-    bottom: -50px;
+    bottom: 50px;
     left: 50%;
     transform: translateX(-50%);
     background: white;
@@ -255,7 +255,7 @@ form {
     font-size: 18px; line-height: 60px;
     }
     .content { padding: 0 15px; }
-    .form-section { padding: 15px; margin: -220px auto; }
+    .form-section { padding: 15px; margin: -170px auto; }
     .form-group { padding: 10px; }
     .form-group label { font-size: 10px; }
     .form-group input, .form-group select { font-size: 12px; padding: 8px; }

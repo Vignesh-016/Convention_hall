@@ -138,12 +138,24 @@ body {
   justify-content: center;
   cursor: pointer;
   z-index: 4;
+  padding: 0;
+  overflow: hidden;
 }
 .arrow.left { left: 20px; }
 .arrow.right { right: 20px; }
 .arrow:hover {
   background: #C08A00;
   color: #000;
+}
+.arrow-icon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  filter: brightness(0) invert(1); /* Makes icon white */
+  transition: filter 0.3s;
+}
+.arrow:hover .arrow-icon {
+  filter: brightness(0) invert(0); /* Makes icon black on hover */
 }
 
 /* ===================== */
@@ -210,6 +222,10 @@ body {
     height: 35px;
     font-size: 1rem;
   }
+  .arrow-icon {
+    width: 18px;
+    height: 18px;
+  }
   .moments-section::after {
     height: 90px;
   }
@@ -248,6 +264,10 @@ body {
     width: 30px;
     height: 30px;
     font-size: 0.9rem;
+  }
+  .arrow-icon {
+    width: 15px;
+    height: 15px;
   }
   .moments-section::after {
     height: 60px;

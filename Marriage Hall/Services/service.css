@@ -242,7 +242,7 @@
 /* =========================== */
 /* SPECIAL OCCASIONS SECTION   */
 /* =========================== */
-.occasion-section {
+/* .occasion-section {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -334,12 +334,12 @@
     .occasion-content h2 {
         font-size: 1.3rem;
     }
-}
+} */
 
 /* =================== */
 /* FACILITY SLIDER     */
 /* =================== */
-.facility-slider {
+/* .facility-slider {
     background-color: #7b0000;
     padding: 30px 35px;
     border-radius: 12px;
@@ -430,9 +430,9 @@
         max-width: 100%;
         padding: 60px 2vw;
     }
-}
+} */
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .facility-slide {
         flex-direction: column;
         gap: 15px;
@@ -447,7 +447,7 @@
     .occasion-section {
         padding: 40px 1vw;
     }
-}
+} */
 
 /* =================== */
 /* FAQ SECTION         */
@@ -785,7 +785,7 @@
 }
 
 /* Staggered Animations */
-.slide.active .main-hall-box,
+    .slide.active .main-hall-box,
 .slide.active .main-description,
 .slide.active .location-pin,
 .slide.active .feature-item {

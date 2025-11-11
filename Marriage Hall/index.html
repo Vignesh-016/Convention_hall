@@ -382,8 +382,10 @@
         <div class="overlay"></div>
         
         <!-- Arrows -->
-        <button class="arrow left"><i class="fa fa-chevron-left"></i></button>
-        <button class="arrow right"><i class="fa fa-chevron-right"></i></button>
+        <button class="arrow left"><img src="./assets/Arrows.svg" alt="Previous" class="arrow-icon"></button>
+        <button class="arrow right">
+          <img src="./assets/Arrows.svg" alt="Next" class="arrow-icon" style="transform: rotate(180deg);">
+        </button>
       
         <!-- Heading -->
         <h2 class="section-title" style="font-family: 'Mea Culpa', cursive;">When Moments Turn Into Masterpieces</h2>
@@ -457,7 +459,7 @@
           <div class="overlay"></div>
           <div class="slide-content">
             <h2>Your Perfect Venue Awaits, Reserve It Now</h2>
-            <div style="width: 110px; height: 3px; background: #fff; opacity: 0.7; margin: 16px auto 15px auto; border-radius: 2px;"></div>
+            <div style="width: 110px; height: 3px; background: #fff; opacity: 0.7; margin: 10px auto 10px auto; border-radius: 2px;"></div>
             <p>
               With years of excellence, elegant spaces, and heartfelt hospitality, we ensure every celebration is seamless. Book today and turn your plans into beautiful reality.
             </p>
@@ -470,7 +472,7 @@
           <div class="overlay"></div>
           <div class="slide-content">
             <h2>Celebrate in Timeless Style</h2>
-            <div style="width: 110px; height: 3px; background: #fff; opacity: 0.7; margin: 16px auto 15px auto; border-radius: 2px;"></div>
+            <div style="width: 110px; height: 3px; background: #fff; opacity: 0.7; margin: 10px auto 10px auto; border-radius: 2px;"></div>
             <p>
               From intimate weddings to grand gatherings, we create spaces where every celebration 
               becomes an unforgettable memory.
@@ -484,7 +486,7 @@
           <div class="overlay"></div>
           <div class="slide-content">
             <h2>Where Every Detail Speaks Luxury</h2>
-            <div style="width: 110px; height: 3px; background: #fff; opacity: 0.7; margin: 16px auto 15px auto; border-radius: 2px;"></div>
+            <div style="width: 110px; height: 3px; background: #fff; opacity: 0.7; margin: 10px auto 10px auto; border-radius: 2px;"></div>
             <p>
               Experience elegance at its finest — with bespoke decor, curated spaces, and seamless event coordination.
             </p>
@@ -493,8 +495,12 @@
         </div>
       
         <!-- Navigation Arrows -->
-        <div class="nav prev" onclick="prevSlide()">&#10094;</div>
-        <div class="nav next" onclick="nextSlide()">&#10095;</div>
+        <div class="nav prev" onclick="prevSlide()">
+          <img src="./assets/line-arrow.svg" alt="Previous" class="nav-icon">
+        </div>
+        <div class="nav next" onclick="nextSlide()">
+          <img src="./assets/line-arrow.svg" alt="Next" class="nav-icon" style="transform: rotate(180deg);">
+        </div>
       </section>
       
       <!-- JavaScript for Slider -->
@@ -551,7 +557,7 @@
             <p>Address: Anna Nagar, Sinnamani Nagar,<br>Thoothukudi, Tamil Nadu 628008</p>
           </div>
       
-           <!-- Newsletter -->
+           <!-- Map -->
       <div class="footer-col map-col">
         <h4 style="font-family: 'League Spartan', sans-serif;">Find Us on Google Maps</h4>
         <div style="width:100%;border-radius:12px;overflow:hidden;">
