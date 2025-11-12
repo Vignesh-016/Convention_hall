@@ -334,23 +334,24 @@
     justify-content: flex-start !important;
   }
   .gallery-title {
-    font-size: 1.25rem;
+    font-size: 20px;
+    font-weight: 500;
     padding-bottom: 1px;
     border-bottom-width: 1.5px;
     width: 98vw;
-    max-width: 61vw;
+    max-width: 70vw;
     margin-bottom: -10px;
     margin-left: 2px;
   }
   .gallery-subtitle {
-    font-size: 1.5rem;
+    font-size: 22px;
     margin-right: 1px;
     max-width: 85vw;
     margin-bottom: 1px;
     margin-left: 2px;
   }
   .gallery-desc {
-    font-size: 9.5px;
+    font-size: 12px;
     max-width: 92vw;
     padding: 15px 0 0 0;
     margin-bottom: 6px;

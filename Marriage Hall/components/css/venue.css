@@ -220,12 +220,12 @@ body {
     top: 56%;
   }
   .slide-content h2 {
-    font-size: 0.75rem;
+    font-size: 16px;
     margin-bottom: 5px;
     line-height: 1.05;
   }
   .slide-content p {
-    font-size: 0.6rem;
+    font-size: 10px;
     margin-bottom: 7px;
     line-height: 1.1;
     padding-top: 6px;
