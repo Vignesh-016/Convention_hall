@@ -247,7 +247,7 @@
           slide.innerHTML = `
             <div class="testimonial-card">
               <div class="testimonial-left">
-                <h4>Testimonial</h4>
+                <h4 style="font-family: 'Mea Culpa', cursive;">Testimonial</h4>
                 <h2>WHAT THEY SAY ABOUT US?</h2>
                 <div class="quote-mark-left">"</div>
                 <div class="author-info">
@@ -351,6 +351,11 @@
         // Pause auto-play on hover
         this.track.addEventListener("mouseenter", () => this.stopAutoPlay());
         this.track.addEventListener("mouseleave", () => this.startAutoPlay());
+        
+        // Update carousel on window resize
+        window.addEventListener("resize", () => {
+          this.updateCarousel();
+        });
       }
     
       nextSlide() {
@@ -371,6 +376,7 @@
       }
     
       updateCarousel() {
+        // Always show 3-card animation (prev, active, next) on all screen sizes
         this.slides.forEach((slide) => {
           slide.classList.remove("active", "prev", "next");
           slide.style.display = "none";
@@ -495,9 +501,9 @@
             <!-- Content -->
             <div class="founder-content" data-aos="fade-left" data-aos-delay="320" data-aos-duration="1000">
               <p class="founder-title"><em>${founder.title}</em> <span class="dot"></span></p>
-              <h2><span class="highlight">${founder.name}</span></h2>
-              <hr class="divider">
-              <p class="description">${founder.description}</p>
+              <h2 style="letter-spacing: 0.07em; font-weight: 500; color: #780000"><span class="highlight">${founder.name}</span></h2>
+              <hr class="divider" style="margin-bottom: 28px;">
+              <p class="description" style="letter-spacing: 0.05rem;">${founder.description}</p>
             </div>
           `;
           
