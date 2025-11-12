@@ -13,6 +13,11 @@
           rel="stylesheet">
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link href="https://fonts.cdnfonts.com/css/lemon-milk" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- AOS Animation CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"/>
 
     <!-- CSS -->
     <link rel="stylesheet"
@@ -58,83 +63,118 @@
         </div>
     </header>
 
-    <!-- Hero Banner -->
-    <section class="hero-banner">
+    <!-- ====== Hero Section ====== -->
+    <section class="service-hero" data-aos="fade-up">
         <div class="overlay"></div>
-        <div class="hero-text">
-            <p>Home – Amenities</p>
+
+        <!-- Breadcrumbs -->
+        <div class="service-breadcrumbs" data-aos="fade-zoom-in" data-aos-delay="100" data-aos-duration="700">
+            <a href="../index.html">Home</a>
+            <span class="custom-separator" style="display: inline-block; vertical-align: middle; width: 32px; height: 16px; position: relative;">
+                <span style="
+                    position: absolute;
+                    left: 0; top: 50%;
+                    width: 20px;
+                    height: 3px;
+                    background: #fff;
+                    border-radius: 2px;
+                    transform: translateY(-50%);
+                "></span>
+                <span style="
+                    position: absolute;
+                    left: 18px; top: 50%;
+                    width: 8px;
+                    height: 8px;
+                    background: #fff;
+                    border-radius: 50%;
+                    box-shadow: 0 1px 6px 0 rgba(30,25,20,0.17);
+                    transform: translateY(-50%);
+                "></span>
+            </span>
+            <span class="current">Services</span>
         </div>
-        <div class="booking-form">
-            <form>
-                <div class="form-group">
-                    <label for="from">From</label>
-                    <div class="input-box">
-                        <i class="fa-solid fa-calendar-days"></i>
-                        <input type="date"
-                               id="from"
-                               value="2025-09-16" />
+
+        <!-- Booking Form -->
+        <div class="service-form-section" data-aos="fade-left" data-aos-delay="200" style="font-family: 'League Spartan', Arial, sans-serif;">
+            <form class="service-form" style="font-family: 'League Spartan', Arial, sans-serif;">
+                <div class="service-form-group" data-aos="fade-up" data-aos-delay="250" style="font-family: 'League Spartan', Arial, sans-serif;">
+                    <label for="service-from" style="font-family: 'League Spartan', Arial, sans-serif;  font-weight: 400;">From</label>
+                    <div style="display: flex; align-items: center; font-family: 'League Spartan', Arial, sans-serif;">
+                        <img src="../Contact Us/assets/uis_calender.png" alt="Calendar Icon" style="width: 22px; height: 22px; margin-right:7px;">
+                        <input type="date" id="service-from" name="from" placeholder="From" style="font-family: 'Lemon Milk', Arial, sans-serif; font-weight: 100;">
                     </div>
                 </div>
-                <div class="form-group">
-                    <label for="to">To</label>
-                    <div class="input-box">
-                        <i class="fa-solid fa-calendar-days"></i>
-                        <input type="date"
-                               id="to"
-                               value="2025-09-16" />
+                <div class="service-form-group" data-aos="fade-up" data-aos-delay="300" style="font-family: 'League Spartan', Arial, sans-serif;">
+                    <label for="service-to" style="font-family: 'League Spartan', Arial, sans-serif;  font-weight: 400;">To</label>
+                    <div style="display: flex; align-items: center; font-family: 'League Spartan', Arial, sans-serif;">
+                        <img src="../Contact Us/assets/uis_calender.png" alt="Calendar Icon" style="width: 22px; height: 22px; margin-right:7px;">
+                        <input type="date" id="service-to" name="to" placeholder="To" style="font-family: 'Lemon Milk', Arial, sans-serif; font-weight: 100;">
                     </div>
                 </div>
-                <div class="form-group">
-                    <label for="event">Event</label>
-                    <div class="input-box">
-                        <i class="fa-solid fa-building-columns"></i>
-                        <select id="event">
-                            <option>MARRIAGE</option>
-                            <option>BIRTHDAY</option>
-                            <option>CORPORATE</option>
+                <div class="service-form-group" data-aos="fade-up" data-aos-delay="350" style="font-family: 'League Spartan', Arial, sans-serif;">
+                    <label for="service-event" style="font-family: 'League Spartan', Arial, sans-serif;  font-weight: 400;">Event</label>
+                    <div style="display: flex; align-items: center; font-family: 'League Spartan', Arial, sans-serif;">
+                        <img src="../Contact Us/assets/streamline_city-hall-remix.png" alt="Calendar Icon" style="width: 22px; height: 22px; margin-right:7px;">
+                        <select id="service-event" name="event" style="font-family: 'Lemon Milk', Arial, sans-serif; font-weight: 100;">
+                            <option value="marriage" style="font-family: 'Lemon Milk', Arial, sans-serif;">MARRIAGE</option>
+                            <option value="birthday" style="font-family: 'Lemon Milk', Arial, sans-serif;">BIRTHDAY</option>
+                            <option value="corporate" style="font-family: 'Lemon Milk', Arial, sans-serif;">CORPORATE</option>
                         </select>
                     </div>
                 </div>
-                <div class="form-group">
-                    <label for="facility">Facilities</label>
-                    <div class="input-box">
-                        <i class="fa-solid fa-utensils"></i>
-                        <select id="facility">
-                            <option>CATERING</option>
-                            <option>DECORATION</option>
-                            <option>ENTERTAINMENT</option>
+                <div class="service-form-group" data-aos="fade-up" data-aos-delay="400" style="font-family: 'League Spartan', Arial, sans-serif;">
+                    <label for="service-facilities" style="font-family: 'League Spartan', Arial, sans-serif; font-weight: 400;">Facilities</label>
+                    <div style="display: flex; align-items: center; font-family: 'League Spartan', Arial, sans-serif;">
+                        <img src="../Contact Us/assets/settings.png" alt="Calendar Icon" style="width: 22px; height: 22px; margin-right:7px;">
+                        <select id="service-facilities" name="facilities" style="font-family: 'Lemon Milk', Arial, sans-serif; font-weight: 100;">
+                            <option value="catering" style="font-family: 'Lemon Milk', Arial, sans-serif;">CATERING</option>
+                            <option value="decoration" style="font-family: 'Lemon Milk', Arial, sans-serif;">DECORATION</option>
+                            <option value="entertainment" style="font-family: 'Lemon Milk', Arial, sans-serif;">ENTERTAINMENT</option>
                         </select>
                     </div>
                 </div>
-                <button type="submit"
-                        class="submit-btn">
-                    Submit <i class="fa-solid fa-arrow-right"></i>
-                </button>
+                <div class="service-submit" data-aos="zoom-in" data-aos-delay="480" style="font-family: 'League Spartan', Arial, sans-serif;">
+                    <button type="submit" style="font-family: 'League Spartan', Arial, sans-serif;"><i class="fas fa-arrow-right"></i> Submit</button>
+                </div>
             </form>
         </div>
     </section>
 
+    <!-- ====== JS just for hero fade-in ====== -->
+    <script>
+        window.addEventListener("load", () => {
+            document.querySelector(".service-hero").classList.add("loaded");
+        });
+    </script>
+
     <!-- Special Occasions Section -->
-    <!-- <section class="occasion-section">
+    <section class="occasion-section">
+        <div class="occasion-decorative-leaf">
+            <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M60 10C70 15 80 25 85 35C90 45 88 55 85 60C82 65 75 70 65 75C55 80 45 82 40 80C35 78 30 72 25 65C20 58 15 50 12 40C9 30 10 20 15 12C20 4 30 0 40 2C50 4 58 8 60 10Z" fill="#B8860B" opacity="0.8"/>
+            </svg>
+        </div>
+        <div class="occasion-decorative-circle-top"></div>
+        <div class="occasion-decorative-circle-bottom"></div>
         <div class="occasion-container">
             <div class="occasion-image-slices">
                 <div class="slice"
-                     style="background-image:url('../assets/Marraige\ Hall.png');"></div>
+                     style="background-image:url('../assets/Marraige Hall.png');"></div>
                 <div class="slice"
-                     style="background-image:url('../assets/Marraige\ Hall.png');"></div>
+                     style="background-image:url('../assets/Marraige Hall.png');"></div>
                 <div class="slice"
-                     style="background-image:url('../assets/Marraige\ Hall.png');"></div>
+                     style="background-image:url('../assets/Marraige Hall.png');"></div>
                 <div class="slice"
-                     style="background-image:url('../assets/Marraige\ Hall.png');"></div>
+                     style="background-image:url('../assets/Marraige Hall.png');"></div>
                 <div class="slice"
-                     style="background-image:url('../assets/Marraige\ Hall.png');"></div>
+                     style="background-image:url('../assets/Marraige Hall.png');"></div>
                 <div class="slice"
-                     style="background-image:url('../assets/Marraige\ Hall.png');"></div>
+                     style="background-image:url('../assets/Marraige Hall.png');"></div>
             </div>
             <div class="occasion-content">
                 <h2>Turning special occasions into unforgettable memories <span class="dot">•</span></h2>
                 <p>
-                    We believe that every story deserves to be celebrated in the most meaningful way. Your wedding, event, or special occasion is more than just a day—it’s a reflection of your journey, your style, and your dreams. That’s why we focus on blending creativity with elegance, paying attention to the smallest details that make the biggest impact.
+                    We believe that every story deserves to be celebrated in the most meaningful way. Your wedding, event, or special occasion is more than just a day—it's a reflection of your journey, your style, and your dreams. That's why we focus on blending creativity with elegance, paying attention to the smallest details that make the biggest impact. From curated décor and personalized themes to seamless planning and warm hospitality, we're here to craft an experience that tells your story.
                 </p>
                 <section class="facility-slider">
                     <div class="facility-track">
@@ -159,17 +199,17 @@
                 </section>
             </div>
         </div>
-    </section> -->
+    </section>
 
     <!-- ============================================ -->
     <!-- ===== NEW ANIMATED HALLS SECTION START ===== -->
     <!-- ============================================ -->
-    <section class="premier-halls-section">
+    <!-- <section class="premier-halls-section">
         <h2 class="section-title">Our Premier Halls & Venues</h2>
         <div class="slider-wrapper">
-            <div class="slider-container">
+            <div class="slider-container"> -->
                 <!-- Slide 1: Main Hall -->
-                <div class="slide active">
+                <!-- <div class="slide active">
                     <div class="content-wrapper">
                         <div class="main-banner"
                              style="background-image: url('https://i.imgur.com/gOa67B1.jpg');">
@@ -210,9 +250,9 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <!-- Slide 2: Garden Area -->
-                <div class="slide">
+                <!-- <div class="slide">
                     <div class="content-wrapper">
                         <div class="main-banner"
                              style="background-image: url('https://i.imgur.com/another-bg.jpg');">
@@ -254,14 +294,14 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- Interactive Animation Elements -->
-        <div id="interactive-overlay"></div>
+        <!-- <div id="interactive-overlay"></div>
         <div id="interactive-icon-loader">
             <span id="close-loader">×</span>
             <div class="loader-spinner"></div>
         </div>
-    </section>
+    </section> -->
     <!-- ========================================== -->
     <!-- ===== NEW ANIMATED HALLS SECTION END ===== -->
     <!-- ========================================== -->
@@ -312,6 +352,18 @@
             document.getElementById("navLinks").classList.toggle("mobile-active");
         }
     </script>
+    
+    <!-- AOS Animation JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 120,
+            easing: 'ease-in-out'
+        });
+    </script>
+    
     <script src="./service.js"></script>
 
     <footer class="footer">
