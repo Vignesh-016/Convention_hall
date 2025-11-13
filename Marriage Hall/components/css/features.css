@@ -17,17 +17,35 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  align-items: center;
-  text-align: center;
+  align-items: center; /* LEFT ALIGN */
+  text-align: left;      /* LEFT ALIGN */
   padding: 50px 20px;
   overflow: hidden;
   /* Removed box-shadow to prevent overlap outside the section */
+}
+
+/* White line under content */
+.moments-section::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  /* Place the line just below the main content but above the feature boxes and above the gradient */
+  bottom: 160px;
+  height: 2px;
+  background: #fff;
+  opacity: 1;
+  z-index: 5;
+  width: 15%;
+  margin: 0 auto;
+  border-radius: 1px;
+  pointer-events: none;
 }
 .moments-section::after {
   content: "";
   position: absolute;
   left: 0; right: 0; bottom: 0;
-  height: 160px;
+  height: 250px;
   pointer-events: none;
   z-index: 2;
   /* Soft black shadow from bottom fading up */
@@ -48,7 +66,7 @@ body {
 
 /* Heading and Text */
 .section-title {
-  font-size: 2.2rem;
+  font-size: 2.3rem;
   font-family: "Great Vibes", cursive;
   position: relative;
   z-index: 3;
@@ -57,14 +75,14 @@ body {
   display: inline-block;
   background: rgba(0,0,0,0.55);
   border-radius: 18px;
-  box-shadow: 0 6px 32px 0 rgba(0,0,0,0.35), 0 1.5px 6px 0 rgba(192,138,0,0.18);
+  box-shadow: 0 6px 32px 0 rgba(0, 0, 0, 0.46), 0 1.5px 6px 0 rgba(192,138,0,0.18);
   padding: 10px 32px 10px 32px;
   font-weight: 400; /* Reduced from default or bolder value */
 }
 .section-text {
   max-width: 900px;
   margin: 0 auto 40px;
-  font-size: 1rem;
+  font-size: 1.1rem;
   line-height: 1.6;
   position: relative;
   z-index: 3;
@@ -83,7 +101,7 @@ body {
 .feature-box {
   border: 1px solid #C08A00;
   padding: 10px 50px 10px 30px;
-  min-width: 350px;
+  min-width: 300px;
   border-radius: 6px;
   color: #fff;
   transition: 0.3s;
@@ -141,8 +159,8 @@ body {
   padding: 0;
   overflow: hidden;
 }
-.arrow.left { left: 20px; }
-.arrow.right { right: 20px; }
+.arrow.left { left: 50px; }
+.arrow.right { right: 50px; }
 .arrow:hover {
   background: #C08A00;
   color: #000;
@@ -168,6 +186,10 @@ body {
     min-height: 600px; /* Increased height for the whole section */
     padding-top: 60px;  /* Add extra top padding */
     padding-bottom: 60px; /* Add extra bottom padding */
+  }
+  .moments-section::before {
+    bottom: 160px;
+    width: 90%;
   }
   .section-title {
     font-size: 2rem;
@@ -198,6 +220,11 @@ body {
   .moments-section {
     height: auto;
     padding: 130px 15px;
+  }
+  .moments-section::before {
+    bottom: 180px;
+    width: 96%;
+    height: 1.5px;
   }
   .section-title {
     font-size: 1.8rem;
@@ -237,6 +264,11 @@ body {
 
 /* Small Mobile */
 @media (max-width: 480px) {
+  .moments-section::before {
+    bottom: 225px;
+    width: 98%;
+    height: 1px;
+  }
   .section-title {
     font-size: 1.8rem;
     line-height: 1.3;

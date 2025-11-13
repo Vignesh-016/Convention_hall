@@ -51,7 +51,7 @@ body {
 }
 
 .slide-content h2 {
-  font-size: 28px;
+  font-size: 32px;
   margin-bottom: 15px;
   font-weight: 600;
   line-height: 1.15;
@@ -59,8 +59,8 @@ body {
 }
 
 .slide-content p {
-  font-size: 15px;
-  line-height: 1.6;
+  font-size: 18px;
+  line-height: 1.2;
   margin-bottom: 20px;
   word-break: break-word;
   font-weight: 400;

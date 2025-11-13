@@ -67,11 +67,12 @@
 
 .cta-overlay h2 {
   font-size: 28px;
-  font-weight: 700;
-  color: #f9c536; /* golden yellow */
+  font-weight: 500;
+  color: #E8A700; /* golden yellow */
   margin-bottom: 12px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   letter-spacing: 1px;
+  font-family: 'Grotesque Demo', 'Inter', 'League Spartan', Arial, Helvetica, sans-serif;
 }
 
 .cta-overlay p {
