@@ -521,103 +521,131 @@
     }
 }
 
-/* =================== */
-/* FAQ SECTION         */
-/* =================== */
-.faq-section {
-    width: 100vw;
-    position: relative;
-    left: 50%;
-    right: 50%;
-    margin: 0 -50vw;
-    padding: 80px 0;
-    background: #fffaee;
+/* SERVICES PAGE FAQ */
+.service-faq-section {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  padding: 48px 0 70px 0;
+  background: #fdf8f3;
+  border-radius: 0;
+  box-shadow: none;
+  z-index: 1;
 }
 
-.faq-title {
-    font-family: "League Spartan", sans-serif;
-    text-align: center;
-    font-size: 32px;
-    margin-bottom: 40px;
-    color: #861010;
+.service-faq-title {
+  font-family: "League Spartan", sans-serif;
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 40px;
+  color: #861010;
+  font-weight: 400;
 }
 
-.faq-container {
-    max-width: 1100px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px 40px;
-    padding: 0 20px;
+.service-faq-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 40px;
+  max-width: 1050px;
+  margin: 0 auto;
 }
 
-.faq-column {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+.service-faq-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-.faq-item {
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.08);
-    overflow: hidden;
-    transition: all 0.3s ease;
+.service-faq-item {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+  transition: all 0.3s ease;
 }
 
-.faq-question {
-    width: 100%;
-    padding: 18px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-family: "League Spartan", sans-serif;
-    font-size: 18px;
-    font-weight: 600;
-    border: none;
-    background: none;
-    cursor: pointer;
-    color: #2c2c54;
-    letter-spacing: 0.5px;
-    word-spacing: 0.18em;
+.service-faq-item:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
 }
 
-.faq-icon {
-    font-size: 20px;
-    transition: transform 0.3s, color 0.3s;
+.service-faq-question {
+  width: 100%;
+  padding: 18px 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+  font-family: "League Spartan", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  background: none;
+  cursor: pointer;
+  outline: none;
+  color: #2c2c54;
+  letter-spacing: 0.5px;
 }
 
-.faq-answer {
-    max-height: 0;
-    overflow: hidden;
-    padding: 0 20px;
-    background: #fafafa;
-    transition: max-height 0.4s ease, padding 0.3s ease;
+.service-faq-icon {
+  font-size: 24px;
+  font-weight: bold;
+  min-width: 24px;
+  transition: all 0.3s ease;
+  color: #861010;
 }
 
-.faq-answer p {
-    font-family: "League Spartan", sans-serif;
-    font-size: 16px;
-    color: #333;
-    margin: 15px 0;
-    line-height: 1.5;
+.service-faq-icon::before {
+  content: '+';
 }
 
-.faq-item.active .faq-answer {
-    max-height: 200px;
-    padding: 15px 20px;
+.service-faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 20px 0 59px;
+  background: #fafafa;
+  transition: max-height 0.4s ease, padding 0.3s ease;
 }
 
-.faq-item.active .faq-icon {
-    transform: rotate(45deg);
-    color: green;
+.service-faq-answer p {
+  font-family: "League Spartan", sans-serif;
+  font-size: 16px;
+  color: #333;
+  margin: 15px 0;
+  line-height: 1.5;
 }
 
+/* ACTIVE */
+.service-faq-item.active .service-faq-answer {
+  max-height: 200px;
+  padding: 15px 20px 15px 59px;
+}
+
+.service-faq-item.active .service-faq-icon::before {
+  content: '−';
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .service-faq-container {
+    max-width: 900px;
+  }
+}
+@media (max-width: 992px) {
+  .service-faq-container {
+    max-width: 720px;
+  }
+}
 @media (max-width: 768px) {
-    .faq-container {
-        grid-template-columns: 1fr;
-    }
+  .service-faq-container {
+      grid-template-columns: 1fr;
+      max-width: 95vw;
+  }
 }
+
 
 /* ======================================= */
 /* ===== ANIMATED HALLS SECTION STYLES ===== */

@@ -72,7 +72,7 @@
   margin-bottom: 12px;
   /* text-transform: uppercase; */
   letter-spacing: 1px;
-  font-family: 'Grotesque Demo', 'Inter', 'League Spartan', Arial, Helvetica, sans-serif;
+  font-family: 'Grotesque Demo', Arial, Helvetica, sans-serif !important;
 }
 
 .cta-overlay p {
@@ -116,6 +116,7 @@
   }
   .cta-overlay h2 {
     font-size: 1.25rem;
+    font-family: 'Grotesque Demo', Arial, Helvetica, sans-serif !important;
   }
   .cta-overlay p {
     font-size: 13.5px;
@@ -158,6 +159,7 @@
   }
   .cta-overlay h2 {
     font-size: 22px;
+    font-family: 'Grotesque Demo', Arial, Helvetica, sans-serif !important;
   }
   .cta-overlay p {
     font-size: 13.5px;
@@ -197,6 +199,7 @@
   }
   .cta-overlay h2 {
     font-size: 17px;
+    font-family: 'Grotesque Demo', Arial, Helvetica, sans-serif !important;
   }
   .cta-overlay p {
     font-size: 12px;
@@ -241,6 +244,7 @@
   .cta-overlay h2 {
     font-size: 13px;
     line-height: 1.2;
+    font-family: 'Grotesque Demo', Arial, Helvetica, sans-serif !important;
   }
   .cta-overlay p {
     font-size: 9px;

@@ -43,7 +43,9 @@ class TestimonialCarousel {
         // this.nextBtn = document.getElementById('nextBtn');
         this.slides = [];
         
-        this.init();
+        if (this.track) {
+            this.init();
+        }
     }
     
     init() {
