@@ -19,6 +19,9 @@
     <!-- AOS Animation CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"/>
 
+     <!-- ADD THIS LINE FOR LEAGUE SPARTAN -->
+     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
     <!-- CSS -->
     <link rel="stylesheet"
           href="service.css" />
@@ -155,7 +158,7 @@
             </svg>
         </div>
         <div class="occasion-decorative-circle-top"></div>
-        <div class="occasion-decorative-circle-bottom"></div>
+       
         <div class="occasion-container">
             <div class="occasion-image-slices">
                 <div class="slice"
@@ -201,98 +204,71 @@
         </div>
     </section>
 
-    <!-- ============================================ -->
-    <!-- ===== NEW ANIMATED HALLS SECTION START ===== -->
-    <!-- ============================================ -->
-    <!-- <section class="premier-halls-section">
-        <h2 class="section-title">Our Premier Halls & Venues</h2>
-        <div class="slider-wrapper">
-            <div class="slider-container"> -->
-                <!-- Slide 1: Main Hall -->
-                <!-- <div class="slide active">
-                    <div class="content-wrapper">
-                        <div class="main-banner"
-                             style="background-image: url('https://i.imgur.com/gOa67B1.jpg');">
-                            <div class="location-pin"><span>M</span></div>
-                            <div class="main-hall-box">
-                                <h1 class="main-title">Main Hall</h1>
-                            </div>
-                            <p class="main-description">
-                                Our Main Hall Offers A Spacious And Elegant Setting, Perfect For Hosting Your Dream Wedding. With Modern Amenities And Timeless Decor, It Creates The Ideal Backdrop For Unforgettable Moments.
-                            </p>
+
+
+
+
+
+
+    
+
+<!-- ========================================================= -->
+<!-- ===== FINAL GSAP STACKING CARDS (DEFINITIVE VERSION) ===== -->
+<!-- ========================================================= -->
+<div class="pinning-container">
+    
+    <!-- This wrapper will be pinned to the screen -->
+    <div class="animation-wrapper">
+        
+        <!-- Layer 1: The Animating Cards (in the back) -->
+        <div class="cards-stack">
+            <!-- Card 1 -->
+            <div class="content-card" data-index="0">
+                <div class="card-grid-container">
+        
+                    <!-- ROW 1: Banner -->
+                    <div class="hall-banner">
+                        <div class="hall-title-box">
+                            <h1 class="hall-title" style="font-family: 'League Spartan', sans-serif;">Main Hall</h1>
                         </div>
+                        <p class="hall-description" style="font-family: 'League Spartan', sans-serif; letter-spacing: 0.05rem;">
+                            Our Main Hall offers a spacious and elegant setting, perfect for hosting your dream wedding. With modern amenities and timeless decor, it creates the ideal backdrop for unforgettable 
+                        </p>
+                        <div class="underline"></div>
+                    </div>
+            
+                    <!-- ROW 2: Features Grid -->
+                    <div class="features-grid-wrapper">
+                        <div class="feature-deco-circle left"></div>
+                        <div class="feature-deco-circle bottom"></div>
                         <div class="features-grid">
-                            <div class="feature-item highlight">
-                                <div class="feature-icon-wrapper"><img src="https://i.imgur.com/your-icon-1.png"
-                                         alt="Stage Icon"></div>
-                                <div class="feature-box">
-                                    <p class="feature-description">Grand Stage With Elegant Backdrop & Floral Decoration</p>
-                                </div>
-                                <div class="feature-line"></div>
-                            </div>
+                            <!-- Feature Item 1 -->
                             <div class="feature-item">
-                                <div id="interactive-icon"
-                                     class="feature-icon-wrapper"><img src="https://i.imgur.com/your-icon-2.png"
-                                         alt="Lighting Icon"></div>
-                                <p class="feature-description">LED Lighting With Customizable Color Themes</p>
-                                <div class="feature-line"></div>
+                                <div class="feature-icon"><img src="icon1.png" alt="Icon"></div>
+                                <p class="feature-text">Grand Stage With Elegant Backdrop & Floral Decoration</p>
                             </div>
+                            <!-- Feature Item 2 -->
                             <div class="feature-item">
-                                <div class="feature-icon-wrapper"><img src="https://i.imgur.com/your-icon-3.png"
-                                         alt="Guests Icon"></div>
-                                <p class="feature-description">600-1,000 Guests Can Visit</p>
-                                <div class="feature-line"></div>
+                                <div class="feature-icon"><img src="icon2.png" alt="Icon"></div>
+                                <p class="feature-text">LED Lighting With Customizable Color Themes</p>
                             </div>
+                            <!-- Feature Item 3 -->
                             <div class="feature-item">
-                                <div class="feature-icon-wrapper"><img src="https://i.imgur.com/your-icon-4.png"
-                                         alt="AC Icon"></div>
-                                <p class="feature-description">Central Air Conditioning & Premium Sound System</p>
+                                <div class="feature-icon"><img src="icon3.png" alt="Icon"></div>
+                                <p class="feature-text">600-1,000 Guests Can Visit</p>
+                            </div>
+                            <!-- Feature Item 4 -->
+                            <div class="feature-item">
+                                <div class="feature-icon"><img src="icon4.png" alt="Icon"></div>
+                                <p class="feature-text">Central Air Conditioning & Premium Sound System</p>
                             </div>
                         </div>
                     </div>
-                </div> -->
-                <!-- Slide 2: Garden Area -->
-                <!-- <div class="slide">
-                    <div class="content-wrapper">
-                        <div class="main-banner"
-                             style="background-image: url('https://i.imgur.com/another-bg.jpg');">
-                            <div class="location-pin"><span>G</span></div>
-                            <div class="main-hall-box">
-                                <h1 class="main-title">Garden Area</h1>
-                            </div>
-                            <p class="main-description">
-                                Discover our beautiful garden, a perfect outdoor setting for ceremonies and receptions, surrounded by lush greenery and romantic lighting.
-                            </p>
-                        </div>
-                        <div class="features-grid">
-                            <div class="feature-item highlight">
-                                <div class="feature-icon-wrapper"><img src="https://i.imgur.com/your-icon-1.png"
-                                         alt="Lawn Icon"></div>
-                                <div class="feature-box">
-                                    <p class="feature-description">Manicured Lawns & Scenic Views</p>
-                                </div>
-                                <div class="feature-line"></div>
-                            </div>
-                            <div class="feature-item">
-                                <div class="feature-icon-wrapper"><img src="https://i.imgur.com/your-icon-2.png"
-                                         alt="Lighting Icon"></div>
-                                <p class="feature-description">Ambient String Lighting & Uplighting</p>
-                                <div class="feature-line"></div>
-                            </div>
-                            <div class="feature-item">
-                                <div class="feature-icon-wrapper"><img src="https://i.imgur.com/your-icon-3.png"
-                                         alt="Guests Icon"></div>
-                                <p class="feature-description">Up to 300 Guests Seating Capacity</p>
-                                <div class="feature-line"></div>
-                            </div>
-                            <div class="feature-item">
-                                <div class="feature-icon-wrapper"><img src="https://i.imgur.com/your-icon-4.png"
-                                         alt="Sound Icon"></div>
-                                <p class="feature-description">Outdoor Sound System & Weather Contingency</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                </div> <!-- end .card-grid-container -->
+            </div>
+            <!-- Card 2 -->
+            <div class="content-card" data-index="1">
+                 <!-- Card 2 content goes here -->
             </div>
         </div> -->
         <!-- Interactive Animation Elements -->
@@ -451,6 +427,10 @@
           </div>
         </div>
       </footer>
+
+      <!-- 1. ADD GSAP & SCROLLTRIGGER LIBRARIES -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
 
 </body>
 
