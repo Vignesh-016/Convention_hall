@@ -277,10 +277,10 @@ body {
   transform: translateX(-50%);
   background: #fff;
   max-width: 1200px;
-  width: 90%;
+  width: 100%;
   padding: 30px 0;
   border-radius: 10px;
-  border: 2px solid #c08a00;
+  border: 2px solid #C08A00;
   box-shadow: 0 6px 24px rgba(0,0,0,0.12);
   display: flex;
   justify-content: center;
@@ -300,7 +300,7 @@ body {
 
 .contact-form-group {
   flex: 1;
-  min-width: 200px;
+  min-width: 230px;
   max-width: 200px;
   border: 1.5px solid #780000;
   border-radius: 7px;
@@ -402,7 +402,7 @@ body {
 ===================================================== */
 
 /* ===== Tablet View (max-width: 1024px) ===== */
-@media (max-width: 1424px) {
+/* @media (max-width: 1424px) {
   .contact-hero {
     height: auto;
     padding-bottom: 0;
@@ -410,10 +410,10 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
-  }
+  } */
 
   /* Breadcrumbs above the form */
-  .contact-breadcrumbs {
+  /* .contact-breadcrumbs {
     position: relative;
     bottom: -190px;
     left: -345px;
@@ -428,7 +428,6 @@ body {
     align-items: center;
   }
 
-  /* Use the desktop design but at a slightly smaller scale */
   .contact-form-section {
     position: absolute;
     bottom: -70px;
@@ -550,7 +549,7 @@ body {
     box-shadow: 0 4px 16px rgba(200,120,0,0.12);
     transform: translateY(-1px);
   }
-}
+} */
 
 @media (max-width: 1024px) {
   .contact-hero {
@@ -565,11 +564,11 @@ body {
   /* Breadcrumbs above the form - aligned to left of form */
   .contact-breadcrumbs {
     position: relative;
-    bottom: -190px;
+    bottom: -160px;
     left: 0;
     margin-top: 250px;
     margin-bottom: 30px;
-    margin-left: 5%;
+    margin-left: 9%;
     margin-right: auto;
     text-align: left;
     padding: 6px 14px;
@@ -585,7 +584,7 @@ body {
   /* Form container centered below banner */
   .contact-form-section {
     position: relative;
-    bottom: -170px;
+    bottom: -140px;
     left: unset;
     transform: none;
     margin: 0 auto 60px;
@@ -665,7 +664,7 @@ body {
     bottom: -170px;
     left: unset;
     transform: none;
-    margin: 0 auto 60px;
+    margin: 0 auto 150px;
     width: 90%;
     max-width: 600px;
     padding: 24px 28px;
@@ -741,9 +740,9 @@ body {
     bottom: -170px;
     left: unset;
     transform: none;
-    margin: 0 auto 60px;
+    margin: 0 auto 150px;
     width: 90%;
-    max-width: 420px;
+    max-width: 500px;
     padding: 28px 30px;
     display: flex;
     justify-content: center;
@@ -784,7 +783,7 @@ body {
   }
 }
 
-/* ===== Small Mobile View (max-width: 480px) ===== */
+ /* ===== Small Mobile View (max-width: 480px) ===== */
 @media (max-width: 480px) {
   .contact-hero {
     height: auto;
@@ -795,139 +794,200 @@ body {
     justify-content: flex-end;
   }
 
-  /* Breadcrumbs above the form - aligned to left of form */
   .contact-breadcrumbs {
     position: relative;
-    bottom: -190px;
+    bottom: -140px;
     left: 0;
-    margin-top: 250px;
-    margin-bottom: 30px;
-    margin-left: 5%;
+    margin-top: 150px;
+    margin-bottom: 20px;
+    margin-left: 4vw;
     margin-right: auto;
     text-align: left;
-    padding: 6px 14px;
+    padding: 6px 10px;
     border-radius: 8px;
-    font-size: 12px;
+    font-size: 13px;
     display: inline-flex;
     justify-content: flex-start;
     align-items: center;
+    min-width: 0;
     width: fit-content;
-    max-width: calc(90% - 20px);
+    max-width: 94vw;
+    background: rgba(255,255,255,0.86);
+    box-shadow: 0 1px 5px rgba(0,0,0,0.04);
   }
 
-  /* Form container centered below banner */
   .contact-form-section {
     position: relative;
-    bottom: -170px;
+    bottom: 0;
     left: unset;
     transform: none;
-    margin: 0 auto 60px;
-    width: 90%;
-    max-width: 320px;
-    padding: 24px 28px;
+    margin: 0 auto 34px auto;
+    width: 98vw;
+    max-width: 98vw;
+    min-width: 0;
+    padding: 12px 3vw 22px 3vw;
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.10);
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow-x: auto;
+    z-index: 20;
   }
 
   .contact-form {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 18px 24px;
+    grid-template-columns: 1fr;
+    gap: 13px 0;
     width: 100%;
+    max-width: 440px;
   }
 
   .contact-form-group {
-    min-width: auto;
+    min-width: 0;
     max-width: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 6px 2px;
+    border-radius: 7px;
+    border: 1px solid #bcbbbb82;
+    background: #fcfcfc;
+    display: flex;
+    flex-direction: column;
   }
 
-  .contact-form-group input {
-    width: 60%;
+  .contact-form-group label {
+    font-size: 11px;
+    font-weight: 500;
+    margin-bottom: 3px;
+    margin-left: 14px;
+    color: #5c5c5c;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .contact-form-group input,
+  .contact-form-group select {
+    font-size: 13px !important;
+    padding: 7px 6vw 7px 12px !important;
+    width: 100% !important;
+    min-width: 0;
+    background: #f5ecec;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    color: #333;
+    margin: 0;
+  }
+
+  .contact-form-group select {
+    background-image: url("../Contact Us/assets/dropdonw.png");
+    background-repeat: no-repeat;
+    background-position: calc(100% - 10px) 50%;
+    background-size: 20px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+  }
+
+  .contact-form-group select:focus {
+    background-image: url("../Contact Us/assets/updown.png");
+  }
+
+  .contact-form-group input[type="date"]::-webkit-input-placeholder,
+  .contact-form-group input[type="text"]::-webkit-input-placeholder {
+    color: #9a9a9a;
+    font-weight: 500;
+    font-size: 13px;
+  }
+  .contact-form-group input[type="date"]::placeholder,
+  .contact-form-group input[type="text"]::placeholder {
+    color: #9a9a9a;
+    font-weight: 500;
+    font-size: 13px;
   }
 
   .contact-submit {
     grid-column: 1 / -1;
     text-align: center;
-    margin-top: 12px;
+    margin-top: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
   }
 
   .contact-submit button {
-    width: 50%;
-    min-width: 200px;
-    padding: 12px 0;
-    font-size: 13px;
+    width: 90%;
+    min-width: 120px;
+    max-width: 320px;
+    padding: 13px 0;
+    font-size: 15px;
+    margin: 0 auto;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    background: linear-gradient(135deg, #8b0000, #780000);
+    color: #fff;
+    border: none;
+    box-shadow: 0 2px 8px rgba(120,0,0,0.14);
+    transition: background 0.2s, box-shadow 0.2s;
+  }
+
+  .contact-submit button:hover, .contact-submit button:focus {
+    background: linear-gradient(135deg, #a52a2a, #8b0000);
+    box-shadow: 0 4px 16px rgba(160,80,0,0.15);
   }
 }
 
+/* Even smaller devices: stack more compactly */
 @media (max-width: 365px) {
   .contact-hero {
-    height: auto;
     padding-bottom: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
+    min-height: 160px;
   }
 
-  /* Breadcrumbs above the form - aligned to left of form */
   .contact-breadcrumbs {
-    position: relative;
-    bottom: -190px;
-    left: 0;
-    margin-top: 250px;
-    margin-bottom: 30px;
-    margin-left: 5%;
-    margin-right: auto;
-    text-align: left;
-    padding: 6px 14px;
-    border-radius: 8px;
-    font-size: 12px;
-    display: inline-flex;
-    justify-content: flex-start;
-    align-items: center;
-    width: fit-content;
-    max-width: calc(90% - 20px);
+    margin-top: 90px;
+    padding: 3px 5px;
+    font-size: 10.5px;
+    max-width: 98vw;
   }
 
-  /* Form container centered below banner */
   .contact-form-section {
-    position: relative;
-    bottom: -170px;
-    left: unset;
-    transform: none;
-    margin: 0 auto 60px;
-    width: 90%;
-    max-width: 250px;
-    padding: 24px 28px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin: 0 auto 22px auto;
+    width: 99vw;
+    max-width: 99vw;
+    padding: 4px 1.5vw 12px 1.5vw;
+    border-radius: 9px;
   }
 
   .contact-form {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 18px 24px;
-    width: 100%;
+    grid-template-columns: 1fr;
+    gap: 8px 0;
+    max-width: 99vw;
   }
 
-  .contact-form-group {
-    min-width: auto;
-    max-width: 100%;
+  .contact-form-group label {
+    font-size: 10px;
+    margin-left: 7px;
   }
-
-  .contact-submit {
-    grid-column: 1 / -1;
-    text-align: center;
-    margin-top: 12px;
+  .contact-form-group input,
+  .contact-form-group select {
+    font-size: 12px !important;
+    padding: 6px 2vw 6px 7px !important;
   }
-
   .contact-submit button {
-    width: 50%;
-    min-width: 200px;
-    padding: 12px 0;
+    width: 96%;
+    min-width: 74px;
+    padding: 10px 0;
     font-size: 13px;
+    border-radius: 7px;
   }
 }
   
@@ -1194,8 +1254,11 @@ body {
       flex-direction: column;
       align-items: center;
       gap: 2rem;
-      margin: 40px 16px 2rem 16px;
-      padding: 32px 20px;
+      margin: 80px 16px 2rem 16px;
+      padding-top: 32px;
+      padding-bottom: 32px;
+      padding-left: 20px;
+      padding-right: 20px;
     }
     
     .images-wrapper {
@@ -1848,11 +1911,6 @@ body {
   .arrow.right { right: 8px; }
 }
 
-/* Combined External CSS File */
-
-/* Combined External CSS File - Refined for Alignment 300px-990px */
-
-/* Combined External CSS File - Final attempt for exact design from 300px to 990px */
 
 /* === GLOBAL / BASE STYLES === */
 .testimonial-section {
@@ -2877,55 +2935,6 @@ body {
     opacity: 0.9;
   }
   
-  /* .newsletter form {
-    display: flex;
-    align-items: center;
-    background: #a67c00;
-    border-radius: 8px;
-    overflow: hidden;
-    max-width: 320px;
-    margin: 0 auto;
-    box-shadow: none;
-    padding: 0 8px 0 0;
-    height: 56px;
-  }
-
-  .newsletter input {
-    flex: 1;
-    padding: 0 0 0 16px;
-    height: 56px;
-    border: none;
-    font-size: 16px;
-    background: transparent;
-    color: #fff;
-    outline: none;
-    font-family: inherit;
-    letter-spacing: 0.01em;
-  }
-
-  .newsletter input::placeholder {
-    color: #fff;
-    opacity: 0.95;
-    font-size: 16px;
-    font-family: inherit;
-  }
-
-  .newsletter button {
-    background: transparent;
-    border: none;
-    padding: 0 15px 0 10px;
-    cursor: pointer;
-    color: #fff;
-    font-size: 20px;
-    display: flex;
-    align-items: center;
-    transition: color 0.2s;
-    height: 56px;
-  }
-
-  .newsletter button:hover {
-    color: #f1c40f;
-  } */
   
   .footer-bottom {
     max-width: 1200px;

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Marriage Hall – About Us</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@400&family=League+Spartan:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+<!-- External CSS -->
+<link rel="stylesheet" href="banner.css" />
+
+</head>
+<body>
+
+<!-- HAMBURGER -->
+<div class="mobile-menu-btn" onclick="toggleMenu()">
+  <div></div><div></div><div></div>
+</div>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="contact.html">Contact Us</a></li>
+  </ul>
+</div>
+
+<!-- HERO -->
+<section class="hero-section">
+
+  <img src="./figma/sec_1_bg_img.jpg" class="hero-bg">
+  <div class="overlay"></div>
+
+  <div class="location-strip">
+    <img src="./figma/sec_1_location.png">
+    <span>Anna Nagar, Sivamorni Nagar, Nagercoil</span>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="facilities.html">Facilities</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <div class="breadcrumb">Home → About Us</div>
+
+  <!-- FORM -->
+  <div class="form-container">
+    <div class="booking-form-wrapper gold-border">
+      <form class="form-flex">
+
+        <div class="outer-box">
+          <label>From</label>
+          <div class="input-row">
+            <div class="icon-box">
+              <img src="./figma/sec_1_form_ico_1.png">
+            </div>
+            <div class="input-field">
+              <input type="date">
+            </div>
+          </div>
+        </div>
+
+        <div class="outer-box">
+          <label>To</label>
+          <div class="input-row">
+            <div class="icon-box">
+              <img src="./figma/sec_1_form_ico_1.png">
+            </div>
+            <div class="input-field">
+              <input type="date">
+            </div>
+          </div>
+        </div>
+
+        <div class="outer-box">
+          <label>Event</label>
+          <div class="input-row">
+            <div class="icon-box">
+              <img src="./figma/sec_1_form_ico_2.png">
+            </div>
+            <div class="input-field">
+              <select>
+                <option>MARRIAGE</option>
+                <option>RECEPTION</option>
+              </select>
+              <img src="./figma/sec_1_dropdown.png" class="dropdown-icon">
+            </div>
+          </div>
+        </div>
+
+        <div class="outer-box">
+          <label>Facilities</label>
+          <div class="input-row">
+            <div class="icon-box">
+              <img src="./figma/sec_1_form_ico_3.png">
+            </div>
+            <div class="input-field">
+              <select>
+                <option>CATERING</option>
+                <option>DECORATION</option>
+              </select>
+              <img src="./figma/sec_1_dropdown.png" class="dropdown-icon">
+            </div>
+          </div>
+        </div>
+
+        <button class="submit-btn">
+          → <span>Submit</span>
+        </button>
+
+      </form>
+    </div>
+  </div>
+
+</section>
+
+<script>
+function toggleMenu() {
+  document.getElementById("mobileMenu").classList.toggle("open");
+}
+</script>
+
+</body>
+</html>

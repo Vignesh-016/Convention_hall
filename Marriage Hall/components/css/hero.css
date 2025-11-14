@@ -41,7 +41,7 @@
     display: block;
     width: 120px;
     height: 3px;
-    background: #c08a00;
+    background: linear-gradient(90deg, #C08A00 100%, #5A4100 100%);
     opacity: 100;
     margin: 18px auto 0 auto; /* Reduce space above the line */
     border-radius: 2px;

@@ -27,18 +27,18 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-// ============================
-// FAQ SECTION SCRIPT
-// ============================
-document.addEventListener("DOMContentLoaded", () => {
-    const faqs = document.querySelectorAll(".faq-item");
-    faqs.forEach((faq) => {
-        const button = faq.querySelector(".faq-question");
-        button.addEventListener("click", () => {
-            const isActive = faq.classList.contains("active");
-            faqs.forEach((item) => item.classList.remove("active"));
-            if (!isActive) faq.classList.add("active");
-        });
+// SERVICES PAGE FAQ TOGGLE
+const serviceFaqs = document.querySelectorAll(".service-faq-item");
+
+serviceFaqs.forEach((faq) => {
+    const btn = faq.querySelector(".service-faq-question");
+
+    btn.addEventListener("click", () => {
+        const isOpen = faq.classList.contains("active");
+
+        serviceFaqs.forEach(f => f.classList.remove("active"));
+
+        if (!isOpen) faq.classList.add("active");
     });
 });
 
