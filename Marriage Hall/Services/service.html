@@ -31,124 +31,7 @@
 
 <body>
 
-    <!-- HEADER COMPONENT -->
-    <header class="header"
-            id="header">
-        <div class="container">
-            <div class="location-info">
-                <i class="fas fa-map-marker-alt"></i>
-                <span>Anna Nagar, Sinnamani Nagar, Thoothukudi, Tamil Nadu 628008</span>
-            </div>
-            <div style="width: 100vw; position: relative; left: 50%; right: 50%; margin-left: -50vw; margin-right: -50vw;">
-                <hr style="border: none; border-top: 1px solid rgba(255, 255, 255, 0.3); margin: 0;">
-            </div>
-            <nav class="navbar">
-                <button class="mobile-menu-btn"
-                        onclick="toggleMenu()">☰</button>
-                <ul class="nav-links"
-                    id="navLinks">
-                    <li><a href="../index.html"
-                           class="nav-link">Home</a></li>
-                    <li><a href="../About us/aboutus.html"
-                           class="nav-link">About Us</a></li>
-                    <li><a href="./service.html"
-                           class="nav-link">Services</a></li>
-                    <!-- <li><a href="#"
-                           class="nav-link active">Amenities</a></li>
-                    <li><a href="#gallery"
-                           class="nav-link">Gallery</a></li>
-                    <li><a href="#blog"
-                           class="nav-link">Blog</a></li> -->
-                    <li><a href="../Contact Us/Contact.html"
-                           class="nav-link">Contact Us</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
 
-    <!-- ====== Hero Section ====== -->
-    <section class="service-hero" data-aos="fade-up">
-        <div class="overlay"></div>
-
-        <!-- Breadcrumbs -->
-        <div class="service-breadcrumbs" data-aos="fade-zoom-in" data-aos-delay="100" data-aos-duration="700">
-            <a href="../index.html">Home</a>
-            <span class="custom-separator" style="display: inline-block; vertical-align: middle; width: 32px; height: 16px; position: relative;">
-                <span style="
-                    position: absolute;
-                    left: 0; top: 50%;
-                    width: 20px;
-                    height: 3px;
-                    background: #fff;
-                    border-radius: 2px;
-                    transform: translateY(-50%);
-                "></span>
-                <span style="
-                    position: absolute;
-                    left: 18px; top: 50%;
-                    width: 8px;
-                    height: 8px;
-                    background: #fff;
-                    border-radius: 50%;
-                    box-shadow: 0 1px 6px 0 rgba(30,25,20,0.17);
-                    transform: translateY(-50%);
-                "></span>
-            </span>
-            <span class="current">Services</span>
-        </div>
-
-        <!-- Booking Form -->
-        <div class="service-form-section" data-aos="fade-left" data-aos-delay="200" style="font-family: 'League Spartan', Arial, sans-serif;">
-            <form class="service-form" style="font-family: 'League Spartan', Arial, sans-serif;">
-                <div class="service-form-group" data-aos="fade-up" data-aos-delay="250" style="font-family: 'League Spartan', Arial, sans-serif;">
-                    <label for="service-from" style="font-family: 'League Spartan', Arial, sans-serif;  font-weight: 400;">From</label>
-                    <div style="display: flex; align-items: center; font-family: 'League Spartan', Arial, sans-serif;">
-                        <img src="../Contact Us/assets/uis_calender.png" alt="Calendar Icon" style="width: 22px; height: 22px; margin-right:7px;">
-                        <input type="date" id="service-from" name="from" placeholder="From" style="font-family: 'Lemon Milk', Arial, sans-serif; font-weight: 100;">
-                    </div>
-                </div>
-                <div class="service-form-group" data-aos="fade-up" data-aos-delay="300" style="font-family: 'League Spartan', Arial, sans-serif;">
-                    <label for="service-to" style="font-family: 'League Spartan', Arial, sans-serif;  font-weight: 400;">To</label>
-                    <div style="display: flex; align-items: center; font-family: 'League Spartan', Arial, sans-serif;">
-                        <img src="../Contact Us/assets/uis_calender.png" alt="Calendar Icon" style="width: 22px; height: 22px; margin-right:7px;">
-                        <input type="date" id="service-to" name="to" placeholder="To" style="font-family: 'Lemon Milk', Arial, sans-serif; font-weight: 100;">
-                    </div>
-                </div>
-                <div class="service-form-group" data-aos="fade-up" data-aos-delay="350" style="font-family: 'League Spartan', Arial, sans-serif;">
-                    <label for="service-event" style="font-family: 'League Spartan', Arial, sans-serif;  font-weight: 400;">Event</label>
-                    <div style="display: flex; align-items: center; font-family: 'League Spartan', Arial, sans-serif;">
-                        <img src="../Contact Us/assets/streamline_city-hall-remix.png" alt="Calendar Icon" style="width: 22px; height: 22px; margin-right:7px;">
-                        <select id="service-event" name="event" style="font-family: 'Lemon Milk', Arial, sans-serif; font-weight: 100;">
-                            <option value="marriage" style="font-family: 'Lemon Milk', Arial, sans-serif;">MARRIAGE</option>
-                            <option value="birthday" style="font-family: 'Lemon Milk', Arial, sans-serif;">BIRTHDAY</option>
-                            <option value="corporate" style="font-family: 'Lemon Milk', Arial, sans-serif;">CORPORATE</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="service-form-group" data-aos="fade-up" data-aos-delay="400" style="font-family: 'League Spartan', Arial, sans-serif;">
-                    <label for="service-facilities" style="font-family: 'League Spartan', Arial, sans-serif; font-weight: 400;">Facilities</label>
-                    <div style="display: flex; align-items: center; font-family: 'League Spartan', Arial, sans-serif;">
-                        <img src="../Contact Us/assets/settings.png" alt="Calendar Icon" style="width: 22px; height: 22px; margin-right:7px;">
-                        <select id="service-facilities" name="facilities" style="font-family: 'Lemon Milk', Arial, sans-serif; font-weight: 100;">
-                            <option value="catering" style="font-family: 'Lemon Milk', Arial, sans-serif;">CATERING</option>
-                            <option value="decoration" style="font-family: 'Lemon Milk', Arial, sans-serif;">DECORATION</option>
-                            <option value="entertainment" style="font-family: 'Lemon Milk', Arial, sans-serif;">ENTERTAINMENT</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="service-submit" data-aos="zoom-in" data-aos-delay="480" style="font-family: 'League Spartan', Arial, sans-serif;">
-                    <button type="submit" style="font-family: 'League Spartan', Arial, sans-serif;"><i class="fas fa-arrow-right"></i> Submit</button>
-                </div>
-            </form>
-        </div>
-    </section>
-
-    <!-- ====== JS just for hero fade-in ====== -->
-    <script>
-        window.addEventListener("load", () => {
-            document.querySelector(".service-hero").classList.add("loaded");
-        });
-    </script>
 
     <!-- Special Occasions Section -->
     <section class="occasion-section">
@@ -229,9 +112,9 @@
                     <!-- ROW 1: Banner -->
                     <div class="hall-banner">
                         <div class="hall-title-box">
-                            <h1 class="hall-title" style="font-family: 'League Spartan', sans-serif;">Main Hall</h1>
+                            <h1 class="hall-title" style="font-family: 'League Spartan', sans-serif; font-weight: 400; letter-spacing: 0.04rem;">Main Hall</h1>
                         </div>
-                        <p class="hall-description" style="font-family: 'League Spartan', sans-serif; letter-spacing: 0.05rem;">
+                        <p class="hall-description" style="font-family: 'League Spartan', sans-serif; letter-spacing: 0.05rem; font-weight: 400; ">
                             Our Main Hall offers a spacious and elegant setting, perfect for hosting your dream wedding. With modern amenities and timeless decor, it creates the ideal backdrop for unforgettable 
                         </p>
                         <div class="underline"></div>
@@ -244,23 +127,27 @@
                         <div class="features-grid">
                             <!-- Feature Item 1 -->
                             <div class="feature-item">
-                                <div class="feature-icon"><img src="icon1.png" alt="Icon"></div>
-                                <p class="feature-text">Grand Stage With Elegant Backdrop & Floral Decoration</p>
+                                <div class="feature-icon icon-1"></div>
+
+                                <p class="feature-text" style="letter-spacing: 0.03rem;">Grand Stage With Elegant Backdrop & Floral Decoration</p>
                             </div>
                             <!-- Feature Item 2 -->
                             <div class="feature-item">
-                                <div class="feature-icon"><img src="icon2.png" alt="Icon"></div>
-                                <p class="feature-text">LED Lighting With Customizable Color Themes</p>
+                                <div class="feature-icon icon-2"></div>
+
+                                <p class="feature-text" style="letter-spacing: 0.03rem;">LED Lighting With Customizable Color Themes</p>
                             </div>
                             <!-- Feature Item 3 -->
                             <div class="feature-item">
-                                <div class="feature-icon"><img src="icon3.png" alt="Icon"></div>
-                                <p class="feature-text">600-1,000 Guests Can Visit</p>
+                                <div class="feature-icon icon-3"></div>
+
+                                <p class="feature-text" style="letter-spacing: 0.03rem;">600-1,000 Guests Can Visit</p>
                             </div>
                             <!-- Feature Item 4 -->
                             <div class="feature-item">
-                                <div class="feature-icon"><img src="icon4.png" alt="Icon"></div>
-                                <p class="feature-text">Central Air Conditioning & Premium Sound System</p>
+                                <div class="feature-icon icon-4"></div>
+
+                                <p class="feature-text" style="letter-spacing: 0.03rem;">Central Air Conditioning & Premium Sound System</p>
                             </div>
                         </div>
                     </div>
@@ -269,14 +156,149 @@
             <!-- Card 2 -->
             <div class="content-card" data-index="1">
                  <!-- Card 2 content goes here -->
+                 <div class="card-grid-container">
+        
+                    <!-- ROW 1: Banner -->
+                    <div class="hall-banner">
+                        <div class="hall-title-box">
+                            <h1 class="hall-title" style="font-family: 'League Spartan', sans-serif; font-weight: 400; letter-spacing: 0.04rem;">Main Hall</h1>
+                        </div>
+                        <p class="hall-description" style="font-family: 'League Spartan', sans-serif; letter-spacing: 0.05rem; font-weight: 400; ">
+                            Our Main Hall offers a spacious and elegant setting, perfect for hosting your dream wedding. With modern amenities and timeless decor, it creates the ideal backdrop for unforgettable 
+                        </p>
+                        <div class="underline"></div>
+                    </div>
+            
+                    <!-- ROW 2: Features Grid -->
+                    <div class="features-grid-wrapper">
+                        <div class="feature-deco-circle left"></div>
+                        <div class="feature-deco-circle bottom"></div>
+                        <div class="features-grid">
+                            <!-- Feature Item 1 -->
+                            <div class="feature-item">
+                                <div class="feature-icon icon-1"></div>
+
+                                <p class="feature-text" style="letter-spacing: 0.03rem;">Grand Stage With Elegant Backdrop & Floral Decoration</p>
+                            </div>
+                            <!-- Feature Item 2 -->
+                            <div class="feature-item">
+                                <div class="feature-icon icon-2"></div>
+
+                                <p class="feature-text" style="letter-spacing: 0.03rem;">LED Lighting With Customizable Color Themes</p>
+                            </div>
+                            <!-- Feature Item 3 -->
+                            <div class="feature-item">
+                                <div class="feature-icon icon-3"></div>
+
+                                <p class="feature-text" style="letter-spacing: 0.03rem;">600-1,000 Guests Can Visit</p>
+                            </div>
+                            <!-- Feature Item 4 -->
+                            <div class="feature-item">
+                                <div class="feature-icon icon-4"></div>
+
+                                <p class="feature-text" style="letter-spacing: 0.03rem;">Central Air Conditioning & Premium Sound System</p>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
             </div>
             <!-- Card 3 -->
             <div class="content-card" data-index="2">
                  <!-- Card 3 content goes here -->
+                 <div class="card-grid-container">
+        
+                    <!-- ROW 1: Banner -->
+                    <div class="hall-banner">
+                        <div class="hall-title-box">
+                            <h1 class="hall-title" style="font-family: 'League Spartan', sans-serif; font-weight: 400; letter-spacing: 0.04rem;">Main Hall</h1>
+                        </div>
+                        <p class="hall-description" style="font-family: 'League Spartan', sans-serif; letter-spacing: 0.05rem; font-weight: 400; ">
+                            Our Main Hall offers a spacious and elegant setting, perfect for hosting your dream wedding. With modern amenities and timeless decor, it creates the ideal backdrop for unforgettable 
+                        </p>
+                        <div class="underline"></div>
+                    </div>
+            
+                    <!-- ROW 2: Features Grid -->
+                    <div class="features-grid-wrapper">
+                        <div class="feature-deco-circle left"></div>
+                        <div class="feature-deco-circle bottom"></div>
+                        <div class="features-grid">
+                            <!-- Feature Item 1 -->
+                            <div class="feature-item">
+                                <div class="feature-icon icon-1"></div>
+
+                                <p class="feature-text" style="letter-spacing: 0.03rem;">Grand Stage With Elegant Backdrop & Floral Decoration</p>
+                            </div>
+                            <!-- Feature Item 2 -->
+                            <div class="feature-item">
+                                <div class="feature-icon icon-2"></div>
+
+                                <p class="feature-text" style="letter-spacing: 0.03rem;">LED Lighting With Customizable Color Themes</p>
+                            </div>
+                            <!-- Feature Item 3 -->
+                            <div class="feature-item">
+                                <div class="feature-icon icon-3"></div>
+
+                                <p class="feature-text" style="letter-spacing: 0.03rem;">600-1,000 Guests Can Visit</p>
+                            </div>
+                            <!-- Feature Item 4 -->
+                            <div class="feature-item">
+                                <div class="feature-icon icon-4"></div>
+
+                                <p class="feature-text" style="letter-spacing: 0.03rem;">Central Air Conditioning & Premium Sound System</p>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
             </div>
             <!-- Card 4 -->
             <div class="content-card" data-index="3">
                  <!-- Card 4 content goes here -->
+                   <div class="card-grid-container">
+        
+                    <!-- ROW 1: Banner -->
+                    <div class="hall-banner">
+                        <div class="hall-title-box">
+                            <h1 class="hall-title" style="font-family: 'League Spartan', sans-serif; font-weight: 400; letter-spacing: 0.04rem;">Main Hall</h1>
+                        </div>
+                        <p class="hall-description" style="font-family: 'League Spartan', sans-serif; letter-spacing: 0.05rem; font-weight: 400; ">
+                            Our Main Hall offers a spacious and elegant setting, perfect for hosting your dream wedding. With modern amenities and timeless decor, it creates the ideal backdrop for unforgettable 
+                        </p>
+                        <div class="underline"></div>
+                    </div>
+            
+                    <!-- ROW 2: Features Grid -->
+                    <div class="features-grid-wrapper">
+                        <div class="feature-deco-circle left"></div>
+                        <div class="feature-deco-circle bottom"></div>
+                        <div class="features-grid">
+                            <!-- Feature Item 1 -->
+                            <div class="feature-item">
+                                <div class="feature-icon icon-1"></div>
+
+                                <p class="feature-text" style="letter-spacing: 0.03rem;">Grand Stage With Elegant Backdrop & Floral Decoration</p>
+                            </div>
+                            <!-- Feature Item 2 -->
+                            <div class="feature-item">
+                                <div class="feature-icon icon-2"></div>
+
+                                <p class="feature-text" style="letter-spacing: 0.03rem;">LED Lighting With Customizable Color Themes</p>
+                            </div>
+                            <!-- Feature Item 3 -->
+                            <div class="feature-item">
+                                <div class="feature-icon icon-3"></div>
+
+                                <p class="feature-text" style="letter-spacing: 0.03rem;">600-1,000 Guests Can Visit</p>
+                            </div>
+                            <!-- Feature Item 4 -->
+                            <div class="feature-item">
+                                <div class="feature-icon icon-4"></div>
+
+                                <p class="feature-text" style="letter-spacing: 0.03rem;">Central Air Conditioning & Premium Sound System</p>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
             </div>
         </div>
 

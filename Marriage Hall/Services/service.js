@@ -159,7 +159,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // Create the ScrollTrigger that controls the pinning and the timeline
     ScrollTrigger.create({
         trigger: ".pinning-container",
-        start: "top top",
+        start: "top+=300 center",
         end: "+=300%",
         
         // THE CRITICAL FIX:
@@ -172,3 +172,19 @@ document.addEventListener("DOMContentLoaded", function() {
         anticipatePin: 1
     });
 });
+
+
+document.querySelectorAll('.feature-icon img').forEach(img => {
+    const defaultSrc = img.getAttribute('data-default');
+    const hoverSrc = img.getAttribute('data-hover');
+    const item = img.closest('.feature-item');
+  
+    item.addEventListener('mouseenter', () => {
+      img.src = hoverSrc;
+    });
+  
+    item.addEventListener('mouseleave', () => {
+      img.src = defaultSrc;
+    });
+  });
+
