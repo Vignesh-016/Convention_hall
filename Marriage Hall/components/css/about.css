@@ -58,16 +58,17 @@
 
 .about-subtitle {
   font-style: italic;
-  font-size: 33px;
+  font-size: 35px;
   color: #333;
   display: flex;
   align-items: center;
   gap: 6px;
+  margin-bottom: -15px;
 }
 
 .about-subtitle .dot {
-  width: 8px;
-  height: 8px;
+  width: 12px;
+  height: 12px;
   background: #7a0a0a;
   border-radius: 50%;
 }
@@ -91,10 +92,12 @@
 
 .about-text {
   font-size: 14px;
+  font-weight: 450;
   line-height: 1.8;
   color: #444;
   margin-bottom: 25px;
   max-width: 90%;
+  text-align: justify;
 }
 
 /* Counters */
@@ -120,14 +123,14 @@
 
 .counter-number {
   font-size: 28px;
-  font-weight: 700;
+  font-weight: 525;
   color: #c08a00;
 }
 
 .counter-text div {
   font-size: 12px;
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 350;
   color: #333;
   letter-spacing: 0.5px;
 }
@@ -135,7 +138,7 @@
 /* CTA Button */
 .legacy-btn {
   display: inline-block;
-  padding: 14px 130px;
+  padding: 6px 130px;
   background: #7a0a0a;
   color: #fff;
   border-radius: 6px;
@@ -250,7 +253,7 @@
   .legacy-btn {
     width: 100%;
     padding: 12px;
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 
@@ -285,6 +288,18 @@
     width: 100%;
     justify-content: center;
     text-align: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .counter-text div {
+    font-size: 10px;
+  }
+
+  .counter-number {
+    font-size: 20px;
   }
 
   .legacy-btn {
