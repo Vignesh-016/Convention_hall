@@ -135,3 +135,40 @@ document.addEventListener('DOMContentLoaded', () => {
         overlay.addEventListener('click', closeLoader);
     }
 });
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    gsap.registerPlugin(ScrollTrigger);
+
+    const cards = gsap.utils.toArray(".cards-stack .content-card");
+    if (cards.length === 0) return;
+
+    // The timeline is now much simpler.
+    const timeline = gsap.timeline();
+
+    // We create a single, continuous animation for each card sliding up.
+    // GSAP will animate from the CSS starting position (translateY(100vh))
+    // to the final position (translateY(0)).
+    cards.slice(1).forEach((card, index) => {
+        timeline.to(card, {
+            y: 0, // Animate to its final resting position
+            ease: "none"
+        }, index * 0.5); // Stagger the start time slightly so they don't all move at once
+    });
+
+    // Create the ScrollTrigger that controls the pinning and the timeline
+    ScrollTrigger.create({
+        trigger: ".pinning-container",
+        start: "top top",
+        end: "+=300%",
+        
+        // THE CRITICAL FIX:
+        // Replaced the 'snap' object with 'scrub: true'.
+        // This links the animation directly to the scrollbar position.
+        scrub: true,
+        
+        pin: ".animation-wrapper", // Pin the wrapper that contains everything
+        animation: timeline,
+        anticipatePin: 1
+    });
+});

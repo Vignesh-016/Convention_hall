@@ -1,6 +1,9 @@
 /* =================== */
 /* HEADER BASE STYLES  */
 /* =================== */
+
+
+
 .header {
     position: fixed;
     top: 0;
@@ -2005,3 +2008,212 @@
     font-size: 13px;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+/* ========================================================= */
+/* ===== GSAP SCROLL-CONTROLLED STACKING CSS (FINAL) ===== */
+/* ========================================================= */
+
+.pinning-container {
+  height: 400vh; /* 100vh for the view + 300vh for 3 card animations */
+  position: relative;
+  background-color: #FDFCF9;
+}
+
+.animation-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; 
+}
+
+/* --- Layer 1: The Animating Cards --- */
+.cards-stack {
+  position: relative;
+  width: 90%;
+  max-width: 1200px;
+  height: 650px;
+  z-index: 1;
+}
+
+.content-card {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  border: 10px solid #BFA168;
+  border-radius: 40px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
+
+  /* Temporary numbering */
+  font-size: 5rem; color: #7b0000; font-weight: bold; font-family: sans-serif;
+  display: flex; justify-content: center; align-items: center;
+}
+
+/* Cascading GAP and Z-INDEX */
+.content-card[data-index="0"] { top: 0; z-index: 1; }
+.content-card[data-index="1"] { top: 20px; z-index: 2; }
+.content-card[data-index="2"] { top: 40px; z-index: 3; }
+.content-card[data-index="3"] { top: 60px; z-index: 4; }
+
+/* 
+* THE KEY CHANGE: Set the initial position for non-active cards here.
+* They start below the browser window.
+*/
+.content-card:not([data-index="0"]) {
+  transform: translateY(100vh);
+}
+
+/* Temporary numbering content */
+.content-card[data-index="0"]::before { content: '1'; }
+.content-card[data-index="1"]::before { content: '2'; }
+.content-card[data-index="2"]::before { content: '3'; }
+.content-card[data-index="3"]::before { content: '4'; }
+
+/* --- Layer 2: The Static Frame --- */
+.static-frame {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+/* ... (The rest of the static-frame and semi-circle CSS is unchanged and correct) ... */
+.static-frame .semi-circle { position: absolute; }
+.static-frame .semi-circle.top { top: 0; left: 50%; transform: translateX(-50%); width: 120px; height: 60px; background-color: #F8D88B; border-radius: 0 0 120px 120px; }
+.static-frame .semi-circle.left { left: 0; top: 50%; transform: translateY(-50%); width: 60px; height: 120px; background-color: #F0E6E5; border-radius: 0 120px 120px 0; }
+.static-frame .semi-circle.right { right: 0; top: 50%; transform: translateY(-50%); width: 60px; height: 120px; background-color: #F0E6E5; border-radius: 120px 0 0 120px; }
+
+
+
+
+
+
+
+/* ================================================================= */
+/* ===== CARD 1 CONTENT STYLES (FINAL DEFINITIVE VERSION) ===== */
+/* ================================================================= */
+
+/* This removes the temporary number */
+.content-card[data-index="0"]::before {
+  content: '';
+}
+
+/* 
+* The main grid container for the entire card.
+* NO PADDING here to allow the banner to be full-width.
+*/
+.card-grid-container {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  
+  height: 100%;
+  box-sizing: border-box;
+}
+
+/* --- ROW 1: Banner Styles --- */
+.hall-banner {
+  width: 100%;
+  /* The banner's top corners must match the main card's outer radius */
+  border-radius: 30px 30px 0 0;
+  
+  background-image: url('./assets/service-3.webp'); /* <-- YOUR IMAGE URL */
+  background-size: cover;
+  background-position: center;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  padding: 30px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+/* The dark overlay for the banner */
+.hall-banner::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 30px 30px 0 0; /* Match the parent's radius */
+}
+
+.hall-banner > * { z-index: 2; }
+
+/* ... (The rest of the .hall-banner styles like .hall-title-box, .hall-title, etc., remain exactly the same) ... */
+.hall-title-box { background-color: #5C0000; border: 2px solid #FFB800; padding: 10px 40px; border-radius: 8px; margin-bottom: 20px; }
+.hall-title { font-size: 42px; margin: 0; }
+.hall-description { font-size: 16px; max-width: 600px; line-height: 1.6; margin-bottom: 20px; }
+.underline { width: 100px; height: 3px; background-color: #C08A00; border-radius: 2px; }
+
+
+/* --- ROW 2: Features Grid Styles (with semi-circles re-added) --- */
+.features-grid-wrapper {
+  position: relative;
+  padding: 60px 40px 20px; /* Adjusted padding */
+  display: flex;
+  align-items: center;
+}
+
+/* --- THE FIX: Re-adding the Decorative Semi-Circles --- */
+.feature-deco-circle {
+  position: absolute;
+  z-index: 1;
+}
+.feature-deco-circle.left {
+  left: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 80px;
+  background-color: #780000;
+  border-radius: 0 80px 80px 0;
+}
+.feature-deco-circle.bottom {
+  bottom: 0;
+  left: 35%;
+  transform: translate(-50%, 50%);
+  width: 80px;
+  height: 40px;
+  background-color: #F8D88B;
+  border-radius: 80px 80px 0 0;
+}
+
+/* The grid container for the four items */
+.features-grid {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  gap: 30px;
+  width: 100%;
+  position: relative;
+  z-index: 2; /* Ensure grid is on top of deco circles */
+}
+
+/* ... (The rest of the .feature-item, .feature-text, and .feature-icon styles remain exactly the same) ... */
+.feature-item { position: relative; flex: 1; padding: 40px 15px 15px; text-align: center; border-left: 3px solid #C08A00; border-top: 3px solid #C08A00; cursor: pointer; transition: background-color 0.3s ease; }
+.feature-text { font-family: 'League Spartan', sans-serif; font-size: 15px; font-weight: 500; line-height: 1.5; color: #780000; transition: color 0.3s ease; }
+.feature-icon { position: absolute; top: 0; left: 0; transform: translate(-50%, -50%); width: 50px; height: 50px; border-radius: 50%; background-color: #780000; display: flex; justify-content: center; align-items: center; border: 3px solid #ffffff; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+.feature-icon img { width: 24px; height: 24px; filter: brightness(0) invert(1); }
+.feature-item:hover { background-color: #780000; }
+.feature-item:hover .feature-text { color: #ffffff; }

@@ -1,0 +1,34 @@
+/* --- Desktop Styles --- */
+.scroll-section {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    min-height: 80vh; /* Give it space */
+  }
+  
+  /* Initial (hidden) state for animated elements */
+  .content-container, .image-container {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  }
+  
+  /* Final (visible) state when the class is added */
+  .scroll-section.is-visible .content-container {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .scroll-section.is-visible .image-container {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.2s; /* Make the image appear slightly after the text */
+  }
+  
+  /* --- Mobile Styles (Different Design) --- */
+  @media (max-width: 768px) {
+    .scroll-section {
+      flex-direction: column; /* Stack elements vertically */
+      text-align: center;
+    }
+  }
