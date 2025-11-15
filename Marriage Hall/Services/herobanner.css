@@ -1,0 +1,353 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #FFF8EE;
+    font-family: "Inter", sans-serif;
+    color: #3C2B2B;
+}
+html, body {
+    overflow-x: hidden !important;
+} 
+
+.memories-section {
+    position: relative;
+    max-width: 1440px;
+    margin: 100px auto;
+    padding: 0 20px 30px;
+    box-sizing: border-box;
+}
+
+/* TOP CIRCLE */
+.circle-top {
+    position: absolute;
+    top: -220px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 150px;
+    border-radius: 50%;
+    background: #FCDA89;
+    box-shadow: 0 0 0 2px #C89411, 0px 5px 5px rgba(200, 148, 17, 0.55);
+    z-index: 2;
+}
+
+.memories-inner {
+    display: flex;
+    align-items: flex-start;
+    gap: 72px;
+}
+
+.memories-image-wrap {
+    flex: 0 0 46%;
+}
+
+.memories-image {
+    width: 100%;
+    display: block;
+    transform: translateY(40px);
+}
+
+.memories-content {
+    flex: 0 0 54%;
+    position: relative;
+}
+
+/* TITLE WRAP */
+.memories-title-wrap {
+    position: relative;
+    display: inline-block;
+}
+
+.memories-title {
+    font-family: "League Spartan", sans-serif;
+    font-size: 43px;
+    font-weight: 400;
+    letter-spacing: 5%;
+    line-height: normal;
+    color: #780000;
+    margin-bottom: 10px;
+}
+
+.memories-title-underline {
+    width: 100%;
+    max-width: 640px;
+    height: 3px;
+    background: #D4961A;
+}
+
+/* FLOWER POSITION */
+.memories-flower {
+    position: absolute;
+    right: -85px;
+    bottom: -1px;
+    width: 95px;
+    pointer-events: none;
+}
+
+.memories-text {
+    font-family: "League Spartan", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #3C2B2B;
+    max-width: 650px;
+    margin: 22px 0 32px;
+    text-align: justify;
+}
+
+.memories-feature-strip {
+    background: #7b0000;
+    border-radius: 7px;
+    padding: 14px 24px 30px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 75%;
+    position: relative;
+}
+
+.memories-feature-card {
+    background: #fdf5d9;
+    border-radius: 5px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-family: "League Spartan", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #7b0000;
+    width: 230px;
+    height: 40px;
+}
+
+.memories-feature-icon {
+    width: 34px;
+    height: 34px;
+}
+
+.memories-feature-icon img {
+    width: 100%;
+}
+
+.memories-dots {
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.memories-dots .dot {
+    width: 8px;
+    height: 8px;
+    background: #d19a7d;
+    border-radius: 50%;
+}
+
+.memories-dots .dot.active {
+    background: #ffffff;
+}
+
+/* ==========================================================
+   TEXT SIZE BREAKPOINTS
+   ========================================================== */
+
+/* 300px – 500px */
+@media (min-width: 300px) and (max-width: 500px) {
+
+    .memories-title {
+        font-size: 26px;
+        line-height: 32px;
+    }
+
+    .memories-text {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .memories-feature-card {
+        font-size: 14px;
+    }
+
+    .circle-top {
+        top: -240px;
+    }
+
+    .memories-image {
+        transform: translateY(10px);
+    }
+
+    .memories-feature-strip {
+        padding: 12px 16px 20px;
+        gap: 14px;
+        width: 90%;
+    }
+
+    .memories-feature-card {
+        max-width: 250px;
+        padding: 8px 14px;
+        height: auto;
+        font-size: 14px;
+    }
+
+    .memories-feature-icon {
+        width: 22px;
+        height: 22px;
+    }
+}
+
+/* 500px – 800px */
+@media (min-width: 500px) and (max-width: 800px) {
+
+    .memories-title {
+        font-size: 30px;
+        line-height: 36px;
+    }
+
+    .memories-text {
+        font-size: 15px;
+        line-height: 24px;
+    }
+
+    .memories-feature-card {
+        font-size: 15px;
+    }
+
+    .circle-top {
+        top: -230px;
+    }
+
+    .memories-image {
+        transform: translateY(15px);
+    }
+
+    .memories-feature-strip {
+        padding: 16px 20px 26px;
+        gap: 18px;
+        width: 90%;
+    }
+
+    .memories-feature-card {
+        max-width: 300px;
+        padding: 12px 18px;
+        font-size: 15px;
+        height: auto;
+    }
+
+    .memories-feature-icon {
+        width: 26px;
+        height: 26px;
+    }
+}
+
+/* 800px – 1000px */
+@media (min-width: 800px) and (max-width: 1000px) {
+
+    .memories-title {
+        font-size: 34px;
+        line-height: 40px;
+    }
+
+    .memories-text {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .memories-feature-card {
+        font-size: 17px;
+    }
+
+    .circle-top {
+        top: -220px;
+    }
+
+    .memories-image {
+        transform: translateY(20px);
+    }
+
+    .memories-feature-strip {
+        padding: 20px 24px 28px;
+        width: 80%;
+    }
+
+    .memories-feature-card {
+        max-width: 340px;
+        padding: 14px 20px;
+        font-size: 17px;
+    }
+}
+
+/* 1000px – 1300px */
+@media (min-width: 1000px) and (max-width: 1300px) {
+
+    .memories-title {
+        font-size: 38px;
+        line-height: 46px;
+    }
+
+    .memories-text {
+        font-size: 17px;
+        line-height: 26px;
+    }
+
+    .memories-feature-card {
+        font-size: 18px;
+    }
+
+    .memories-section {
+        transform: scale(0.33);
+        transform-origin: top center;
+    }
+}
+
+/* 1300px – 1495px */
+@media (min-width: 1300px) and (max-width: 1495px) {
+
+    .memories-title {
+        font-size: 40px;
+        line-height: 48px;
+    }
+
+    .memories-text {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .memories-feature-card {
+        font-size: 19px;
+    }
+
+    .memories-section {
+        transform: scale(0.92);
+        transform-origin: top center;
+    }
+}
+
+/* MOBILE LAYOUT FIXES */
+@media (min-width: 250px) and (max-width: 1000px) {
+
+    .memories-inner {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .memories-feature-strip {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .memories-feature-card {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .memories-flower {
+        right: -55px;
+        bottom: -1px;
+        width: 75px;
+    }
+}
