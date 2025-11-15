@@ -288,8 +288,8 @@ body.contact-page {
 .contact-form-group select#facilities,
 .contact-form-group select#facilities option {
   font-family: 'LEMON MILK', 'Lemon Milk', Arial, sans-serif !important;
-  font-weight: 400 !important;
-  color : #939393 !important;
+  font-weight: 300 !important;
+  color : #6f6f6f !important;
   font-size: 13px;
 }
 
@@ -300,11 +300,11 @@ body.contact-page {
   padding: 10px 22px;
   display: inline-flex;
   align-items: center;
-  gap: 26px;
+  gap: 14px;
   border-radius: 7px;
   font-weight: 300;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 18px;
   transition: all 0.3s;
 }
 
@@ -572,10 +572,10 @@ body.contact-page {
     left: 0;
     margin-top: 150px;
     margin-bottom: 30px;
-    margin-left: 5%;
+    margin-left: -320px;
     margin-right: auto;
     text-align: left;
-    padding: 6px 14px;
+    padding: 1px 1px;
     border-radius: 8px;
     font-size: 13px;
     display: inline-flex;
@@ -591,7 +591,11 @@ body.contact-page {
     bottom: -170px;
     left: unset;
     transform: none;
-    margin: 0 auto 60px;
+    margin: 0 auto -180px auto;
+    top: unset;
+    bottom: -170px;
+    left: unset;
+    right: unset;
     width: 90%;
     max-width: 600px;
     padding: 24px 28px;
@@ -665,12 +669,12 @@ body.contact-page {
   .contact-form-section {
     position: absolute;
     bottom: -70px;
-    left: 10%;
+    /* left: 1%; */
     transform: translateX(-50%);
     margin: 0 auto;
-    width: 90%;
+    width: 80%;
     max-width: 1200px;
-    padding: 30px 0;
+    padding: 32px 24px; /* Added uniform padding: 32px top/bottom, 24px left/right */
     display: flex;
     justify-content: center;
     align-items: stretch;
@@ -717,8 +721,8 @@ body.contact-page {
   }
 }
 
-/* ===== Mobile View 300px-450px (Exact Design Match) ===== */
-@media (max-width: 450px) and (min-width: 300px) {
+/* ===== Mobile & Small Device Responsive (300px - 480px) ===== */
+@media (max-width: 480px) and (min-width: 300px) {
   .contact-hero {
     height: auto;
     min-height: 50vh;
@@ -733,17 +737,13 @@ body.contact-page {
     box-sizing: border-box;
   }
 
-  /* Form container - white card with gold border */
   .contact-form-section {
     position: relative;
-    bottom: auto;
-    left: unset;
-    transform: none;
     margin: 20px auto 40px;
     width: calc(100% - 32px);
     max-width: calc(100vw - 32px);
     padding: 20px 16px;
-    background: #ffffff;
+    background: #fff;
     border: 2px solid #c08a00;
     border-radius: 12px;
     box-shadow: 0 4px 16px rgba(0,0,0,0.1);
@@ -754,16 +754,13 @@ body.contact-page {
     overflow: hidden;
   }
 
-  /* Single column layout */
   .contact-form {
     display: flex !important;
     flex-direction: column !important;
     gap: 16px;
     width: 100%;
-    grid-template-columns: unset !important;
   }
 
-  /* Form groups - full width, stacked */
   .contact-form-group {
     min-width: 100% !important;
     max-width: 100% !important;
@@ -780,7 +777,6 @@ body.contact-page {
     overflow: hidden;
   }
 
-  /* Labels - uppercase, proper spacing */
   .contact-form-group label {
     font-size: 14px;
     font-weight: 400;
@@ -793,7 +789,6 @@ body.contact-page {
     gap: 8px;
   }
 
-  /* Input container with icon */
   .contact-form-group > div {
     display: flex;
     align-items: center;
@@ -802,7 +797,6 @@ body.contact-page {
     min-width: 0;
   }
 
-  /* Icons */
   .contact-form-group img {
     width: 20px !important;
     height: 20px !important;
@@ -810,7 +804,6 @@ body.contact-page {
     flex-shrink: 0;
   }
 
-  /* Inputs and selects - typography per design */
   .contact-form-group input,
   .contact-form-group select {
     border: none;
@@ -830,14 +823,12 @@ body.contact-page {
     box-sizing: border-box;
   }
 
-  /* Date input styling */
   .contact-form-group input[type="date"] {
     color: #6f6f6f;
     font-family: 'League Spartan', Arial, sans-serif;
     font-weight: 600;
   }
 
-  /* Focus state for inputs - dark red border like screenshot */
   .contact-form-group:focus-within {
     border: 2px solid #780000 !important;
     box-shadow: 0 0 0 1px rgba(120, 0, 0, 0.2);
@@ -849,7 +840,6 @@ body.contact-page {
     color: #6f6f6f;
   }
 
-  /* Select dropdown styling */
   .contact-form-group select {
     appearance: none;
     -webkit-appearance: none;
@@ -871,15 +861,12 @@ body.contact-page {
     display: none;
   }
 
-  /* Ensure date inputs show red text */
   .contact-form-group input[type="date"]::-webkit-calendar-picker-indicator {
     filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
     cursor: pointer;
   }
 
-  /* Submit button - full width */
   .contact-submit {
-    grid-column: unset;
     width: 100%;
     margin-top: 8px;
     display: flex;
@@ -915,8 +902,8 @@ body.contact-page {
   }
 }
 
-/* Show breadcrumbs from 381px to 450px */
-@media (max-width: 450px) and (min-width: 381px) {
+/* Show breadcrumbs for visible range */
+@media (max-width: 480px) and (min-width: 381px) {
   .contact-breadcrumbs {
     display: inline-flex !important;
     position: relative;
@@ -926,7 +913,10 @@ body.contact-page {
     margin-bottom: 20px;
     margin-left: 5%;
     text-align: left;
-    padding: 6px 14px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 18px;
+    padding-right: 18px;
     border-radius: 8px;
     font-size: 12px;
     justify-content: flex-start;
@@ -934,149 +924,6 @@ body.contact-page {
     width: fit-content;
     max-width: calc(90% - 20px);
     z-index: 20;
-  }
-}
-
-/* ===== Specific Fix for 370px-450px to prevent overflow ===== */
-@media (max-width: 450px) and (min-width: 370px) {
-  body.contact-page {
-    overflow-x: hidden;
-    width: 100%;
-    max-width: 100vw;
-  }
-
-  .contact-hero {
-    width: 100%;
-    max-width: 100vw;
-    padding-left: 0;
-    padding-right: 0;
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  /* Form container - tighter constraints */
-  .contact-form-section {
-    width: calc(100vw - 24px);
-    max-width: calc(100vw - 24px);
-    margin-left: 12px;
-    margin-right: 12px;
-    padding: 18px 14px;
-    box-sizing: border-box;
-  }
-
-  /* Ensure form doesn't overflow */
-  .contact-form {
-    width: 100%;
-    max-width: 100%;
-    box-sizing: border-box;
-  }
-
-  /* Form groups - ensure they fit */
-  .contact-form-group {
-    width: 100% !important;
-    max-width: 100% !important;
-    padding: 10px 10px;
-    box-sizing: border-box;
-  }
-
-  /* Input containers */
-  .contact-form-group > div {
-    width: 100%;
-    max-width: 100%;
-    box-sizing: border-box;
-  }
-
-  /* Inputs - reduce padding if needed */
-  .contact-form-group input,
-  .contact-form-group select {
-    padding: 8px 8px;
-    width: 100% !important;
-    max-width: 100%;
-    box-sizing: border-box;
-  }
-
-  /* Icons - slightly smaller to save space */
-  .contact-form-group img {
-    width: 18px !important;
-    height: 18px !important;
-    margin-right: 6px !important;
-  }
-}
-
-/* ===== Small Mobile View (max-width: 480px, excluding 300-450px range) ===== */
-/* Apply to screens smaller than 300px OR between 451-480px */
-@media (max-width: 299px), (min-width: 451px) and (max-width: 480px) {
-  .contact-hero {
-    height: auto;
-    padding-bottom: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
-  }
-
-  /* Breadcrumbs above the form - aligned to left of form */
-  .contact-breadcrumbs {
-    position: relative;
-    bottom: -190px;
-    left: 0;
-    margin-top: 250px;
-    margin-bottom: 30px;
-    margin-left: 5%;
-    margin-right: auto;
-    text-align: left;
-    padding: 6px 14px;
-    border-radius: 8px;
-    font-size: 12px;
-    display: inline-flex;
-    justify-content: flex-start;
-    align-items: center;
-    width: fit-content;
-    max-width: calc(90% - 20px);
-  }
-
-  /* Form container centered below banner */
-  .contact-form-section {
-    position: relative;
-    bottom: -170px;
-    left: unset;
-    transform: none;
-    margin: 0 auto 60px;
-    width: 90%;
-    max-width: 320px;
-    padding: 24px 28px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .contact-form {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 18px 24px;
-    width: 100%;
-  }
-
-  .contact-form-group {
-    min-width: auto;
-    max-width: 100%;
-  }
-
-  .contact-form-group input{
-    width:60%;
-  }
-
-  .contact-submit {
-    grid-column: 1 / -1;
-    text-align: center;
-    margin-top: 12px;
-  }
-
-  .contact-submit button {
-    width: 50%;
-    min-width: 200px;
-    padding: 12px 0;
-    font-size: 13px;
   }
 }
 

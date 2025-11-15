@@ -329,7 +329,7 @@ body {
   width: 100%;
   color: #939393;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 300;
   background-color: rgba(120,0,0,0.11);
   outline: none;
   text-align: left;
@@ -812,18 +812,19 @@ body {
     min-width: 0;
     width: fit-content;
     max-width: 94vw;
-    background: rgba(255,255,255,0.86);
+    /* background: rgba(255,255,255,0.86); */
     box-shadow: 0 1px 5px rgba(0,0,0,0.04);
   }
 
   .contact-form-section {
     position: relative;
+    top: 10;
     bottom: 0;
     left: unset;
     transform: none;
-    margin: 0 auto 34px auto;
+    margin: 50px auto 34px auto;
     width: 98vw;
-    max-width: 98vw;
+    max-width: 90vw;
     min-width: 0;
     padding: 12px 3vw 22px 3vw;
     background: #fff;
@@ -878,7 +879,6 @@ body {
     border-radius: 5px;
     border: none;
     outline: none;
-    color: #333;
     margin: 0;
   }
 
