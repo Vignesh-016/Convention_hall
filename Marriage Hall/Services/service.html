@@ -29,11 +29,141 @@
           href="../components/css/footer.css" />
     <link rel="stylesheet"
           href="./herobanner.css" />
+    <link rel="stylesheet"
+          href="./header.css" />
+"
 
 </head>
 
 <body>
 
+     <!-- Header Component -->
+<header class="header" id="header" data-aos="fade-down" data-aos-duration="900">
+    <div class="container">
+      
+      <!-- Location Info -->
+      <div class="location-info" data-aos="fade-right" data-aos-delay="100">
+        <i class="fas fa-map-marker-alt"></i>
+        <span>Anna Nagar, Sinnamani Nagar, Thoothukudi, Tamil Nadu 628008</span>
+      </div>
+  
+      <!-- Divider Line (Full Width) -->
+      <div style="width: 100vw; position: relative; left: 50%; right: 50%; margin-left: -50vw; margin-right: -50vw;" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="200">
+        <hr style="border: none; border-top: 1px solid #ffffff; margin: 0; opacity: 0.3;">
+      </div>
+  
+      <!-- Navbar -->
+      <nav class="navbar" data-aos="fade-up" data-aos-delay="250">
+        <!-- Mobile Menu Toggle -->
+        <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+        
+        <!-- Navigation Links -->
+        <div class="nav-links" id="navLinks">
+          <a href="../index.html" class="nav-link">Home</a>
+          <a href="../About us/aboutus.html" class="nav-link">About Us</a>
+          <a href="../Services/service.html" class="nav-link">Services</a>
+          <!-- <a href="../index.html#facilities" class="nav-link">Facilities</a>
+          <a href="../index.html#gallery" class="nav-link">Gallery</a>
+          <a href="../index.html#blog" class="nav-link">Blog</a> -->
+          <a href="./Contact.html" class="nav-link active">Contact Us</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+  
+    <script>
+      function toggleMenu() {
+        var links = document.getElementById("navLinks");
+        if (links) {
+          links.classList.toggle("mobile-active");
+        }
+      }
+      </script>
+      
+  
+    <!-- ====== Hero Section ====== -->
+    <section class="contact-hero" data-aos="fade-up">
+      <div class="overlay"></div>
+  
+      <!-- Breadcrumbs -->
+      <div class="contact-breadcrumbs" data-aos="fade-zoom-in" data-aos-delay="100" data-aos-duration="700">
+        <a href="index.html">Home</a>
+        <span class="custom-separator" style="display: inline-block; vertical-align: middle; width: 32px; height: 16px; position: relative;">
+          <span style="
+            position: absolute;
+            left: 0; top: 50%;
+            width: 20px;
+            height: 3px;
+            background: #fff;
+            border-radius: 2px;
+            transform: translateY(-50%);
+          "></span>
+          <span style="
+            position: absolute;
+            left: 18px; top: 50%;
+            width: 8px;
+            height: 8px;
+            background: #fff;
+            border-radius: 50%;
+            box-shadow: 0 1px 6px 0 rgba(30,25,20,0.17);
+            transform: translateY(-50%);
+          "></span>
+        </span>
+        <span class="current">Contact Us</span>
+      </div>
+  
+      <!-- Booking Form -->
+      <div class="contact-form-section" data-aos="fade-left" data-aos-delay="200" style="font-family: 'League Spartan', Arial, sans-serif;">
+        <form class="contact-form" style="font-family: 'League Spartan', Arial, sans-serif;">
+          <div class="contact-form-group" data-aos="fade-up" data-aos-delay="250" style="font-family: 'League Spartan', Arial, sans-serif;">
+            <label for="from" style="font-family: 'League Spartan', Arial, sans-serif;  font-weight: 400;">From</label>
+            <div style="display: flex; align-items: center; font-family: 'League Spartan', Arial, sans-serif;">
+              <img src="./assets/uis_calender.png" alt="Calendar Icon" style="width: 22px; height: 22px; margin-right:7px;">
+              <input type="date" id="from" name="from" placeholder="From" style="font-family: 'Lemon Milk', Arial, sans-serif; font-weight: 100;">
+            </div>
+          </div>
+          <div class="contact-form-group" data-aos="fade-up" data-aos-delay="300" style="font-family: 'League Spartan', Arial, sans-serif;">
+            <label for="to" style="font-family: 'League Spartan', Arial, sans-serif;  font-weight: 400;">To</label>
+            <div style="display: flex; align-items: center; font-family: 'League Spartan', Arial, sans-serif;">
+              <img src="./assets/uis_calender.png" alt="Calendar Icon" style="width: 22px; height: 22px; margin-right:7px;">
+              <input type="date" id="to" name="to" placeholder="To" style="font-family: 'Lemon Milk', Arial, sans-serif; font-weight: 100;">
+            </div>
+          </div>
+          <div class="contact-form-group" data-aos="fade-up" data-aos-delay="350" style="font-family: 'League Spartan', Arial, sans-serif;">
+            <label for="event" style="font-family: 'League Spartan', Arial, sans-serif;  font-weight: 400;">Event</label>
+            <div style="display: flex; align-items: center; font-family: 'League Spartan', Arial, sans-serif;">
+              <img src="./assets/streamline_city-hall-remix.png" alt="Calendar Icon" style="width: 22px; height: 22px; margin-right:7px;">
+              <select id="event" name="event" style="font-family: 'Lemon Milk', Arial, sans-serif; font-weight: 100;">
+                <option value="marriage" style="font-family: 'Lemon Milk', Arial, sans-serif;">MARRIAGE</option>
+                <option value="birthday" style="font-family: 'Lemon Milk', Arial, sans-serif;">BIRTHDAY</option>
+                <option value="corporate" style="font-family: 'Lemon Milk', Arial, sans-serif;">CORPORATE</option>
+              </select>
+            </div>
+          </div>
+          <div class="contact-form-group" data-aos="fade-up" data-aos-delay="400" style="font-family: 'League Spartan', Arial, sans-serif;">
+            <label for="facilities" style="font-family: 'League Spartan', Arial, sans-serif; font-weight: 400;">Facilities</label>
+            <div style="display: flex; align-items: center; font-family: 'League Spartan', Arial, sans-serif;">
+              <img src="./assets/settings.png" alt="Calendar Icon" style="width: 22px; height: 22px; margin-right:7px;">
+              <select id="facilities" name="facilities" style="font-family: 'Lemon Milk', Arial, sans-serif; font-weight: 100;">
+                <option value="catering" style="font-family: 'Lemon Milk', Arial, sans-serif;">CATERING</option>
+                <option value="decoration" style="font-family: 'Lemon Milk', Arial, sans-serif;">DECORATION</option>
+                <option value="entertainment" style="font-family: 'Lemon Milk', Arial, sans-serif;">ENTERTAINMENT</option>
+              </select>
+            </div>
+          </div>
+          <div class="contact-submit" data-aos="zoom-in" data-aos-delay="480" style="font-family: 'League Spartan', Arial, sans-serif;">
+            <button type="submit" style="font-family: 'League Spartan', Arial, sans-serif;"><i class="fas fa-arrow-right"></i> Submit</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+     <!-- ====== JS just for hero fade-in ====== -->
+  <script>
+    window.addEventListener("load", () => {
+      document.querySelector(".contact-hero").classList.add("loaded");
+    });
+  </script>
 
 
    
@@ -49,7 +179,7 @@
         <div class="memories-inner">
     
             <div class="memories-image-wrap">
-                <img src="./figma/bg_img.png" class="memories-image">
+                <img src="./assets/bg_img.webp" class="memories-image">
             </div>
     
             <div class="memories-content">
@@ -61,7 +191,7 @@
     
                     <div class="memories-title-underline"></div>
     
-                    <img src="./figma/service_sec_2_flower.png" class="memories-flower">
+                    <img src="./assets/service_sec_2_flower.png" class="memories-flower">
                 </div>
     
                 <p class="memories-text">

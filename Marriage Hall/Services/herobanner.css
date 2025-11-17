@@ -1,10 +1,4 @@
-body {
-    margin: 0;
-    padding: 0;
-    background: #FFF8EE;
-    font-family: "Inter", sans-serif;
-    color: #3C2B2B;
-}
+
 html, body {
     overflow-x: hidden !important;
 } 
@@ -14,21 +8,22 @@ html, body {
     max-width: 1440px;
     margin: 100px auto;
     padding: 0 20px 30px;
+    padding-top: 50px;
     box-sizing: border-box;
 }
 
 /* TOP CIRCLE */
 .circle-top {
     position: absolute;
-    top: -220px;
+    top: 3%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%) translateY(-50%);
     width: 120px;
-    height: 150px;
-    border-radius: 50%;
+    height: 75px;
+    border-radius: 0 0 120px 120px;
     background: #FCDA89;
     box-shadow: 0 0 0 2px #C89411, 0px 5px 5px rgba(200, 148, 17, 0.55);
-    z-index: 2;
+    z-index: 3;
 }
 
 .memories-inner {
@@ -172,7 +167,8 @@ html, body {
     }
 
     .circle-top {
-        top: -240px;
+        top: 0;
+        transform: translateX(-50%) translateY(-50%);
     }
 
     .memories-image {
@@ -216,7 +212,8 @@ html, body {
     }
 
     .circle-top {
-        top: -230px;
+        top: 0;
+        transform: translateX(-50%) translateY(-50%);
     }
 
     .memories-image {
@@ -260,7 +257,8 @@ html, body {
     }
 
     .circle-top {
-        top: -220px;
+        top: 0;
+        transform: translateX(-50%) translateY(-50%);
     }
 
     .memories-image {
