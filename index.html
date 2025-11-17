@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Loading...</title>
+  <meta http-equiv="refresh" content="5;url=index.html">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      background: #fff9ef;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .loader-box {
+      text-align: center;
+    }
+    .loader {
+      border: 8px solid #ffe7a0;
+      border-top: 8px solid #c08a00;
+      border-radius: 50%;
+      width: 70px;
+      height: 70px;
+      animation: spin 1s linear infinite;
+      margin: 0 auto 20px auto;
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg);}
+      100% { transform: rotate(360deg);}
+    }
+    .loading-text {
+      font-family: 'League Spartan', Arial, sans-serif;
+      font-size: 1.5rem;
+      color: #c08a00;
+      letter-spacing: 2px;
+    }
+  </style>
+  <script>
+    // Optional: In case meta refresh fails, use JS redirect as backup
+    setTimeout(function(){
+      window.location.href = "Marriage Hall/index.html";
+    }, 10);
+  </script>
+</head>
+<body>
+  <div class="loader-box">
+    <div class="loader"></div>
+    <div class="loading-text">Loading ...</div>
+  </div>
+</body>
+</html>
